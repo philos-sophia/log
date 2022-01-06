@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>经济学原理：非对称信息与市场</title>
+  <meta name="description" content="总结: |  非对称信息是指交易中一方知道而另一方不知道的信息。交易  之前存在的非对称信息被称为事前非对称信息（或隐藏信息），  交易之后出现的非对称信息被称为事后非对称信息。事前非对  称信息导致逆向选择，事后非对称信息导致道德风险。  非对称信息被认为会导致市场失灵，因此需要政府干预以解决  市场失灵。但这...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/books/2021/12/05/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E9%9D%9E%E5%AF%B9%E7%A7%B0%E4%BF%A1%E6%81%AF%E4%B8%8E%E5%B8%82%E5%9C%BA/">
+  <link rel="alternate" type="application/rss+xml" title="叶子" href="/feed.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW8P6JTH7J"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW8P6JTH7J');
+</script>
+
+
+
+</head>
+
+
+  <body>
+
+    <style>
+
+.site-nav ul li {
+  width: 15%;
+}
+
+</style>
+
+<header class="site-header">
+
+  <div class="wrapper">
+    <h2 class="site-title">
+      <a class="site-title" href="/">叶子</a>
+    </h2>
+
+     <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+        <div class="trigger">
+            <ul>
+              <li><a href="/">随笔</a></li>
+              <li><a href="/books">读书</a></li>
+              <li><a href="/misc">杂记</a></li>
+              <li><a href="/run">跑步</a></li>
+              <li><a href="/math">数学</a></li>
+              <li><a href="/essays">集子</a></li>
+
+            </ul>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">经济学原理：非对称信息与市场</h1>
+    <p class="post-meta">
+      <time datetime="2021-12-05T19:06:13+08:00" itemprop="datePublished">Dec 5, 2021</time>
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">张维迎</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="yaml"><span class="na">总结</span><span class="pi">:</span> <span class="pi">|</span>
+
+  <span class="s">非对称信息是指交易中一方知道而另一方不知道的信息。交易</span>
+  <span class="s">之前存在的非对称信息被称为事前非对称信息（或隐藏信息），</span>
+  <span class="s">交易之后出现的非对称信息被称为事后非对称信息。事前非对</span>
+  <span class="s">称信息导致逆向选择，事后非对称信息导致道德风险。</span>
+
+  <span class="s">非对称信息被认为会导致市场失灵，因此需要政府干预以解决</span>
+  <span class="s">市场失灵。但这种观点是错误的。非对称信息是市场的基本特</span>
+  <span class="s">征，因为市场以分工为基础，有分工就有非对称信息。如果有</span>
+  <span class="s">非对称信息就有市场失灵，那市场从一开始就不会出现。</span>
+
+  <span class="s">市场没有失灵，因为市场白身有解决非对称信息的机制。当潜</span>
+  <span class="s">在的帕累托改进存在的时候，意味着有盈利的机会，市场参与</span>
+  <span class="s">者就有积极性寻找解决非对称信息问题的办法：没有私人信息</span>
+  <span class="s">的一方有积极性获取信息，有（好的）私人信息的一方有积极</span>
+  <span class="s">性传递信息，或者第三方出于盈利的目的也愿意生产信息市场</span>
+  <span class="s">不仅是一只“看不见的手”，也是一双“隐形的眼睛”。声誉</span>
+  <span class="s">机制是市场解决非对称信息的最重要机制。在充分竞争的市场</span>
+  <span class="s">上，诚实是最好的竞争策略。</span>
+
+  <span class="s">企业作为一个法律构造，是声誉的载体。它把生命有限的自然</span>
+  <span class="s">参与人转变成具有无限生命的行为主体，从而使得声誉机制能</span>
+  <span class="s">更有效地发挥作用。有了企业组织。信息的观察和传递就更为</span>
+  <span class="s">容易。</span>
+
+  <span class="s">企业所有者是声誉价值的索取者，要为所有员工的行为承担责</span>
+  <span class="s">任。企业如果没有所有者，就没有人关心企业的声誉，市场就</span>
+  <span class="s">不可能有效。</span>
+
+  <span class="s">企业的品牌集中体现了企业在市场上积累的声誉。品牌的价值</span>
+  <span class="s">来自信息不对称。品牌企业是市场的总承包商，它对所有上游</span>
+  <span class="s">环节的生产者承担连带责任，代替消费者监督所有上游生产者。</span>
+  <span class="s">没有品牌大企业，市场也不可能有效运行。因此，反大企业本</span>
+  <span class="s">身是反市场的。</span>
+
+  <span class="s">政府的过度管制不仅本身无效率，而且会损害市场的声誉机制。</span>
+  <span class="s">好多现象表面看上去是市场的失败，但真正的原因是管制过度。</span>
+
+<span class="s">---</span>
+<span class="na">术语</span><span class="pi">:</span> <span class="pi">|</span>
+
+  <span class="s">非对称信息 逆向选择 道德风险</span>
+  <span class="s">机制设计 信号传递 激励相容约束 第三方信息提供商</span>
+  <span class="s">声誉机制 企业品牌</span>
+  <span class="s">政府管制</span>
+  <span class="s">声誉的需求曲线 声誉的供给曲线</span>
+  <span class="s">管制陷阱</span>
+
+<span class="s">---</span>
+<span class="na">非对称信息与市场</span><span class="pi">:</span> <span class="pi">|</span>
+
+  <span class="s">非对称信息的概念:</span>
+
+    <span class="s">什么是非对称信息: |</span>
+
+      <span class="s">对称信息是指每个人都知道的信息，并且是每个人都一样</span>
+      <span class="s">的信息；非对称信息指交易一方拥有但不被另一方所知道</span>
+      <span class="s">的信息。</span>
+
+      <span class="s">在经济学里，非对称信息又称为不完全信息，对应地，对</span>
+      <span class="s">称信息又称为完全信息。</span>
+
+      <span class="s">在交易还没发生之时就己经存在的非对称信息，称为事前</span>
+      <span class="s">的非对称信息；在交易之后才产生的非对称信息，称为事</span>
+      <span class="s">后的非对称信息。</span>
+
+        <span class="s">例如，你买了某一个产品，它的质量是给定的，是好是</span>
+        <span class="s">坏，卖的人知道，你不知道，这就是事前的非对称信息；</span>
+        <span class="s">另一种可能是，你买了一个产品，产品质量本来没有问</span>
+        <span class="s">题，但在使用的过程中，由于你操作不正确，把它弄坏</span>
+        <span class="s">了，这时候你仍然可以找厂家索赔，因为厂家可能不知</span>
+        <span class="s">道究竟是产品的质量问题还是你操作不当，这就是事后</span>
+        <span class="s">的非对称信息。</span>
+
+        <span class="s">因为事前信息通常指客观存在的状态的信息，事后信息</span>
+        <span class="s">通常涉及当事人采取的某种行为的信息，所以事前非对</span>
+        <span class="s">称信息有时也称为“隐藏信息”（hidden information），</span>
+        <span class="s">事后非对称信息有时也称为“隐藏行动”（hidden action）。</span>
+        <span class="s">对应这两类非对称信息，有两个重要的理论：第一类非</span>
+        <span class="s">对称信息的理论叫作“逆向选择”（adverse selection）理</span>
+        <span class="s">论，第二类非对称信息的理论叫作 “道德风险”（moral</span>
+        <span class="s">hazard）理论。</span>
+
+        <span class="s">逆向选择：</span>
+
+          <span class="s">信息不对称带来的潜在交易价值无法实现的现象。</span>
+
+        <span class="s">道德风险：</span>
+
+          <span class="s">市场交易的一方利用其拥有的信息优势，采取对方所</span>
+          <span class="s">无法观测和监督的隐藏行动或不行动，从而导致对方</span>
+          <span class="s">利益受损的可能性。</span>
+
+    <span class="s">非对称信息的普遍性: |</span>
+
+      <span class="s">知识拓展: 事前非对称信息</span>
+
+        <span class="s">如果一个政治家要竟选国家领导人或者地区领导人，他</span>
+        <span class="s">的治国能力、品质、理念，政治家自己清楚，老百姓不</span>
+        <span class="s">清楚。竞选的过程就是老百姓了解这些信息的过程。即</span>
+        <span class="s">使这样，我们知道，最后也经常可能犯错误，也就是说，</span>
+        <span class="s">民主体制下，也可能选出一个并不是大部分选民所希望</span>
+        <span class="s">的领袖。</span>
+
+      <span class="s">知识拓展: 事后非对称信息</span>
+
+        <span class="s">你雇了一名律师替你打官司，官司是否打得赢，依赖于</span>
+        <span class="s">律师的努力程度。但对于他的努力程度，例如，他是否</span>
+        <span class="s">尽心尽力搜集对你有利的证据，是否在法庭上卖劲儿辦</span>
+        <span class="s">护，甚至是否被对方收买，你可能不太容易判断。</span>
+
+        <span class="s">在医惠关系之中，医护人员是不是精心地来照料病人？</span>
+        <span class="s">现在出的很多医疗事故导致的医患关系紧张，就是病人</span>
+        <span class="s">怀疑医生没有尽到其应尽的责任。事实上也可能不是这</span>
+        <span class="s">样，但是医护人员知道，病人（特别是家属）没办法分</span>
+        <span class="s">清楚。</span>
+
+  <span class="s">所谓“市场失灵”的若干例子: |</span>
+
+    <span class="s">事前的非对称信息往往导致所谓的逆向选择，简单地说就是</span>
+    <span class="s">“劣胜优汰”的结果。逆向选择往往被用来证明市场失灵的</span>
+    <span class="s">存在。</span>
+
+      <span class="s">二手车市场中的逆向选择:</span>
+
+      <span class="s">阿克洛夫认为，二手车市场可能出现的问题是，由于存在</span>
+      <span class="s">非对称信息，好车可能卖不出去，坏车反倒卖出去了。</span>
+
+      <span class="s">无论好车还是坏车，只要对买者的价值大于卖者，如果信</span>
+      <span class="s">息是对称的，都很容易成交。</span>
+
+      <span class="s">所谓的逆向选择，就是高质量的车退出市场的过程。</span>
+
+      <span class="s">保险市场中的逆向选择:</span>
+
+      <span class="s">人类面临很多风险，所有需要保险。</span>
+
+      <span class="s">信贷市场中的逆向选择:</span>
+
+
+    <span class="s">由于存在非对称信息：</span>
+      <span class="s">1）不是所有的好产品都能卖出去；</span>
+      <span class="s">2）不是所有的风险都能得到保险；</span>
+      <span class="s">3）不是所有的好项目都得到融资。</span>
+    <span class="s">更一般地说，不是所有的好人都能得到好报。这就是经济学</span>
+    <span class="s">家所说的非对称信息导致的“市场失灵”。</span>
+
+  <span class="s">解决非对称信息问题的市场机制: |</span>
+
+    <span class="s">市场没有失灵: |</span>
+
+      <span class="s">非对称信息经常被当作市场失灵的证据。按照传统经济学</span>
+      <span class="s">的逻辑，在存在市场失灵的地方，就需要政府干预，以纠</span>
+      <span class="s">正市场的失灵。我们暂时不管政府干预是否有效，首先需</span>
+      <span class="s">要回答的一个基本问题是：市场真的失灵了吗？答案是否</span>
+      <span class="s">定的。</span>
+
+      <span class="s">事实上，非对称信息是市场的基本特征之，甚至可以说是</span>
+      <span class="s">市场存在的理由。</span>
+
+      <span class="s">道理很简单，市场基于分工和专业化，而只要有分工就有</span>
+      <span class="s">非对称信息，因为每个人都有自己所从事领域的专业知识，</span>
+      <span class="s">这些专业知识其他人没有，普通消费者更没有。即使在传</span>
+      <span class="s">统农村那种简单的交易关系中，也有非对称信息，比如说</span>
+      <span class="s">一个铁匠或木匠所具有的专业知识，普通村民并不具有。</span>
+
+      <span class="s">只有完全自给自足的经济，才没有非对称信息。如果说非</span>
+      <span class="s">对称信息一定导致市场失灵，那么市场从来就不会存在。</span>
+
+      <span class="s">从某种意义上说，市场的优越性，恰恰在于它创造了越来</span>
+      <span class="s">越多的非对称信息（即越来越复杂的分工和专业化），从</span>
+      <span class="s">而使得每个人的才能得到充分发挥，具有不同信息的人能</span>
+      <span class="s">相互合作。传统理论之所以会得出非对称信息导致市场失</span>
+      <span class="s">灵的结论，一个基本原因是它把专业化和分工当作事前给</span>
+      <span class="s">定的，没有市场的时候就存在，并且，它的一些基本理论</span>
+      <span class="s">是在完全信息的假设下得出的。</span>
+
+      <span class="s">完全信息本来是新古典经济学家为了分析的方便而做的理</span>
+      <span class="s">论假设，不是市场本身运作的前提，当经济学家在这一假</span>
+      <span class="s">设下发展出一整套有关有效市场的理论，然后回过头来再</span>
+      <span class="s">讨论非对称信息的时候，他们很容易把理论的假设当作市</span>
+      <span class="s">场有效运行的前提，从而得出信息不对称导致市场失灵的</span>
+      <span class="s">结论。</span>
+
+      <span class="s">市场本身是以不对称信息为前提，而不是以对称信息为前</span>
+      <span class="s">提。我们不能把市场理论的失灵当作市场本身的失灵。</span>
+
+      <span class="s">市场发展出来了各种各样解决信息不对称问题的机制，大</span>
+      <span class="s">致可以归为四种类型。</span>
+
+      <span class="s">第一种机制是，没有私人信息的一方，可能有积极性（也</span>
+      <span class="s">有办法）获取这个信息。</span>
+
+      <span class="s">第二种机制是，处于信息优势的这一方，也有积极性想办</span>
+      <span class="s">法告诉别人信息。</span>
+
+      <span class="s">第三种机制是，由原来交易中没有但在市场中非常重要的</span>
+      <span class="s">第三方 (third party）提供信息。</span>
+
+        <span class="s">如果某个第三方知道一辆好车是好车，并目如果他能够</span>
+        <span class="s">使买者相信这辆车是好车（例如通过提供担保），就可</span>
+        <span class="s">以收取一个中间费用，或者先直接把这辆车买下来然后</span>
+        <span class="s">再加价卖出去。</span>
+
+      <span class="s">第三种机制是，由原来交易中没有但在市场中非常重要的</span>
+      <span class="s">关于解決非对称信息问题的上述三种机制，有位经济学家</span>
+      <span class="s">曾经形象地将其比喻为停车场的三种供给方式。当人们有</span>
+      <span class="s">了汽车的时候，就需要有停车场。</span>
+
+        <span class="s">谁来提供停车场呢？</span>
+
+          <span class="s">首先，车主自己可能愿意购买停车场（车库)；</span>
+
+          <span class="s">其次，人们去商场的时候，如果这个商场没有停车场，</span>
+          <span class="s">去的人就会少，所以商场有积极性提供停车场；</span>
+
+          <span class="s">最后，还有一些专业的停车场，它既不买东西也不卖</span>
+          <span class="s">东西，专门靠提供收费停车位赚钱。</span>
+
+      <span class="s">第四种机制是市场的声誉机制。</span>
+
+        <span class="s">市场不仅是一只“看不见的手”（invisible hand），</span>
+        <span class="s">也是一双“隐形的眼睛"（invisible eyes）,它记录</span>
+        <span class="s">每一个参与人的所作所为，积累成该参与人的声誉，正</span>
+        <span class="s">是这种声誉机制使得诚实成为最好的商业政策。</span>
+
+        <span class="s">博弈论证明，在重复博弈的情况下，参与人最有积极性</span>
+        <span class="s">建立一个好的声營。当一个人（或一个企业）专业化于</span>
+        <span class="s">某个特定领域的时候，他（它）需要付出巨大的沉没成</span>
+        <span class="s">本，这意味着做一锤子买卖通常不是最好的选择。要在</span>
+        <span class="s">市场上持续生存下去，他（它）必须抵挡利用信息不对</span>
+        <span class="s">称骗人的诱惑，建立一个诚实可信的声誉。</span>
+
+        <span class="s">声誉机制是市场解决信息不对称问题最重要的机制，前</span>
+        <span class="s">面三种机制的有效性通常也依赖于声誉机制。不理解声</span>
+        <span class="s">誉机制，就不可能理解市场经济。</span>
+
+    <span class="s">没有私人信息的一方如何获取信息: |</span>
+
+      <span class="s">一种方式是直接获取信息。</span>
+
+        <span class="s">例如，想买二手汽车的人可以通过阅读书籍了解汽车的</span>
+        <span class="s">知识，也可以向懂行的朋友学习，或者请专业人员来对</span>
+        <span class="s">汽车进行检查或试驾；</span>
+
+        <span class="s">在确定健康险费率时，保险公司会根据每个人的特点，</span>
+        <span class="s">包括家庭住址、年龄、是否抽烟、是否喝酒等一系列指</span>
+        <span class="s">标，然后根据一个很复杂的计算方式确定每个投保人的</span>
+        <span class="s">保费率（这就是精算的功能）；</span>
+
+        <span class="s">银行在决定是否发放货款之前会对货款申请人进行调查，</span>
+        <span class="s">如派信贷员调查借款人的资信状况、财务往来数据，查</span>
+        <span class="s">他过去投资过什么项目，对计划投资的项目进行风险评</span>
+        <span class="s">估，等等。</span>
+
+      <span class="s">另一种方式是间接获取信息，就是想办法让有私人信息的</span>
+      <span class="s">一方自己说实话。</span>
+
+        <span class="s">机制设计 (mechanism design)：</span>
+
+          <span class="s">处于信息劣势的一方通过设计某种激励方案让处于信</span>
+          <span class="s">息优势的一方说实话。如通过设计一组合同，来区分</span>
+          <span class="s">不同类型的交易对象。</span>
+
+      <span class="s">以保险市场为例。保险公司常常同时提供若干可选择的保</span>
+      <span class="s">险方案（合同），其中有部分保险，也有全额保险。这实</span>
+      <span class="s">际上就是保险公司设计的一个机制。目的是间接地让投保</span>
+      <span class="s">人说实话，表明其具有的风险是高还是低。最后的结果一</span>
+      <span class="s">定是具有较高风险的人选择更加接近全额的保险（缴的保</span>
+      <span class="s">费也更高），具有较低风险的人选择部分保险。通过这种</span>
+      <span class="s">方式，保险公司可以识别出谁是高风险者、谁是低风险者。</span>
+
+
+        <span class="s">风险溢价（risk preminum）:</span>
+
+          <span class="s">风险厌恶这愿意“花钱买平安”。</span>
+
+        <span class="s">确定性等价（certainty equivalent）:</span>
+
+          <span class="s">一笔价值多少的确定性资产，被该消费者认为是与其</span>
+          <span class="s">风险资产无差异的。</span>
+
+
+
+      <span class="s">另一个由非对称信息产生的问题叫作“道德风险”，解决</span>
+      <span class="s">道德风险问题的理论叫作“委托—代理理论”(principal</span>
+      <span class="s">agent theory)，比如老板怎么设计合同去激动并约束员</span>
+      <span class="s">工，国家怎么设计一个制度来激励并约束政府官员，等等。</span>
+
+        <span class="s">对于保险公司而言，除了要发现投保人的信息，另一件</span>
+        <span class="s">事就是要激励投保人：如果车被盗了保险公司只赔偿80%，</span>
+        <span class="s">车主自己承担20%，车主就有积极性把车看管好；而如果</span>
+        <span class="s">保险公司赔偿100%，车主可能就没有那个积极性了。在讨</span>
+        <span class="s">论金融危机为什么会出现，企业应如何解决奖金、分红、</span>
+        <span class="s">股票的分配时，涉及的都是道德风脸和委托—理问题。</span>
+
+    <span class="s">有没有私人信息的一方如何传递信息: |</span>
+
+      <span class="s">直接的方式就是向潜在买者解释。</span>
+
+        <span class="s">例如：提供说明书或者某种咨询，如电话咨询和现场咨</span>
+        <span class="s">询；提供试用，让买者先把车开回去几天，看看这车怎</span>
+        <span class="s">么样；提供车辆的保修、保养记录，等等。通过这样的</span>
+        <span class="s">信息直接提供，二手车的潜在买者至少可以得到更多的</span>
+        <span class="s">信息，从而对车的质量作出更准确的判断。</span>
+
+      <span class="s">间接的方式是花费一定成本让对方了解他的车质量是好的。</span>
+
+        <span class="s">信号传递：</span>
+
+        <span class="s">拥有信息优势的一方通过一种有成本的方式向处于信息</span>
+        <span class="s">劣势的一方传递自己的真实信息。</span>
+
+
+        <span class="s">二手车的卖者为例：他可以向买者提供具有法律约束力</span>
+        <span class="s">的保修承诺（这样的承诺是要支付成本的）。潜在买者</span>
+        <span class="s">这时可能就会想，敢做出这样承诺的人，他的车一般来</span>
+        <span class="s">说不会有问题，否则一定得不偿失。</span>
+
+        <span class="s">一个信号要起到“证明某产品具有高质量”的作用，就</span>
+        <span class="s">必须是只有高质量的产品才愿意发出的，也就是说，如</span>
+        <span class="s">果低质量的产品也要发出同样的信号，尽管在技术上常</span>
+        <span class="s">常也是可行的，但在经济上是不划算的。</span>
+
+        <span class="s">更一般的，传递的信号首先一定要是可信的。如果是通</span>
+        <span class="s">过提供保修来传递（产品具有高质量的）信号，一定是</span>
+        <span class="s">因为低质量的产品不敢发出同样的信号，这就是信号传</span>
+        <span class="s">递要满足所谓的“激励相容约束”（incentive comp-</span>
+        <span class="s">atibility constroints）。</span>
+
+        <span class="s">激励相容约束：</span>
+
+          <span class="s">指选择合同规定的行为要比选择其他的行为更优。</span>
+
+        <span class="s">过提供保修来传递（产品具有高质量的）信号，一定是</span>
+        <span class="s">除了信号要可信，一方愿意发出信号，另一方能从接收</span>
+        <span class="s">到的信号中获得信息，还要求所有参与方至少愿意留在</span>
+        <span class="s">市场中。在上述例子中，就是要求卖车的人愿意卖，买</span>
+        <span class="s">车的人愿意买，我们把这个条件称为“参与约束”（p-</span>
+        <span class="s">articipation constraints）或者“个体理性约束”（</span>
+        <span class="s">individual rationality constraints).</span>
+
+        <span class="s">参与约束：</span>
+
+          <span class="s">指接受某个合同给当事人带来的收益不小于参与交易</span>
+          <span class="s">时的利益。</span>
+
+        <span class="s">一个能够满足激励相容约束的信号传递机制之所以可能</span>
+        <span class="s">存在，一定要使高质量产品与低质量产品之间的价格差</span>
+        <span class="s">足够大。高质量产品的提供者，正是在这个价格差的空</span>
+        <span class="s">间里构造出低质量产品所无法模仿的信号。这也是为什</span>
+        <span class="s">么政府管制价格会导致市场上产品质量的下降：高质量</span>
+        <span class="s">的产品会从市场上消失，最后消费者买到的都是低质量</span>
+        <span class="s">的产品。</span>
+
+        <span class="s">更一般地说，信号传递的成本差异是信号机制发生作用</span>
+        <span class="s">的关键。是否愿意和能否支付传递信号的成本，是区分</span>
+        <span class="s">能够发出信号者和不能发出信号者的根本原因（回想激</span>
+        <span class="s">励相容约束），即信号之所以能够成为信号的根本原因。</span>
+
+        <span class="s">信号传递机制把不同类型的卖者区别开来，使得有效率</span>
+        <span class="s">的交易更容易发生，避免了所谓的市场失灵。</span>
+
+    <span class="s">专业信息提供商: |</span>
+
+      <span class="s">第三方信息提供商：</span>
+
+        <span class="s">专门从事信息的生产、加工、甄别的专业性机构。</span>
+
+      <span class="s">迷你案例: 中世纪欧洲的商人法庭</span>
+
+      <span class="s">迷你案例: 阿里巴巴的支付宝</span>
+
+      <span class="s">迷你案例: 媒体影评为什么不敢偏袒</span>
+
+  <span class="s">声誉机制:</span>
+
+    <span class="s">重复博弈与声誉: |</span>
+
+      <span class="s">不过尽管信号传递这个机制很重要，但是没有这里要讲的</span>
+      <span class="s">声誉（reputation）更具一般性。</span>
+
+      <span class="s">信号传递机制和声誉机制，背后是同样的理论。只是角度</span>
+      <span class="s">不同，市场中一条很重要的原则：每一个人都想建立一个</span>
+      <span class="s">好的名声。如果你有一个不骗人的名声，你卖什么别人都</span>
+      <span class="s">相信，你一定能赚钱，所以有句话叫作“诚实是最好的商</span>
+      <span class="s">业政策”。</span>
+
+      <span class="s">声誉机制本质上是什么？就是愿意为了长远利益而放弃眼</span>
+      <span class="s">前的诱惑。</span>
+
+      <span class="s">一个人不是活一天，甚至不是一年，甚至不是十年，你要</span>
+      <span class="s">看得很长远：在长远的时间里，你在社会上得到什么，别</span>
+      <span class="s">人是否愿意和你合作，依赖于你的名声如何。认识到这一</span>
+      <span class="s">点，你就可能为了自己更长远的利益，拒绝机会主义的诱</span>
+      <span class="s">惑。所以诚实本身是理性的，它最符合你的利益。</span>
+
+      <span class="s">如我们前面所讲的，人的理性和一般理解的自私是不一样</span>
+      <span class="s">的。理性的人一定会很注重自己的名声，因为这是他的利</span>
+      <span class="s">益所在。那种为了短期利益而坑蒙拐骗的人，恰恰不懂自</span>
+      <span class="s">己的真正利益所在。</span>
+
+      <span class="s">声誉机制：</span>
+
+        <span class="s">通过市场上声誉的作用，使人们愿意为了长远利益而放</span>
+        <span class="s">弃短期利益的诱惑。</span>
+
+      <span class="s">市场不仅有一只“看不见的手，”还有一双“隐形的眼睛”。</span>
+      <span class="s">“看不见的手〞是指价格机制，“隐形的眼睛〞是指声誉</span>
+      <span class="s">机制。这两种机制本质上是一回事：在竞争的市场上，为</span>
+      <span class="s">他人创造价值，是实现自己利益的最好手段。从全世界来</span>
+      <span class="s">看，市场经济最发达的国家一定是人们的诚信水平最高的</span>
+      <span class="s">国家，就是这个原因。</span>
+
+      <span class="s">学术经典: 亚当·斯密论声誉机制</span>
+
+        <span class="s">任何国家一旦引入商业活动，诚实和守时就相伴而至。</span>
+        <span class="s">这些美德在原始和野蛮民族几乎不为人知。在所有欧洲</span>
+        <span class="s">国家中，荷兰人是最为商业化的也最信守他们的承诺。</span>
+        <span class="s">（在这方面）英格兰人比苏格兰人要好，但不如荷兰人；</span>
+        <span class="s">这个国家（英国）偏僻的角落，不如它的商业发达的地</span>
+        <span class="s">区。这并非像某些人假设的，可以归结于它的国民性。</span>
+        <span class="s">不存在任何自然的理由，可以解释为什么英国人或苏格</span>
+        <span class="s">兰人不能像荷兰人那样，在履行自己的协议时恪守时间。</span>
+        <span class="s">问题在很大程度上可以归结为自利。自利这个一般原则</span>
+        <span class="s">控制着每个人的行动，引导人们按照自己的优势选择行</span>
+        <span class="s">为方式，它在英格兰人中和荷兰人中一样根深蒂固。做</span>
+        <span class="s">交易的人担心自己的名声受损，做每件事都有所顾忌。</span>
+        <span class="s">当一个人每天可能做二十个交易的时候，他不可能通过</span>
+        <span class="s">伤害邻居得到任何好处，因为任何欺骗行为都会得不偿</span>
+        <span class="s">失。而在人们相互之间的交易活动只是偶然发生的地方，</span>
+        <span class="s">我们发现，他们更可能欺骗，因为他们从狡猾的小伎俩</span>
+        <span class="s">中得到的利益大于因名声受损而遭受的损失。我们称之</span>
+        <span class="s">为政治家的那些人在诚信和守时方面也不是最杰出的。</span>
+        <span class="s">来自不同国家的大使们更不尽如人意，他们因取得的任</span>
+        <span class="s">何一点成就而备受赞美，但从不在意自己是否诚实守信。</span>
+        <span class="s">原因在于，国家之间的协议一个世纪里也不会多于两三</span>
+        <span class="s">次，他们从一次欺诈中得到的益处远大一个坏名声造成</span>
+        <span class="s">的损失。法国自路易十四以来直这样对待我们，但它的</span>
+        <span class="s">利益和荣耀并不受到任何伤害。</span>
+
+        <span class="s">但是，如果国家之间像商人之间那样每天要签订一两个</span>
+        <span class="s">合约，为了保护好名声，它们就必须信守诺言。在交易</span>
+        <span class="s">频繁的时候，任何人都不会期待从一次交易中获得像总</span>
+        <span class="s">是诚实守信时所能得到的好处；对自己的真正利益敏感</span>
+        <span class="s">的精明商人，宁肯选择失去眼前的好处，也不愿意给别</span>
+        <span class="s">人留下怀疑自己的理由。任何这样的不诚实行为都令人</span>
+        <span class="s">作呕，因而很少发生。当人口中的更大部分变成商人的</span>
+        <span class="s">时候，他们总是带来诚实和守时的风尚，这些就是商业</span>
+        <span class="s">民族的基本美德。</span>
+
+      <span class="s">声誉机制发生作用的前提是博弈是重复的。</span>
+
+        <span class="s">如果博弈是一次性的，当事人就不可能有积极性积累好</span>
+        <span class="s">的声誉；反之，在重复博弈中，当事人出于长远利益的</span>
+        <span class="s">考虑，就有积极性建立一个重诚信的声誉，如同亚当·斯</span>
+        <span class="s">密两百多年前就讲到的。</span>
+
+        <span class="s">一般来说，越注重未来的人（即贴现因子足够大），越</span>
+        <span class="s">值得我们信任。</span>
+
+        <span class="s">幸运的是，市场经济本身，就为人们提供了重复博弈的</span>
+        <span class="s">积极性。在市场经济中，产品和服务主要是由企业这样</span>
+        <span class="s">的组织提供的。企业作为市场的生产主体，正是市场本</span>
+        <span class="s">身的创造。</span>
+
+    <span class="s">作为声誉载体的企业: |</span>
+
+      <span class="s">传统经济学假定企业是一个“生产函数”（product fun-</span>
+      <span class="s">ction）。但如果我们仔细分析的话，企业其实不仅是一个</span>
+      <span class="s">生产函数，它还是一部“创新的机器”(innovation mac-</span>
+      <span class="s">hine)；就市场的运行而言，或许更重要的是，企业是一个</span>
+      <span class="s">“声誉载体”（bearer of reputotion)，那些大肆宣传</span>
+      <span class="s">信息不对称导致市场失灵的人，完全忽略了企业的这一功能。</span>
+
+      <span class="s">企业:</span>
+
+        <span class="s">法律构造的可以从事经济活动的行为主体，是一个“声</span>
+        <span class="s">誉载体”。</span>
+
+        <span class="s">幸运的是，市场经济本身，就为人们提供了重复博弈的</span>
+      <span class="s">每个人的生命都是有限的，但是企业的生命可以是无限的。</span>
+      <span class="s">公司（企业）不同于自然人，自然人死亡了，博弈就结束</span>
+      <span class="s">了，但公司作为法律构造的行为主体（因此被称为“法人”），</span>
+      <span class="s">它的生命并不随自然人的死亡而死亡。原来的所有者死了</span>
+      <span class="s">还会有新的所有者接手。即便企业的所有者因年老体衰或</span>
+      <span class="s">兴趣改变不想继续经营了，想把它卖掉，他能卖多少钱，</span>
+      <span class="s">也取决于企业的品牌价值。因此，博弈没有最后阶段。也</span>
+      <span class="s">就是说，企业是把一个个有限的生命连续成无限生命的组</span>
+      <span class="s">织。有了企业这样的组织，声誉机制就能更好地解决信息</span>
+      <span class="s">不对称带来的逆向选择问题。</span>
+
+      <span class="s">在市场上，企业唯一的资产就是它的声誉。企业的厂房、</span>
+      <span class="s">设备等有形资产，都可以被看作成本，真正的资产只有声</span>
+      <span class="s">誉，声誉毁了就什么都没了。</span>
+
+      <span class="s">有了企业，大量的交易活动都可以基于声誉进行，通常不</span>
+      <span class="s">需要法律介入。如果所有合同的履行都靠法律，社会的交</span>
+      <span class="s">易成本就会太高。如果大部分人很注重声誉，就不会经常</span>
+      <span class="s">欺骗别人，也不必诉诸法律来解决所有的纠纷：就算是需</span>
+      <span class="s">要法律，法律的成本也会大大降低。</span>
+
+      <span class="s">企业之所以能使声誉机制更有效，一个重要的原因是它使</span>
+      <span class="s">得信息的观察和传输更容易，成本更低。</span>
+
+      <span class="s">企业的所有者本质上是一个承担连带责任的人。企业将大</span>
+      <span class="s">量员工的行为加总了，市场没有办法监督每一个员工，也</span>
+      <span class="s">不需要监督每个员工，市场监督老板就可以了。监督老板</span>
+      <span class="s">的办法就是让他拿利润——剩余收入。</span>
+
+      <span class="s">在充分竞争的市场上，利润实际上是声誉的价值。因为任</span>
+      <span class="s">何员工犯的错误，都会影响企业的声誉，老板都得承担连</span>
+      <span class="s">带费任，这时候老板就会有积极性管理好员工。很多企业</span>
+      <span class="s">的内部管理机制就是为此设计出来的。如果老板没有办法</span>
+      <span class="s">监督员工，企业的声誉就荡然无存，老板也就无钱可赚了。</span>
+
+      <span class="s">声誉机制要有效运行，企业一定要有所有者。如果没有所</span>
+      <span class="s">有者，就没有人关心企业的声誉，企业就不能被称为企业，</span>
+      <span class="s">市场就不可能有效。就此而言，最重要的是有效的产权保</span>
+      <span class="s">护（包括商标、品牌等无形资产保护）、交易白由、进入</span>
+      <span class="s">和退出的自由。</span>
+
+      <span class="s">只有大企业才会形成品牌。企业的品牌集中体现了企业在</span>
+      <span class="s">市场上积累的声誉。品牌的价值正是来自信息不对称，如</span>
+      <span class="s">果没有信息不对称，也就不需要品牌。</span>
+
+      <span class="s">信息不对称程度越大，建立品牌的成本就越高，但品牌的</span>
+      <span class="s">价值也就越高。</span>
+
+      <span class="s">品牌：</span>
+
+        <span class="s">企业在市场上积累的声誉。品牌的价值来自信息不对称。</span>
+
+      <span class="s">生产（或销售）最终产品的品牌企业不仅要对自己的行为</span>
+      <span class="s">负责，实际上也要为所有上游产品（零部件和原材料）的</span>
+      <span class="s">生产者承担连带责任。这些品牌企业可以理解为产品的总</span>
+      <span class="s">承包商，这是市场经济非常微妙的地方。现代社会的信息</span>
+      <span class="s">不对称太普遍，比如一部汽车里面有上万个零部件，来自</span>
+      <span class="s">数百家甚至数千家生产厂家，几乎每一个部件消费者都不</span>
+      <span class="s">懂，用来生产这些零部件的原材料消费者也不懂。幸运的</span>
+      <span class="s">是，有了最终产品的品牌企业，消费者根本不需要关注零</span>
+      <span class="s">部件生产厂家，也不需要关注钢铁、橡胶等原材料生产厂</span>
+      <span class="s">家，更不需要关注澳大利亚的铁矿石企业，只要盯着为我</span>
+      <span class="s">们生产最终产品的企业的品牌就行了。这些品牌企业为消</span>
+      <span class="s">费者承担了监督整个生产过程的责任。</span>
+
+      <span class="s">与连坐制不同的是，现代社会的连带责任是在个人自愿的</span>
+      <span class="s">基础上由契约瑞结而成的。它既约束每个人，也给每个人</span>
+      <span class="s">签约的自由。</span>
+
+  <span class="s">政府管制与市场声誉:</span>
+
+    <span class="s">政府解决非对称信息导致的市场失灵问题，可以采取的方式</span>
+    <span class="s">包括：</span>
+
+      <span class="s">1） 准入限制。</span>
+
+          <span class="s">比如，未经政府审批不能开办医院、律师事务所、会</span>
+          <span class="s">计师事务所等等。</span>
+
+      <span class="s">2） 质量管制。</span>
+
+          <span class="s">比如，产品达不到质量标准不能上市；举行各种评比，</span>
+          <span class="s">评出谁好谁坏；组织各种检查、年审。</span>
+
+      <span class="s">3） 强制的信息披露规定。</span>
+
+    <span class="s">讽刺的是，虽然政府干预被认为是解决逆向选择的手段，但</span>
+    <span class="s">是如果我们看一看实际情况就会发现，往往是政府干预越多</span>
+    <span class="s">的国家，逆向选择越严重；而政府千预越少的国家，逆向选</span>
+    <span class="s">择反而越少。</span>
+
+      <span class="s">一方面，传统理论以为只要存在信息不对称就需要政府干</span>
+      <span class="s">预，忽略了市场本身解决信息不对称的能力；</span>
+
+      <span class="s">另一方面，政府也可能失灵 (government failure)。</span>
+
+
+    <span class="s">讽刺的是，虽然政府干预被认为是解决逆向选择的手段，但</span>
+    <span class="s">政府能解决市场失灵的逻辑有三个隐含的假设：第一，政府</span>
+    <span class="s">是无所不知的，也就是说，政府有完全的信息；第二，政府</span>
+    <span class="s">官员是大公无私的，他们心目中只有消费者的利益，没有自</span>
+    <span class="s">己的私利；第三，政府是说话算数的，言必行，行必果。但</span>
+    <span class="s">这三个假设都不成立。</span>
+
+
+    <span class="s">政府管制：</span>
+
+      <span class="s">政府对企业的行为进行法律和政策约束。政府管制的原因</span>
+      <span class="s">包括反垄断、解决外部性以及信息不对称问题。</span>
+
+    <span class="s">声誉的需求曲线，用博弈论的语言，也可以称为“政府反应</span>
+    <span class="s">曲线”，表示政府管制如何对市场声誉做出反应。这条曲线</span>
+    <span class="s">具有递减的形状：维持一个既定的市场秩序，企业和个人越</span>
+    <span class="s">重视自己的声誉需要的政府管制就超少；反之，企业和个人</span>
+    <span class="s">起不重視自己的声誉，需要的政府管制就越多。</span>
+
+    <span class="s">声誉的需求曲线：</span>
+
+      <span class="s">表示政府管制如何对市场声誉做出反应，</span>
+
+    <span class="s">声誉的供给曲线，也可以称为“市场的反应曲线”，表示市</span>
+    <span class="s">场声誉如何对政府管制做出反应。这条曲线具有先上升后下</span>
+    <span class="s">降的形状：在开始的阶段，政府完全不管，即没有任何法律</span>
+    <span class="s">规则，市场的声誉机制很难奏效。比如说，如果没有统一的</span>
+    <span class="s">度量衡和有效的产权保护，欺诈行为就不容易判断，也就不</span>
+    <span class="s">可能受到有效的处罚，此时，企业和个人很难有积极性重视</span>
+    <span class="s">自己的声誉；在这个阶段，随着有助于声營机制建立的管制</span>
+    <span class="s">措施的增加，企业和个人会越来起重视自己的声誉（也就是</span>
+    <span class="s">声誉的供给增加）。但是，当管制超过一定限度之后，政府</span>
+    <span class="s">管制越多，企业反倒越来越不注重声誉了。</span>
+
+    <span class="s">声誉的供给曲线：</span>
+
+      <span class="s">表示市场声誉如何对政府管制饭出反应。</span>
+
+    <span class="s">为什么管制超过一定限度后，会出现政府管得越多企业越不</span>
+    <span class="s">重视声誉的情况？</span>
+
+      <span class="s">第一政府管得过多，市场的不确定性就增大，预测未来变</span>
+      <span class="s">得更为困难，所以企业和个人都会（也只能）追求短期利</span>
+      <span class="s">益，做一锤子买卖。</span>
+
+      <span class="s">第二管制创造垄断和垄断租金。</span>
+
+        <span class="s">声誉机制之所以起作用，是因为一个人干了坏事别人就</span>
+        <span class="s">不跟他做交易了。如果一个人或者企业受到特殊保护取</span>
+        <span class="s">得垄断地位，别人就没办法惩罚它的不合作行为，声誉</span>
+        <span class="s">机制也就不起作用了。</span>
+
+      <span class="s">第三，管制容易带来寻租的机会，从而引起腐败。</span>
+
+        <span class="s">你有权力，别人就有贿赂你的动机。对企业来讲，贿赂</span>
+        <span class="s">管制者比贿赂投资者和客户更划算、更方便！</span>
+
+    <span class="s">声誉的需求曲线和供给曲线的交点，给出了均衡的管制水平</span>
+    <span class="s">和声誉水平。但如果政府管制的效率非常低，这两条曲线甚</span>
+    <span class="s">至可能不相交极端情况成为均衡，整个社会就陷入管制陷阱。</span>
+
+    <span class="s">在落入管制陷阱的过程中，人们总是把企业不重视声誉理解</span>
+    <span class="s">为管制太少，结果就陷入了管制和声誉的恶性循环。</span>
+
+    <span class="s">信息不对称是一个问题，但是其本身不是市场的失灵（甚至</span>
+    <span class="s">可以认为市场本身的特点和要求），不能由信息不对称，就</span>
+    <span class="s">引申出市场会失败，就需要政府干预的结论。</span>
+
+    <span class="s">大量的经验研究证据表明，市场上更多的失灵是政府管制的</span>
+    <span class="s">失灵；好多现象表面看上去是市场的失灵，但真正的原因是</span>
+    <span class="s">管制过度。</span>
+
+    <span class="s">迷你案例: 医药和食品管制导致严重的官员腐败</span>
+
+      <span class="s">医药和食品两个领域，被认为是信息不对称非常严重的领</span>
+      <span class="s">域，自然也是政府管制最多的两个领域。但严格的政府管</span>
+      <span class="s">制不仅没有提升中国的食品安全和药物安全，反而使这两</span>
+      <span class="s">个领域成为官员腐败的重灾区。</span></code></pre>
+</div>
+</div>
+  </div>
+
+  <ul class="post-navigation">
+    <li>
+      
+      <a href="/books/2021/12/03/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E5%A4%96%E9%83%A8%E6%80%A7%E5%92%8C%E5%85%AC%E5%85%B1%E4%BA%A7%E5%93%81/">&laquo; 经济学原理：外部性和公共产品</a>
+      
+    </li>
+    <li>
+      
+      <a href="/books/2021/12/12/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AF%BC%E8%AE%BA/">经济学原理：宏观经济学导论 &raquo;</a>
+      
+    </li>
+  </ul>
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div>我只希望，祈祷，我的心境不要再粗糙下去，荒芜下去，这就是我的大愿望。</div>
+
+  <div class="license">
+    <a rel="license" href="/LICENSE.txt"><img alt="Creative Commons License" style="border-width:0" src="/assets/licenses/cc-by-nc-nd-4.0-80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+  </div>
+  </details>
+</footer>
+
+
+  </body>
+
+</html>

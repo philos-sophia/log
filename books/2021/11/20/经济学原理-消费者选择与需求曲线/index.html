@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>经济学原理：消费者选择与需求曲线</title>
+  <meta name="description" content="总结: |  消费者通过选择消费组合在满足预算约束的条件下最大化效用。  最有消费组合的基本条件是：最后一分钱的支出不论拥有任何  商品的消费，得到的边际效用相等。  最优消费组合意味着，对一种商品的需求随消费者的偏好、收  入和商品价格的变化而变化。  需求曲线是一条向下倾斜的曲线。当一种商品的价格下降时，  ...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/books/2021/11/20/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E6%B6%88%E8%B4%B9%E8%80%85%E9%80%89%E6%8B%A9%E4%B8%8E%E9%9C%80%E6%B1%82%E6%9B%B2%E7%BA%BF/">
+  <link rel="alternate" type="application/rss+xml" title="叶子" href="/feed.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW8P6JTH7J"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW8P6JTH7J');
+</script>
+
+
+
+</head>
+
+
+  <body>
+
+    <style>
+
+.site-nav ul li {
+  width: 15%;
+}
+
+</style>
+
+<header class="site-header">
+
+  <div class="wrapper">
+    <h2 class="site-title">
+      <a class="site-title" href="/">叶子</a>
+    </h2>
+
+     <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+        <div class="trigger">
+            <ul>
+              <li><a href="/">随笔</a></li>
+              <li><a href="/books">读书</a></li>
+              <li><a href="/misc">杂记</a></li>
+              <li><a href="/run">跑步</a></li>
+              <li><a href="/math">数学</a></li>
+              <li><a href="/essays">集子</a></li>
+
+            </ul>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">经济学原理：消费者选择与需求曲线</h1>
+    <p class="post-meta">
+      <time datetime="2021-11-20T20:19:50+08:00" itemprop="datePublished">Nov 20, 2021</time>
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">张维迎</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="console"><span class="go">总结: |
+  消费者通过选择消费组合在满足预算约束的条件下最大化效用。
+  最有消费组合的基本条件是：最后一分钱的支出不论拥有任何
+  商品的消费，得到的边际效用相等。
+
+  最优消费组合意味着，对一种商品的需求随消费者的偏好、收
+  入和商品价格的变化而变化。
+
+  需求曲线是一条向下倾斜的曲线。当一种商品的价格下降时，
+  消费者对它的需求量会沿着需求曲线而增加（吉芬商品除外）。
+  替代品价格的下降会导致需求量的减少，互补品价格的下降会
+  导致需求量的增加。价格效应是替代效应和收入效应共同作用
+  的结果。
+
+  需求曲线因偏好、收入和其他商品价格的变化而移动。
+
+  市场需求曲线是个体需求曲线的水平加总，因而更可能是一条
+  光滑的向下倾斜的曲线。
+
+  正常品的需求量随消费者收入的上升而上升，劣等品的需求量
+  随收入的上升而下降。随着人们收入的增加，用于必需品的支
+  出在总收入中的比例不断下降。
+
+  由于技术进步导致的收入增加和价格下降，经济进步表现为奢
+  侈品的必需品化。因此，限制当前少数人的奢侈品消费，就等
+  于阻止多数人今后的必需品消费。
+
+术语: |
+  预算约束线 需求函数 正常商品 劣等品 互补品 替代品
+  替代效应 收入效应 价格效应 吉芬商品 需求曲线 消费者剩余
+  价格弹性 收入弹性 恩格尔系数 市场需求曲线</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="yaml"><span class="na">消费者选择与需求曲线</span><span class="pi">:</span>
+
+  <span class="na">导读</span><span class="pi">:</span> <span class="pi">|</span>
+
+    <span class="s">在经济学中，消费者决策简化为在满足收入约束的条件下，</span>
+    <span class="s">消费者如何选择不同产品的消费组合，实现个人效用的最大</span>
+    <span class="s">化问题。</span>
+
+    <span class="s">影响消费决策的因素主要包括个人偏好、产品价格和个人收</span>
+    <span class="s">入。</span>
+
+  <span class="na">最优消费组合选择</span><span class="pi">:</span> <span class="pi">|</span>
+
+    <span class="s">在市场经济中，对产品的需求来自消费者的选择。即使消费</span>
+    <span class="s">者并不直接购买原材料和中间品，对原材料和中间品的需求</span>
+    <span class="s">也间接来自消费者对最终产品的需求。</span>
+
+    <span class="s">无差异曲线: |</span>
+
+      <span class="s">能给消费者带来相同效用水平的两种商品的所有组合。</span>
+
+    <span class="s">预算约束线: |</span>
+
+      <span class="s">如果用Pa表示苹果的价格，Xa表示苹果的消费量，Pb表示</span>
+      <span class="s">香蕉的价格，Xb表示香蕉的消费量，M表示消费者的货币收</span>
+      <span class="s">入，那么消费者对苹果和香蕉的需求满足如下预算约束条</span>
+      <span class="s">件：</span>
+
+        <span class="s">PaXa + PbXb &lt;= M</span>
+
+      <span class="s">预算约束线: |</span>
+
+        <span class="s">用于购买商品的总支出等于总收入。</span>
+
+        <span class="s">收入变动但价格不变时，预算约束线将平移。</span>
+
+        <span class="s">某种商品的价格单方面变动时，预算约束线将发生旋转。</span>
+
+  <span class="na">最优消费组合</span><span class="pi">:</span> <span class="pi">|</span>
+
+    <span class="s">直观上来看，最优的消费组合A点满足条件：经过它的无差异</span>
+    <span class="s">曲线与它所在的预算约束线相切，即无差异曲线的斜率（边</span>
+    <span class="s">际替代率）等于预算约束线的斜率。</span>
+
+    <span class="s">最优消费选择的直观经济含义是：最后一分钱无论用于哪种</span>
+    <span class="s">商品的消费，给消费者带来的满足程度是一样的。如果这个</span>
+    <span class="s">等式不成立，那么说明消费者可以在相同的预算下，通过变</span>
+    <span class="s">换消费结构，降低单位边际效用低的商品消费，增加边际效</span>
+    <span class="s">用高的商品消费，从而让自己的福利进一步提高。</span>
+
+    <span class="s">消费者的最优选择满足单位货币的边际效用在所有产品上都</span>
+    <span class="s">相等，这一结论可以扩展到N中产品的决策问题。无论偏好中</span>
+    <span class="s">包含的是食品、衣服、住宅，还是旅行工具、娱乐手段、知</span>
+    <span class="s">识产品（如图书），花在不同产品上的最后一分钱都必须带</span>
+    <span class="s">来相同的边际效用。</span>
+
+    <span class="s">当然，现实的消费者选择很难满足这个条件，因为人们并不</span>
+    <span class="s">拥有完备信息，也没有那么高的计算能力，并且，好多产品</span>
+    <span class="s">在量上是不可分割的。</span>
+
+  <span class="na">比较静态分析</span><span class="pi">:</span> <span class="pi">|</span>
+
+    <span class="s">需求函数: 需求量与价格、收入的关系。</span>
+
+      <span class="s">消费者的最优选择实际上给出了他对某种产品的需求与他</span>
+      <span class="s">的收入及产品价格之间的关系，经济学家将这种关系定义</span>
+      <span class="s">为需求函数：</span>
+
+        <span class="s">Xa = Da (Pa, Pb; M)</span>
+
+        <span class="s">Xb = Db (Pa, Pb; M)</span>
+
+    <span class="s">偏好变化: |</span>
+
+      <span class="s">经济学家通常不研究人的偏好如何变化和为什么变化，但</span>
+      <span class="s">现实表明，人的偏好确实会随着时间变化，并且变化的原</span>
+      <span class="s">因有时也是显而易见的。</span>
+
+    <span class="s">收入变化: |</span>
+
+      <span class="s">正常商品（normal goods）: 消费数量随收入增加而增加</span>
+        <span class="s">的商品。</span>
+
+      <span class="s">劣等品（inferior goods）: 消费数量随收入增加而下降</span>
+        <span class="s">的商品。</span>
+
+    <span class="s">价格变化: |</span>
+
+      <span class="s">替代效应（substitution effect）: 当真实收入不变的情</span>
+        <span class="s">况下，由相对价格变化引起的需求的变化。</span>
+
+      <span class="s">收入效应（income effect）: 由收入变化引起的需求的变化。</span>
+
+      <span class="s">价格效应: 由价格变化引起的收入效应与替代效应之和。</span>
+
+      <span class="s">正常商品的收入效应是正的，劣等品的收入效应是负的。</span>
+
+      <span class="s">互补品: 相对价格的变化会带来收入效应，但替代效应为零。</span>
+
+    <span class="s">知识拓展: 吉芬商品</span>
+
+      <span class="s">按照马歇尔的观点，吉芬商品的特殊性在于：他的收入吉</span>
+      <span class="s">芬商品是指随着商品的价格上升，消费者对其需求量反而</span>
+      <span class="s">增加的商品。19世纪英国人吉芬统计了1845年爱尔兰发生</span>
+      <span class="s">灾荒期间，当地土豆价格和消费数量的数据。实际上，吉</span>
+      <span class="s">芬本人并没有在此数据上建立相关的理论，也没有把数据</span>
+      <span class="s">结果与经济学知识联系在一起。第一个注意到吉芬商品的</span>
+      <span class="s">是剑桥大学教授、经济学家马歇尔。后者从吉芬的数据中</span>
+      <span class="s">发现：随着爱尔兰土豆价格的上涨，土豆的需求量反而增</span>
+      <span class="s">加了。这一现象与传统的经济学需求理论直接背离，在当</span>
+      <span class="s">时被称为“吉芬难题”。</span>
+
+      <span class="s">此后，在经济学理论中，这类需求量与价格呈同方向变动</span>
+      <span class="s">的特殊商品被称作吉芬商品（Giffen goods）。</span>
+
+      <span class="s">按照马歇尔的观点，吉芬商品的特殊性在于：他的收入效</span>
+      <span class="s">应与替代效应方向相反且其幅度超过替代效应。</span>
+
+      <span class="s">有人认为股票是吉芬商品，因为股票价格上涨通常伴随交</span>
+      <span class="s">易数量的增加。这显然是不成立的，因为股票是用来投资</span>
+      <span class="s">的对象，根本不是用来消费的商品，自然也不是吉芬商品。</span>
+
+      <span class="s">对于吉芬商品的存在与否，学术界一直存在着争议。</span>
+
+    <span class="s">间接效用函数: |</span>
+
+      <span class="s">我们之前把消费者的偏好定义在产品上，这样的效用函数</span>
+      <span class="s">被称为直接效用函数（direct utility function）。</span>
+
+      <span class="s">我们也可以把效用函数定义在价格和收入水平上，其办法</span>
+      <span class="s">是把需求函数带入直接效用函数，由此构造出一个复合函</span>
+      <span class="s">数。这样定义的复合函数被称为间接效用函数（indirect</span>
+      <span class="s">utility function），因为自变量收入和价格对效用的</span>
+      <span class="s">影响是通过消费组合的影响而间接发挥作用的。</span>
+
+      <span class="s">在数学上，直接效用函数可以表示为：U（X1, X2,</span>
+        <span class="s">..., Xn）</span>
+      <span class="s">而间接效用函数可以表示为U（P1, P2, ..., Pn; M）</span>
+
+      <span class="s">直接效用函数中，效用水平的高低依赖于物品和服务的消</span>
+      <span class="s">费。间接效用函数中，效用水平取决于你有多少钱可以花，</span>
+      <span class="s">这容易产生日常生活中人们把幸福等同于钱的幻觉。事实</span>
+      <span class="s">上，人们之所以喜欢钱，并不是因为它给我们带来了直接</span>
+      <span class="s">的效用，而是因为它能买到我们喜欢的东西，这些东西才</span>
+      <span class="s">是我们需要的。</span>
+
+      <span class="s">金钱本身只是手段，不是目的。我们可以通过花费金钱购</span>
+      <span class="s">买商品来间接获得效用。当然，如果金钱可以买到任何我</span>
+      <span class="s">们想要的东西，把金钱等同于幸福也没有大错。但事实上，</span>
+      <span class="s">即使在市场经济中，与我们的幸福相关的许多东西也无法</span>
+      <span class="s">用金钱买到，尽管确实有许多东西可以用金钱买到。这是</span>
+      <span class="s">我们必须记住的一点。</span>
+
+      <span class="s">知识拓展: 希克斯替代与斯拉斯基替代</span>
+
+  <span class="na">个人需求曲线与需求法则</span><span class="pi">:</span>
+
+    <span class="na">需求曲线</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">根据前面的比较静态分析，一种商品如果不是吉芬商品，</span>
+      <span class="s">那么随着它的价格下降，消费者将会增加对它的消费量。</span>
+      <span class="s">这样我们可以构建出一个以其价格为自变量、以需求为因</span>
+      <span class="s">变量的个人需求函数，在几何图形上，这个需求函数就是</span>
+      <span class="s">一条向下倾斜的需求曲线。</span>
+
+      <span class="s">需求函数: 消费者对产品的需求量与该产品价格之间的关</span>
+        <span class="s">系。</span>
+
+        <span class="s">数学上，自变量通常用横坐标表示，因变量用纵坐标表</span>
+        <span class="s">示。经济学家用横坐标表示需求量（因变量），纵坐标</span>
+        <span class="s">表示价格（自变量），是沿用了英国经济学家马歇尔最</span>
+        <span class="s">初的做法。</span>
+
+      <span class="s">当然，在经济学中，需求曲线并不一定是线性的，但只要</span>
+      <span class="s">不是吉芬商品，商品的价格和需求量之间必然存在着负相</span>
+      <span class="s">关关系。</span>
+
+      <span class="s">需求曲线当然是我们的理论构造。现实生活中的需求曲线通</span>
+      <span class="s">常是不易观察到的，我们能观察到的是实际的价格数据和人</span>
+      <span class="s">们的实际购买量，并不是我们这里讲的需求曲线。</span>
+
+    <span class="na">需求曲线移动</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">需求曲线反应的只是需求量与该产品价格之间的关系。为什</span>
+      <span class="s">么需求曲线会移动？因为影响需求的因素不只是该商品的价</span>
+      <span class="s">格，还有收入水平、消费者的偏好、其他商品的价格、法律</span>
+      <span class="s">和社会规范、外部环境以及价格预期等等。由此可见，需求</span>
+      <span class="s">量本身是一个多元函数，其对应的函数形式可以写为：</span>
+        <span class="s">x = D （p，M，u，p1，p2, ...）。</span>
+      <span class="s">需求曲线是在假定其他因素不变的情况下推导出来的。</span>
+
+      <span class="s">在无差异曲线和预算约束线的坐标图中，收入的变化表现为</span>
+      <span class="s">预算约束线的平移。对正常商品而言，给定价格和偏好，如</span>
+      <span class="s">果消费者的收入增加，他对商品的需求量就会增加；如果消</span>
+      <span class="s">费者的收入减少，他对商品的需求就会减少。对劣等品而言，</span>
+      <span class="s">情况正好相反。</span>
+
+      <span class="s">恩格尔曲线: |</span>
+
+      <span class="s">如果我们用纵坐标表示消费者收入的变化值，用横坐标表示</span>
+      <span class="s">消费者最优组合消费对应的苹果消费的数量，那么我们就可</span>
+      <span class="s">以得到关于苹果的收入——消费变动曲线，这一曲线被称为恩</span>
+      <span class="s">格尔曲线。</span>
+
+      <span class="s">替代品: 一种商品的价格上涨导致另一种商品的需求上升。</span>
+
+      <span class="s">互补品: 一种商品的价格上涨导致另一种商品的需求下降。</span>
+
+    <span class="na">消费者剩余</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">价格变化如何影响消费者的福利？回到这个问题，我们需</span>
+      <span class="s">要引入一个重要的概念：消费者剩余（consumer surplus）。</span>
+
+      <span class="s">消费者剩余: 是消费者宁愿付出而不愿意得不到此物的最</span>
+      <span class="s">大价格与消费者为此物实际支付价格之间的差额。</span>
+
+      <span class="s">在市场当中，交易都是自愿的，每个消费者愿意付出的代</span>
+      <span class="s">价不会大于他得到的收益，否则交易就不可能进行，也就</span>
+      <span class="s">是说，交易一定会给消费者带来至少大于零的消费者剩余。</span>
+
+      <span class="s">你要过的幸福，首先要给别人带来幸福: |</span>
+
+      <span class="s">生产者之间的竞争，本质上就是为了消费者创造消费者剩</span>
+      <span class="s">余的竞争。在市场中，谁给消费者带来消费者剩余多，谁</span>
+      <span class="s">就能给获胜。企业的直接目标是利润，但是前提是要给消</span>
+      <span class="s">费这带来幸福。这就是为什么可以把市场的逻辑概括成一</span>
+      <span class="s">句话：你要过的幸福，首先要给别人带来幸福。</span>
+
+  <span class="na">需求弹性</span><span class="pi">:</span>
+
+    <span class="na">需求的价格弹性</span><span class="pi">:</span> <span class="pi">|</span>
+      <span class="s">需求量变化的百分比与价格变化的百分比的比值。</span>
+
+      <span class="s">自价格弹性: |</span>
+        <span class="s">衡量自身价格变化的需求弹性。</span>
+
+      <span class="s">交叉价格弹性: |</span>
+        <span class="s">衡量其他商品（替代品或互补品）价格变化的需求弹性。</span>
+
+        <span class="s">一般来说，我们把需求价格弹性大于1的商品称作富有弹</span>
+        <span class="s">性的，把需求弹性小于1的商品称作缺乏弹性的。对于需</span>
+        <span class="s">求价格弹性大于1的商品，降价可以增加企业的收入；对</span>
+        <span class="s">于需求弹性小于1的商品，降价可以降低企业的收入。</span>
+
+        <span class="s">在同一需求曲线的不同位置上，对应的需求价格弹性可能</span>
+        <span class="s">是不同的。对于一条线性的需求曲线而言，其任何一点对</span>
+        <span class="s">应的斜率是相同的，但是每一点的弹性是不同的。从左到</span>
+        <span class="s">右，弹性从无穷大逐渐降至零。</span>
+
+      <span class="s">知识拓展: 弧弹性与价格弹性的中点法</span>
+
+        <span class="s">有时候，我们需要计算需求曲线上某个区间上的价格弹</span>
+        <span class="s">性，这个弹性数值被称为弧弹性，而前文提到的需求的</span>
+        <span class="s">价格弹性也被称作点弹性。</span>
+
+        <span class="s">在经济学中，如果没有特别注明，价格弹性通常是指点</span>
+        <span class="s">弹性。不过弧弹性在现实应用中是非常重要的。</span>
+
+      <span class="s">影响需求价格弹性的因素有哪些？首先，价格弹性的大小</span>
+      <span class="s">取决于该产品支出在总收入中所占的比例。这个比例越小，</span>
+      <span class="s">需求的价格弹性越小。由此，可以得出一个推论：对于同</span>
+      <span class="s">样一种商品而言，富人比穷人对价格更不敏感。其次，价</span>
+      <span class="s">格弹性的大小取决于替代品的多少。通常替代品越多，商</span>
+      <span class="s">品涨价将导致消费者转而选择其替代品，因此商品对应的</span>
+      <span class="s">需求弹性越大；反之，替代品越少，需求弹性越小。再次，</span>
+      <span class="s">价格弹性取决于产品的耐久性。商品耐久性越高，价格弹</span>
+      <span class="s">性越大。这是因为，对耐久性商品而言，消费者会更愿意</span>
+      <span class="s">根据价格变化的预期调整购买时点。此外，商品的属性也</span>
+      <span class="s">会影响其价格弹性的大小。必需品的价格弹性比较小，奢</span>
+      <span class="s">侈品的价格弹性比较大。这里，必需品和奢侈品是根据收</span>
+      <span class="s">入弹性定义的。</span>
+
+      <span class="s">迷你案例: 第一刚需品——盐</span>
+
+      <span class="s">奢侈品的价格弹性比较大。这里，必需品和奢侈品是根据</span>
+      <span class="s">收与自价格弹性不同，需求的交叉价格弹性可能为正，也</span>
+      <span class="s">可能为负，依赖于商品之间在需求上是替代性的还是互补</span>
+      <span class="s">性的。替代品的交叉价格弹性为正数，互补品的交叉价格</span>
+      <span class="s">弹性为负数。例如，汽油和汽车是互补品，汽油价格的上</span>
+      <span class="s">升会引起汽车需求的减少；牛肉和羊肉是替代品，牛肉价</span>
+      <span class="s">格的上升会导致羊肉需求的增加。</span>
+
+    <span class="na">需求的收入弹性</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">收入弹性是需求变化率与收入变化率的比值，反应的需求</span>
+      <span class="s">对消费者的收入变化的敏感度。</span>
+
+      <span class="s">不同商品的需求收入弹性是不同的。一般来说，收入弹性</span>
+      <span class="s">大于1的是奢侈品，小于1的是必需品。因此，随着人们收</span>
+      <span class="s">入的增加，尽管所有正常品的需求都会增加，但必需品需</span>
+      <span class="s">求的增长幅度小于收入的增长幅度，而奢侈品需求的增长</span>
+      <span class="s">幅度大于收入增长幅度。比如说，食盐的消费量与收入水</span>
+      <span class="s">平几乎没有关系，而化妆品的消费增长远快于收入的增长。</span>
+
+      <span class="s">恩格尔系数: 食品支出在总支出中所占的比重。</span>
+
+      <span class="s">一个人越富裕，一个社会越发达，必需品支出占总支出的</span>
+      <span class="s">比重越低。经济学家通常用恩格尔系数衡量家庭和社会的</span>
+      <span class="s">富裕程度。食品是人类最重要的必需品，恩格尔系数是食</span>
+      <span class="s">品支出占总的家庭支出的比重。</span>
+
+      <span class="s">知识拓展: 恩格尔系数与恩格尔曲线</span>
+
+        <span class="s">恩斯特·恩格尔（Etnst Engel)是19世纪德国统计学</span>
+        <span class="s">家和经济学家，以恩格尔曲线和恩格尔系数用名。恩格</span>
+        <span class="s">尔根据统计资料，对消費结构的变化得出一个规律：</span>
+
+          <span class="s">一个家庭收入越少，家庭收入中用来购买食物的支出</span>
+          <span class="s">所占的比例就越大；随着家庭收入的增加，家庭收入</span>
+          <span class="s">中用来购买食物的支出所占比例则会下降。</span>
+
+        <span class="s">推而广之，一个国家越穷，每个国民的平均收入中用于</span>
+        <span class="s">购买食物的支出所占比例就越大；随着国家的富裕，该</span>
+        <span class="s">比例呈下降趋势。这就是恩格尔定律。而食品支出总额</span>
+        <span class="s">占个人消费支出总额的比重即恩格尔系数。</span>
+
+        <span class="s">恩格尔曲线是刻画商品消费数量随着收入增长而变动的</span>
+        <span class="s">路径，由消费者的收入——消费曲线推导得到。必需品的</span>
+        <span class="s">恩格尔曲线为递增的凹函数，表明必需品的需求量随着</span>
+        <span class="s">收入的增加而增加得越来越慢；奢侈品的恩格尔曲线为</span>
+        <span class="s">递增的凸函数，表明奢修品的需求量随着收入的增加而</span>
+        <span class="s">增加得越来越快；劣等品的恩格尔曲线的斜率是负的，</span>
+        <span class="s">表明劣等品的需求量随着收入的增加而减少。</span>
+
+  <span class="na">需求的加总和市场需求曲线</span><span class="pi">:</span>
+
+    <span class="na">市场需求曲线</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">个体需求曲线的水平加总；总需求量随价格的下降而上升。</span>
+
+      <span class="s">在一个市场上，随着商品价格的下跌，市场总需求将会增</span>
+      <span class="s">加。这种增加分为两类：</span>
+
+        <span class="s">(1) 当商品价格下跌时．原有消费者根据各自的个人需</span>
+            <span class="s">求曲线增加个人的消费数量。</span>
+
+        <span class="s">(2) 商品价格下跌，可能使市场上的消费者数量增加。</span>
+            <span class="s">有些人本来不会消费该商品，但是由于其价格的下</span>
+            <span class="s">降，转而开始选择消费该商品。</span>
+
+      <span class="s">通常来说，市场需求的价格弹性要大于消费者个体需求的</span>
+      <span class="s">价格弹性，也就是市场的总需求曲线更加平坦。</span>
+
+    <span class="na">经济发展的度量</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">经济发展意味着什么？简单地说就是，原来只有少数人买</span>
+      <span class="s">得起、少数人消费的东西，随着时间的推移，越来越多的</span>
+      <span class="s">人可以买得起，越来越多的人可以消费。因此，经济发展</span>
+      <span class="s">可以理解为奢侈品越来越必需品化。</span>
+
+      <span class="s">奢侈品的必需品化来自两个因素：</span>
+
+        <span class="s">一是收入水平的提高，</span>
+
+        <span class="s">二是价格的下降。</span>
+
+      <span class="s">而这两个因素又来自一个共同因素的作用，这就是创新和</span>
+      <span class="s">技术进步。</span>
+
+      <span class="s">创新和技术进步不断提高劳动生产率．一方面降低了生产</span>
+      <span class="s">成本导致价格下降，另一方面增加了消费者的收入。</span>
+
+      <span class="s">哈耶克说：“在一种新商品成为一种公众需要并构成一种</span>
+      <span class="s">生活必需品之前，通常只是少数人的玩物。因此，今日的</span>
+      <span class="s">奢侈品乃是明日之必需品。"</span></code></pre>
+</div>
+</div>
+  </div>
+
+  <ul class="post-navigation">
+    <li>
+      
+      <a href="/books/2021/11/18/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E4%BA%A4%E6%8D%A2-%E5%88%86%E5%B7%A5%E4%B8%8E%E8%B4%A7%E5%B8%81/">&laquo; 经济学原理：交换、分工与货币</a>
+      
+    </li>
+    <li>
+      
+      <a href="/books/2021/11/21/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E7%94%9F%E4%BA%A7%E4%B8%8E%E4%BE%9B%E7%BB%99%E6%9B%B2%E7%BA%BF/">经济学原理：生产与供给曲线 &raquo;</a>
+      
+    </li>
+  </ul>
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div>我只希望，祈祷，我的心境不要再粗糙下去，荒芜下去，这就是我的大愿望。</div>
+
+  <div class="license">
+    <a rel="license" href="/LICENSE.txt"><img alt="Creative Commons License" style="border-width:0" src="/assets/licenses/cc-by-nc-nd-4.0-80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+  </div>
+  </details>
+</footer>
+
+
+  </body>
+
+</html>

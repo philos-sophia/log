@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>经济学原理：生产与供给曲线</title>
+  <meta name="description" content="总结: |  生产是指从投入到产出的转换，生产函数是要素投入量与产品  产出量之间的数量关系。  在短期内，只有一种或部分要素的投入可变；在产量超过一定  水平后，可变要素的边际生产率会递减。但长期来看，所有要  素的投入量都可以改变，生产函数可以表现出规模报酬递增、  不变、递减三种情况。  当所有要素投入可变...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/books/2021/11/21/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E7%94%9F%E4%BA%A7%E4%B8%8E%E4%BE%9B%E7%BB%99%E6%9B%B2%E7%BA%BF/">
+  <link rel="alternate" type="application/rss+xml" title="叶子" href="/feed.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW8P6JTH7J"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW8P6JTH7J');
+</script>
+
+
+
+</head>
+
+
+  <body>
+
+    <style>
+
+.site-nav ul li {
+  width: 15%;
+}
+
+</style>
+
+<header class="site-header">
+
+  <div class="wrapper">
+    <h2 class="site-title">
+      <a class="site-title" href="/">叶子</a>
+    </h2>
+
+     <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+        <div class="trigger">
+            <ul>
+              <li><a href="/">随笔</a></li>
+              <li><a href="/books">读书</a></li>
+              <li><a href="/misc">杂记</a></li>
+              <li><a href="/run">跑步</a></li>
+              <li><a href="/math">数学</a></li>
+              <li><a href="/essays">集子</a></li>
+
+            </ul>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">经济学原理：生产与供给曲线</h1>
+    <p class="post-meta">
+      <time datetime="2021-11-21T22:45:54+08:00" itemprop="datePublished">Nov 21, 2021</time>
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">张维迎</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="console"><span class="go">总结: |
+  生产是指从投入到产出的转换，生产函数是要素投入量与产品
+  产出量之间的数量关系。
+
+  在短期内，只有一种或部分要素的投入可变；在产量超过一定
+  水平后，可变要素的边际生产率会递减。但长期来看，所有要
+  素的投入量都可以改变，生产函数可以表现出规模报酬递增、
+  不变、递减三种情况。
+
+  当所有要素投入可变时，企业选择最优要素组合使得生产成本
+  达到最小。成本最小化的条件是：要素在生产上的边际替代率
+  等于要素价格之比；或者说，最后一元钱的成本支出无论用于
+  哪种要素，对产出的边际贡献相等。因此，成本最小化要素组
+  合随要素价格的变化而变化。
+
+  企业选择最优的要素组合相当于选择某种特定的生产技术。短
+  期成本不可能低于长期成本。
+
+  边际成本曲线与平均成本曲线在平均成本的最低点相交。
+
+  最优产量在边际收益等于边际成本时达到。在完全竞争的市场
+  上，对单个生产者而言，边际收益等于产品的价格。
+
+  短期供给曲线是平均可变成本最低点以上的边际成本曲线。长
+  期供给曲线是长期平均成本最低点以上的长期边际成本曲线。
+  无论短期还是长期，供给量随价格的上升而上升。
+
+  在没有法定准入限制的情况下，一个企业想持续赚取利润，就
+  必须通过不断创新，获得别的企业难以获得的技术和资源。
+
+---
+
+术语: |
+
+生产西数 短期 长期 平均产量 边际产量 等产量曲线
+边际技术替代率 边际技术替代率递减法则 规模报酬
+柯布-道格拉斯生产函数 成本函数 成本曲线 固定成本 可变成本
+平均成本 边际成本 利润 销售收入沉没成本 边际收益
+短期供给曲线 长期供给曲线 供给价格弹性</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="yaml"><span class="na">生产与供给曲线</span><span class="pi">:</span>
+
+  <span class="na">生产技术</span><span class="pi">:</span> <span class="pi">|</span>
+
+    <span class="s">生产过程是指从投入到产出的转换，其中投入的物品被称为</span>
+    <span class="s">要素投入，产出的物品被称作产品。</span>
+
+    <span class="s">生产函数: |</span>
+
+      <span class="s">生产函数: 投入与产出之间的关系。</span>
+
+        <span class="s">y = f(x1, x2, ..., xn)</span>
+
+        <span class="s">y 代表某种产品的产量，xi代表第i种要素的投入量。</span>
+
+      <span class="s">生产函数通常被认为是技术性的，但这种技术关系不仅与</span>
+      <span class="s">物质形态的技术有关，还受到企业内部管理制度和外部环</span>
+      <span class="s">境的影响。</span>
+
+      <span class="s">短期: 只有一种或部分要素投入可变的时间跨度。</span>
+
+      <span class="s">长期: 所有要素投入都可以改变的时间跨度。</span>
+
+    <span class="s">短期生产函数: |</span>
+
+      <span class="s">投入总量/总产量/平均产量/边际产量: |</span>
+
+        <span class="s">单一要素投入的总数量称为投入总量，单一产品的产出</span>
+        <span class="s">总量称为总产量，分别为我们前面提到的x和y。</span>
+
+        <span class="s">总产量除以投入总量称为要素的平均产量，记为 AP = y/x。</span>
+        <span class="s">每增加一单位的要素投入所增加的产出量称为要素的边</span>
+        <span class="s">际产量，记为 MP = dy/dx。</span>
+
+      <span class="s">边际生产率递减法则: |</span>
+
+        <span class="s">在其他要素投入不变、只有一种要素投入可变的情况下，</span>
+        <span class="s">可变要素投入超过一定的临界值后，其对应的边际产量</span>
+        <span class="s">随着投入的增加而下降。</span>
+
+        <span class="s">事实上，平均产量下降是边际产量下降的结果，这是因</span>
+        <span class="s">为新投入带来的产出数量低于原来的平均值，因此新的</span>
+        <span class="s">平均值被拉低了。</span>
+
+        <span class="s">边际生产率递减法则适用于所有的要素投入，包括劳动、</span>
+        <span class="s">资本、士地等。中国实施城镇化战略，大量农民离开土</span>
+        <span class="s">地进入城市，士地上工作的芳动力数量大大减少，但粮</span>
+        <span class="s">食产量并没有减少，一个重要原因是原来的农业生产中，</span>
+        <span class="s">劳动力的边际生产率为零．甚至是负的。</span>
+
+    <span class="s">知识拓展: 马尔萨斯陷阱</span>
+
+      <span class="s">两百多年前，英国经济学家马尔萨斯提出了一个著名的观</span>
+      <span class="s">点：由于边际生产率递减法则的作用，随着人口增多，人</span>
+      <span class="s">均粮食产量会越来越少，人类永远只能生活在生存线上，</span>
+      <span class="s">生活水平不可能提高。这被称为马尔萨斯陷阱。</span>
+
+      <span class="s">马尔萨斯的理论基本上造用于马尔萨斯之前的时代，但不</span>
+      <span class="s">适用于马尔萨斯之后的时代。</span>
+
+      <span class="s">为什么马尔萨斯的悲观预测没有出现？因为经济不仅受边</span>
+      <span class="s">际生产率递减法则的支配，也受技术进步的支配。如果技</span>
+      <span class="s">术进步速度足够快，边际生产率递减法则就不会表现为人</span>
+      <span class="s">均产出的减少，因为技术进步可以提高边际生产率。</span>
+
+    <span class="s">长期生产函数: |</span>
+
+      <span class="s">长期来讲，所有要素投入都是可以改变的，企业可以通过</span>
+      <span class="s">调整不同要素的组合来实现所希望的产出。经济学家特别</span>
+      <span class="s">关注两种生产要素：资本和芳动。</span>
+
+      <span class="s">在只有资本和劳动两种要素的情况下，生产函数变为：</span>
+
+        <span class="s">y = f(K, L)</span>
+
+        <span class="s">这里K代表资本，L代表劳动。</span>
+
+      <span class="s">资本在物质形态上表现为厂房、机器设备、中间品、原材</span>
+      <span class="s">料等。但经济学上讲的资本一般指货币（价值）形态的资</span>
+      <span class="s">本，其原因在于，上述物质形态的资本都可以在市场上用</span>
+      <span class="s">货币形态资本购得或租赁得到。</span>
+
+      <span class="s">劳动指劳动者的体力、知识、智力的投入。劳动必须与资</span>
+      <span class="s">本结合才能生产出产品，否则就成了 “巧妇难为无米之</span>
+      <span class="s">欢”。</span>
+
+      <span class="s">当然，从人类历史的发展来看，财富最初都来白于芳动，</span>
+      <span class="s">随着社会的发展，芳动所得积累成了资本，如我们在鲁滨</span>
+      <span class="s">孙经济中看到的。</span>
+
+      <span class="s">一般来说，要素投入在生产上具有可替代性。就是说，同</span>
+      <span class="s">样的产出数量，可以由不同的要素组合来生产。比如，可</span>
+      <span class="s">以多用资本、少用劳动，也可以少用资本、多用劳动。</span>
+
+      <span class="s">等产量曲线（isoquant），表示某一固定产出下对应的所</span>
+      <span class="s">有投入组合的连线。</span>
+
+        <span class="s">无差异曲线给出的是相同的效用水平</span>
+
+        <span class="s">等产量曲线给出的是相同的产出水平</span>
+
+      <span class="s">边际技术替代率: 在产量不变的前提下，增加一单位某种</span>
+        <span class="s">要素投入可以替代另外一种要素的数量。</span>
+
+      <span class="s">边际技术替代率递减法则: 随着一种要素投入的增加，该</span>
+        <span class="s">要素可替代其他要素的数量不断递减。</span>
+
+    <span class="s">规模报酬: |</span>
+
+      <span class="s">当所有投入增加一倍时，产出也增加一倍，则称该生产技</span>
+      <span class="s">术为规模报酬不变的；当所有投入增一加倍时，产出增加</span>
+      <span class="s">小于一倍，则称该生产技术为规模报酬递减的；当所有投</span>
+      <span class="s">入增一加倍时，产出增加大于一倍，则称该生产技术为规</span>
+      <span class="s">模报酬递增的</span>
+
+      <span class="s">一般来说，规模较小时，增加投入有规模报酬递增；但当</span>
+      <span class="s">规模大到一定程度时，就会出现规模报酬递减。</span>
+
+  <span class="na">生产成本</span><span class="pi">:</span>
+
+    <span class="na">成本函数和成本曲线</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">生产成本是指企业为要素投入支付的代价．它不仅依赖于</span>
+      <span class="s">要素投入的数量，而且依赖于要素的价格。</span>
+
+      <span class="s">经济学上，产量与为生产该产量而必须支付的最低成本之</span>
+      <span class="s">间的关系，被称为成本西数，记为</span>
+
+        <span class="s">C = C (y)</span>
+
+      <span class="s">其中y表示产量。</span>
+
+      <span class="s">在图形上，成本函数就变为成本曲线。</span>
+
+      <span class="s">根据生产上的要素投入的可调整性，我们需要区别短期成</span>
+      <span class="s">本函数和长期成本函数以及对应的短期成本曲线和长期成</span>
+      <span class="s">本曲线。</span>
+
+      <span class="s">短期成本是指只有一种要素投入或部分要素投入可变时的</span>
+      <span class="s">最低成本，长期成本是指所有要素投入都可变时的最低成</span>
+      <span class="s">本。</span>
+
+    <span class="na">短期成本曲线</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">在短期内，由于有一部分要素投入的数量给定的，这些要</span>
+      <span class="s">素投入对应的成本不随产量而变化，因而被称为固定成本（FC)。</span>
+      <span class="s">相应的，可变要素的投入量随着产量的改变而变化，对应</span>
+      <span class="s">的成本被称为可变成本(VC)。固定成本和可变成本之和构</span>
+      <span class="s">成了总成本(TC)</span>
+
+      <span class="s">固定成本: 不随产量变化的成本：等于固定生产要素的支</span>
+        <span class="s">出。</span>
+
+      <span class="s">可变成本: 随产量增减而变化的成本：等干可变生产要素</span>
+        <span class="s">的支出。</span>
+
+      <span class="s">固定成本和可变成本的相对比例在不同产品中是不同的。</span>
+      <span class="s">一般来说，资本密集型产品的固定成本比重较大，而劳动</span>
+      <span class="s">密集型产品的可变成本比重较大。这是因为．机器设备、</span>
+      <span class="s">厂房等固定资产都是固定成本，而劳动成本、原材料投入</span>
+      <span class="s">是可变成本。当然，如果企业没有解雇工人的自由，劳动</span>
+      <span class="s">成本也就成为固定成本。</span>
+
+      <span class="s">注意，根据定义，固定成本和可变成本的区别只对短期有</span>
+      <span class="s">意义。从长期看，因为所有要素投入都是可变的，所以所</span>
+      <span class="s">有成本都是可变成本。</span>
+
+      <span class="s">平均成本: 总成本与总产量之比，</span>
+        <span class="s">记作 AC = TC/y。</span>
+
+      <span class="s">平均固定成本: 固定本与总产量之比，</span>
+        <span class="s">记作 AFC = FC/y。</span>
+
+      <span class="s">平均可变成本: 可变本与总产量之比，</span>
+        <span class="s">记作 AVC = VC/y。</span>
+
+      <span class="s">平均成本和边际成本之间的关系是：当平均成本高于边际</span>
+      <span class="s">成本时，平均成本随着产量的增加而降低；当平均成本低</span>
+      <span class="s">于边际成本时，平均成本随着产量的增加而上升。</span>
+
+    <span class="na">长期成本曲线</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">生产函数: |</span>
+
+        <span class="s">y = f(K, L)</span>
+
+        <span class="s">其中K和L分别表示资本投入和劳动投入，</span>
+
+      <span class="s">成本函数: |</span>
+
+        <span class="s">C = Kr + Lw，</span>
+
+        <span class="s">其中K和L分别表示资本投入和劳动投入，</span>
+        <span class="s">r和w分别表示资本和劳动力的价格。</span>
+
+        <span class="s">分析长期成本函数有两个步骤：</span>
+
+        <span class="s">第一步，给定产量目标，企业如何选择成本最低的要素</span>
+        <span class="s">投入组合；</span>
+
+        <span class="s">第二步．最低成本如何随产量而变化。</span>
+
+      <span class="s">等成本曲线的斜率(绝对值)是劳动价格和资本价格的比例。</span>
+
+      <span class="s">同等产量曲线类似于消费者理论中的无差异曲线一样，等</span>
+      <span class="s">成本曲线在形式上类似于消费者理论中的预算约束线。不</span>
+      <span class="s">同的是，在消费者行为理论中，消费者要解决的问题是如</span>
+      <span class="s">何在给定的预算约束线下，通过选择产品组合实现效用最</span>
+      <span class="s">大化；而在这里，企业面临的问题是如何在给定的产量下，</span>
+      <span class="s">通过选择投入组合实现成本最小化。</span>
+
+      <span class="s">从等成本曲线和等产量曲线的图中可以看出，最优组合点</span>
+      <span class="s">满足这样的条件：等产量曲线的要素边际替代率（绝对值）</span>
+      <span class="s">等于要素价格比率。</span>
+
+      <span class="s">换言之，最优组合要求最后一单位的成本支出不论花在资</span>
+      <span class="s">本投入上还是劳动投入上，其边际产量是相同的。如果不</span>
+      <span class="s">是这样，企业就可以通过调整投入的比例降低成本。比如</span>
+      <span class="s">说，如果对于最后一单位成本支出来说，资本的边际生产</span>
+      <span class="s">率大于劳动的边际生产率，通过用资本替代劳动就可以降</span>
+      <span class="s">低成本支出。</span>
+
+      <span class="s">规模经济: 成本增长幅度等于或小于产量增长幅度。</span>
+
+      <span class="s">长期成本函数和长期成本曲线的具体形状，依赖于生产函</span>
+      <span class="s">数的特征和要素价格如何随产量变化。如果成本的增长慢</span>
+      <span class="s">于产量的增长，则长期成本西数是递增的山函数；如果成</span>
+      <span class="s">本和产量按照固定的比例增加，则长期成本函数是递增的</span>
+      <span class="s">线性函数；如果成本的增长快于产量的增长，则长期成本</span>
+      <span class="s">函数是递增的凸函数。在经济学上，前两种情况统称为规</span>
+      <span class="s">模经济，第三种情况称为规模不经济。</span>
+
+      <span class="s">值得一提的是，规模经济与规模报酬是两个相关但并不完</span>
+      <span class="s">全相同的概念。一个明显的特征是：规模经济的概念涉及</span>
+      <span class="s">成本问题，而规模报酬递增是纯技术问题。规模报酬递增</span>
+      <span class="s">是形成规模经济的一种主要因素，但既不是必要因素也不</span>
+      <span class="s">是充分因素。即使技术上生产函数为规模报酬非递增的，</span>
+      <span class="s">但如果劳动力价格w、资本价格r随着产出增加而下降．那</span>
+      <span class="s">么成本上升的速度仍然可能低于产量增长的速度，从而形</span>
+      <span class="s">成规模经济；反之，即使技术上生产函数为规模报酬递增</span>
+      <span class="s">的，但如果劳动力价格w、资本价格r随着产出增加而递增．</span>
+      <span class="s">那么成本上升的速度仍然可能高于产量增长的速度，从而</span>
+      <span class="s">形成规模不经济。当然，如果要素价格与产量无关，像我</span>
+      <span class="s">们一直假定的那样，则规模经济和规模报酬概念是对应的。</span>
+
+      <span class="s">长期平均成本（LAC）: 长期成本与总产量之比。</span>
+
+      <span class="s">长期边际成本（LMC）: 增加一单位总产量导致的长期成本</span>
+        <span class="s">的增加值。。</span>
+
+      <span class="s">长期平均成本曲线和长期边际成本曲线相交于长期平均成</span>
+      <span class="s">本的最低点。</span>
+
+    <span class="na">长期平均成本于短期平均成本的关系</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">长期中，对于任何计划生产的产量y，企业总是选择成本最</span>
+      <span class="s">小的要素投入组合，这也是选择平均成本最小的要素投入组</span>
+      <span class="s">合；短期内，企业只有在生产该计划产量时，短期平均成本</span>
+      <span class="s">才是最低的。</span>
+
+    <span class="na">企业的目标</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">经济学假定，企业的目标是利润最大化。</span>
+
+      <span class="s">利润最大化目标的问题: |</span>
+
+        <span class="s">首先，利润这个目标是从私有制企业推出来的。在私有</span>
+        <span class="s">企业中，所有者最关心的当然是利润。而在现实情况中，</span>
+        <span class="s">并非所有企业都是私有企业，还存在很多国有企业，后</span>
+        <span class="s">者通常并不以利润最大化为目标。</span>
+
+        <span class="s">其次，即使是私有股份制企业，也普遍存在着所有权与</span>
+        <span class="s">控制权分离的现象，这将产生委托——代理问题。有可</span>
+        <span class="s">能出现决策者追求做大规模、管理更多的人、扩大自己</span>
+        <span class="s">的权限等符合代理人自己的利益而不符合委托人目标最</span>
+        <span class="s">大化的决策。</span>
+
+        <span class="s">最后，利润有长期和短期之别，真正的企业家会注重长</span>
+        <span class="s">期利润，宁愿短期亏损也不愿意损害企业的长期利益。</span>
+        <span class="s">因此，企业可能也不是以当前利润最大化为目标的。</span>
+
+        <span class="s">此外，还有一些社会性因素约束利润目标。当下流行着</span>
+        <span class="s">一个很时髦的词叫作 “企业社会责任”，要求企业要为</span>
+        <span class="s">消费者和社会公众考虑。如果企业利润与社会责任存在</span>
+        <span class="s">冲突，企业有时候也不得不放弃利润最大化的目标。</span>
+
+        <span class="s">传统的经济学通常不考虑企业目标与社会责任之间存在</span>
+        <span class="s">的矛盾，但在非经济学领域，很多学者却在论证、研究</span>
+        <span class="s">二者之间的矛盾。</span>
+
+        <span class="s">尽管利润最大化目标的假设存在上述缺陷，但在市场经</span>
+        <span class="s">济中，它仍然是我们在理论上可以接受的个假设。因为，</span>
+        <span class="s">从长期看，如果一个企业持续不能赚钱，它是没有办法</span>
+        <span class="s">生存下去的。并且，企业决策者其他目标的实现，也在</span>
+        <span class="s">很大程度上依赖于利润。因此，在本书中，我们仍然遵</span>
+        <span class="s">循传统经济学的做法，假定企业的最终目标是利润最大化。</span>
+
+      <span class="s">会计上，企业的利润可以表示为销售收入和成本之差。销</span>
+      <span class="s">售收人可以表示为价格与产量的乘积，成本是为生产该产</span>
+      <span class="s">量而必须支付的要素投入的支出。</span>
+
+      <span class="s">如果我们用π表示利润，R表示收入，C表示成本，y表示产</span>
+      <span class="s">量，我们有如下等式：</span>
+        <span class="s">π（y） = R（y） - C（y）</span>
+
+      <span class="s">知识拓展: 经济利润与会计利润</span>
+
+        <span class="s">会计利润和经济利润的区别在于二者对成本的定义不同。</span>
+        <span class="s">经济学中的成本是为生产而付出的所有机会成本，而会</span>
+        <span class="s">计账面成本不包括隐形的机会成本。</span>
+
+        <span class="s">机会成本本质上不是成本，而是放弃的收益，即将资源</span>
+        <span class="s">投入当前生产所放弃的其他机会最大可能的收益。</span>
+
+        <span class="s">有些机会成本是无法从账目中观察到但却对决策者有影</span>
+        <span class="s">响的隐性成本。比如，很多国有企业占用大量的土地以</span>
+        <span class="s">及很多其他资源，这些资源本来可以通过市场拍卖，产</span>
+        <span class="s">生相应的收益，从经济学的视角看是一笔巨额的机会成</span>
+        <span class="s">本。这些资源免费投入国企中，但对应的机会成本没有</span>
+        <span class="s">计算在企业财务报表之内。因此，会计上盈利的国有企</span>
+        <span class="s">业在经济上可能是亏损的。</span>
+
+      <span class="s">沉默成本(sunk cost):</span>
+
+        <span class="s">与机会成本相对应的另一种成本是沉没成本。沉没成本</span>
+        <span class="s">是指已经支付的、无法挽回的成本。</span>
+
+        <span class="s">经济成本 = 会计成本 + 隐形机会成本 - 沉没成本</span>
+
+        <span class="s">经济利润 = 会计利润 - 隐形机会成本 + 沉没成本</span>
+
+      <span class="s">值得一提的是，在短期内经济学上通常把固定成本看作沉</span>
+      <span class="s">没成本。这种做法在有些情况下并不成立。例如，购买到</span>
+      <span class="s">的机械设备虽然在短期内无法转让，属于固定成本，但是</span>
+      <span class="s">它并不是沉没成本。因为如果停止生产，机械设备对应的</span>
+      <span class="s">成本至少是部分可以变现的。再如，很多专用性芯片购买</span>
+      <span class="s">后，其对应的成本即变成了沉没成本，但它们通常是按比</span>
+      <span class="s">例与产品匹配生产，因而应该被视作可变成本。</span>
+
+    <span class="na">利润最大化条件</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">利润函数:</span>
+
+        <span class="s">π= π（y）</span>
+
+      <span class="s">利润曲线:</span>
+
+        <span class="s">利润函数在产量——利润坐标图上，就是利润曲线。</span>
+
+        <span class="s">利润曲线的变化轨迹总是总收入曲线和总成本曲线共同</span>
+        <span class="s">的作用的结果。</span>
+
+      <span class="s">总收入曲线与总成本曲线距离最大之点即利润最大之点，</span>
+      <span class="s">对应的产量就是最优产量</span>
+
+      <span class="s">从总成本曲线和总收入曲线的图中还可以看出，最大利润</span>
+      <span class="s">在总收入曲线的斜率等于总成本曲线的斜率时达到。总收</span>
+      <span class="s">入曲线的斜率是经济学上定义的产量的边际收益，即增加</span>
+      <span class="s">一单位产量所带来的收入的增加；总成本曲线的斜率是边</span>
+      <span class="s">际成本。由此，我们得到利润最大化产量的基本条件：</span>
+
+        <span class="s">边际收益 = 边际成本</span>
+
+      <span class="s">边际收益: 产量增加一单位带来的销售收入的增加额。</span>
+
+      <span class="s">在完全竞争市场，利润的最大化产量的条件是，价格等于</span>
+      <span class="s">边际成本：</span>
+
+        <span class="s">p = MC（y）</span>
+
+    <span class="na">短期利润与生产决策</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">当价格大于平均总成本时，生产可以带来利润。但如果短</span>
+      <span class="s">期利润小于零。企业是否应该选择停产呢？答案取决于市</span>
+      <span class="s">场价格与平均可变成本的比较。</span>
+
+      <span class="s">迷你案例: 为什么航空公司会提供超低票价</span>
+
+        <span class="s">在飞行过程中，燃油费、折旧费等固定成本项构成了成</span>
+        <span class="s">本的主要部分，而多一个乘客带来的边际成本却接近于</span>
+        <span class="s">零。对于航空公司而言，重要的不是固定成本，而是边</span>
+        <span class="s">际成本。这是因为，不管飞机上是坐满了人还是空无一</span>
+        <span class="s">人，只要飞机一起飞，就必须支付相应的固定成本，但</span>
+        <span class="s">只要能以高手边际成本的价格多卖出一张票，他们就能</span>
+        <span class="s">多賺一份钱（或者少亏一份钱)。</span>
+
+    <span class="na">长期利润与生产决策</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">如果没有进入壁垒，如果所有的技术和生产要素对所有的</span>
+      <span class="s">企业都可以以同等的条件（价格）获得，企业不可能持续</span>
+      <span class="s">地赚取利润。这是因为，利润的存在会诱使新企业的进入，</span>
+      <span class="s">竞争会降低市场价格，直到价格等于平均成本为止。因此，</span>
+      <span class="s">长期均衡结果一定是市场价格处于与长期平均成本最低点</span>
+      <span class="s">相等的水平。此时，D = MR = LAC = LMC，利润为零。</span>
+
+      <span class="s">长期均衡: 价格等于最低长期平均成本。</span>
+
+      <span class="s">长期均衡结果一定是市场价格处于与长期平均成本最低点</span>
+      <span class="s">创新意味着长期均衡是不存在的。对一个企业来说，最重</span>
+      <span class="s">要的并非我们在前面分析的给定技术和产品情况下如何选</span>
+      <span class="s">择要素组合和产量，而是创造新的技术和产品。</span>
+
+  <span class="na">供给曲线</span><span class="pi">:</span>
+
+    <span class="na">单个企业的供给曲线</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">消费者的选择决定了需求函数和需求曲线，生产者的选择</span>
+      <span class="s">决定了供给函数和供给曲线。</span>
+
+      <span class="s">供给函数或供给曲线，是指在不同价格水平下企业愿意生</span>
+      <span class="s">产的产量，记为 y = S (p)。</span>
+
+      <span class="s">短期供给曲线: 短期平均可变成本最低点以上的边际成本</span>
+        <span class="s">曲线部分。</span>
+
+      <span class="s">长期供给曲线: 长期平均成本最低点以上的长期边际成本</span>
+        <span class="s">曲线部分。</span>
+
+    <span class="na">供给弹性</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">与消费者理论中用需求弹性度量需求对价格的敏感度类似，</span>
+      <span class="s">在生产理论中，我们用供给价格弹性度量企业产量对价格</span>
+      <span class="s">的敏感度。</span>
+
+      <span class="s">供给价格弹性: 供给量变化率与价格变化率的比值。</span>
+
+      <span class="s">根据我们前面的描述，生产过程分为短期和长期。短期内</span>
+      <span class="s">企业调整产量的自由度较小，但是随着时间的推移，企业</span>
+      <span class="s">可以更加灵活地改变生产方案。因此短期供给弹性小于长</span>
+      <span class="s">期供给弹性。比如说，假如粮食价格涨了一倍，粮食的供</span>
+      <span class="s">给量不会马上发生巨大的变化。但是一年之后，粮食的供</span>
+      <span class="s">给量就会出现明显的增长。</span>
+
+    <span class="na">市场供给曲线</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">市场供给曲线又称产业供给曲线，在产量——价格坐标图</span>
+      <span class="s">上，它是又所有生产企业的供给曲线横向加总得到的。</span>
+
+      <span class="s">在一个市场上，商品的价格上涨通常会引发市场总供给的</span>
+      <span class="s">增长。这种增长来自两个方面：</span>
+
+        <span class="s">第一，当商品价格上涨时，原有生产企业根据各自的供</span>
+        <span class="s">给曲线增加自己的产量。</span>
+
+        <span class="s">第二，商品价格上涨可能诱使生产者的数量增加。在原</span>
+        <span class="s">来的价格下，有些企业不会生产该商品，但当价格上涨</span>
+        <span class="s">到超过其最低的平均可变成本时，它们就会开始选择生</span>
+        <span class="s">产该商品。一般来说，一种产品的价格越高，生产该产</span>
+        <span class="s">品的企业的数量越多。</span>
+
+    <span class="na">供给曲线的移动</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">从长期来看，供给曲线的移动主要是由技术变化、其他产</span>
+      <span class="s">品价格变动以及投入品价格变动等因素导致的边际成本的</span>
+      <span class="s">变化引起的。</span>
+
+      <span class="s">竞争品: |</span>
+
+        <span class="s">如果同样的投入品用于A产品的生产，就不能用于B产品</span>
+        <span class="s">的生产，或者种产品产量的增加会提高另一种产品生产</span>
+        <span class="s">的边际成本，那么，A产品和B产品就是竞争品。比如，企</span>
+        <span class="s">业内同样的人力可以用于计算机的生产，也可以用于手</span>
+        <span class="s">机的生产，则计算机和手机就是竞争品。因此，如果手</span>
+        <span class="s">机价格上升，生产计算机的机会成本就会上升，意味着</span>
+        <span class="s">在计算机价格不变的情况下，企业会减少计算机的产量。</span>
+
+      <span class="s">互补品: |</span>
+
+        <span class="s">如果同样的要素投入可以同时生产两种产品，或者一种</span>
+        <span class="s">产品产量的增加可以降低另一种产品生产的边际成本，</span>
+        <span class="s">则这两种产品就是生产上的互补品。比如，牛肉和牛皮</span>
+        <span class="s">就是典型的互补品。当牛肉的价格上升时，农场主就会</span>
+        <span class="s">增加牛肉的供应。此时，即使牛皮的价格不变，牛皮的</span>
+        <span class="s">产量也会增加，也就是说，牛皮的供给曲线会向右移动。</span>
+
+      <span class="s">尽管有多种因素在推动供给曲线的移动，但从历史上看，</span>
+      <span class="s">技术进步导致的成本下降，是供给曲线向右移动的主要原</span>
+      <span class="s">因。比如，20世纪90年代早期，个砖头大的手机（俗称“</span>
+      <span class="s">大哥大”）售价在3万元人民币以上，而现在一个普通手机</span>
+      <span class="s">的售价只有几百元，而其功能是 “大哥大” 手机的数百</span>
+      <span class="s">倍。这就是技术进步导致的价格下跌。</span>
+
+    <span class="na">从机会成本看供给曲线</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">事实上，所有的生产成本都是机会成本或机会成本的某种</span>
+      <span class="s">变形。</span></code></pre>
+</div>
+</div>
+  </div>
+
+  <ul class="post-navigation">
+    <li>
+      
+      <a href="/books/2021/11/20/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E6%B6%88%E8%B4%B9%E8%80%85%E9%80%89%E6%8B%A9%E4%B8%8E%E9%9C%80%E6%B1%82%E6%9B%B2%E7%BA%BF/">&laquo; 经济学原理：消费者选择与需求曲线</a>
+      
+    </li>
+    <li>
+      
+      <a href="/books/2021/11/24/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E4%BE%9B%E6%B1%82%E4%B8%8E%E4%BB%B7%E6%A0%BC/">经济学原理：供求与价格 &raquo;</a>
+      
+    </li>
+  </ul>
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div>我只希望，祈祷，我的心境不要再粗糙下去，荒芜下去，这就是我的大愿望。</div>
+
+  <div class="license">
+    <a rel="license" href="/LICENSE.txt"><img alt="Creative Commons License" style="border-width:0" src="/assets/licenses/cc-by-nc-nd-4.0-80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+  </div>
+  </details>
+</footer>
+
+
+  </body>
+
+</html>

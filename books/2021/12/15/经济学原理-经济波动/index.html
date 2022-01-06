@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>经济学原理：经济波动</title>
+  <meta name="description" content="经济并不是一直平稳增长的，在短期它会经历很多的波动。对经济波动进行解释，是宏观经济学的两大主要议题之一。所谓经济波动，是指经济偏离了其增长趋势。一般来说，经济波动是很难预测的，由历史资料很难推断什么时候会产生经济波动。一旦经济波动发生，它将意味着一连串宏观经济变量的同时变化。在这些变量中，GDP、投资、消费、净出...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/books/2021/12/15/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E7%BB%8F%E6%B5%8E%E6%B3%A2%E5%8A%A8/">
+  <link rel="alternate" type="application/rss+xml" title="叶子" href="/feed.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW8P6JTH7J"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW8P6JTH7J');
+</script>
+
+
+
+</head>
+
+
+  <body>
+
+    <style>
+
+.site-nav ul li {
+  width: 15%;
+}
+
+</style>
+
+<header class="site-header">
+
+  <div class="wrapper">
+    <h2 class="site-title">
+      <a class="site-title" href="/">叶子</a>
+    </h2>
+
+     <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+        <div class="trigger">
+            <ul>
+              <li><a href="/">随笔</a></li>
+              <li><a href="/books">读书</a></li>
+              <li><a href="/misc">杂记</a></li>
+              <li><a href="/run">跑步</a></li>
+              <li><a href="/math">数学</a></li>
+              <li><a href="/essays">集子</a></li>
+
+            </ul>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">经济学原理：经济波动</h1>
+    <p class="post-meta">
+      <time datetime="2021-12-15T21:40:00+08:00" itemprop="datePublished">Dec 15, 2021</time>
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">张维迎</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>经济并不是一直平稳增长的，在短期它会经历很多的波动。对经济波动进行解释，是宏观经济学的两大主要议题之一。</p>
+</div>
+<div class="paragraph">
+<p>所谓经济波动，是指经济偏离了其增长趋势。一般来说，经济波动是很难预测的，由历史资料很难推断什么时候会产生经济波动。一旦经济波动发生，它将意味着一连串宏观经济变量的同时变化。在这些变量中，GDP、投资、消费、净出口、价格水平等是顺周期的，而失业率等指标则是逆周期的。</p>
+</div>
+<div class="paragraph">
+<p>对于经济波动，可以用总需求——总供给框架来进行解释。总需求曲线所刻画的，是价格水平和对经济中所有商品及劳务的需求总量之间的关系。由于财富效应、利率效应和汇率效应的存在，总需求曲线是向右下方倾斜的。总供给曲线所刻画的，则是价格水平和经济中所有商品及劳务的供给总量之间的关系。在长期，经济中的供给总量由生产要素数量和生产率水平决定，因此长期总供给曲线是一条垂直的线。而在短期，总供给曲线则是向右上方倾斜的，它可以由黏性工资理论、黏性价格理论以及错觉理论等来解释，当经济受到总需求冲击时，总需求曲线会发生移动，从而影响短期产量和价格。但只要长期总供给曲线不发生变动，总需求的变化最终只会影响价格水平而不会影响产出。当经济受到总供给冲击时，短期总供给曲线会发生移动，在这个过程中，可能会产生“工资——价格螺旋式上升”的现象。不过，总供给曲线最终会回归到原来位置，整个经济回到最初均衡状态。</p>
+</div>
+<div class="paragraph">
+<p>借助总需求-总供给框架，我们可以对很多经济冲击的影响进行分析。</p>
+</div>
+<div class="paragraph">
+<p>术语: |</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="text">经济波动 总需求-总供给模型 总需求曲线
+财富效应 利率效应 汇率 汇率效应 购买力平价
+总供给曲线 长期总供给曲线
+短期总供给曲线 黏性工资理论 黏性价格理论 错觉理论 滞胀 工资——价格螺旋</code></pre>
+</div>
+</div>
+<hr>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#经济波动">1. 经济波动</a>
+<ul class="sectlevel2">
+<li><a href="#经济波动的两个特征事实">1.1. 经济波动的两个特征事实</a>
+<ul class="sectlevel3">
+<li><a href="#经济波动是难以预测的">1.1.1. 经济波动是难以预测的</a></li>
+<li><a href="#经济波动会造成一系列变量的共同变动">1.1.2. 经济波动会造成一系列变量的共同变动</a></li>
+</ul>
+</li>
+<li><a href="#经济波动的解释框架总需求-总供给模型">1.2. 经济波动的解释框架：总需求-总供给模型</a></li>
+<li><a href="#总需求曲线">1.3. 总需求曲线</a>
+<ul class="sectlevel3">
+<li><a href="#总需求曲线向右下方倾斜的原因">1.3.1. 总需求曲线向右下方倾斜的原因</a></li>
+<li><a href="#总需求曲线的移动">1.3.2. 总需求曲线的移动</a></li>
+<li><a href="#对总需求曲线移动的小结">1.3.3. 对总需求曲线移动的小结</a></li>
+</ul>
+</li>
+<li><a href="#总供给曲线">1.4. 总供给曲线</a>
+<ul class="sectlevel3">
+<li><a href="#垂直的长期总供给曲线">1.4.1. 垂直的长期总供给曲线</a></li>
+<li><a href="#长期总供给曲线的移动">1.4.2. 长期总供给曲线的移动</a></li>
+<li><a href="#总需求总供给框架下的长期问题">1.4.3. 总需求——总供给框架下的长期问题</a></li>
+<li><a href="#短期总供给曲线">1.4.4. 短期总供给曲线</a></li>
+<li><a href="#短期总供给曲线的移动">1.4.5. 短期总供给曲线的移动</a></li>
+</ul>
+</li>
+<li><a href="#总需求总供给框架下经济波动的解释">1.5. 总需求——总供给框架下经济波动的解释</a>
+<ul class="sectlevel3">
+<li><a href="#总需求曲线的移动-2">1.5.1. 总需求曲线的移动</a></li>
+<li><a href="#总供给曲线的移动">1.5.2. 总供给曲线的移动</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1">
+<h2 id="经济波动">1. 经济波动</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在现实中，经济并不总是沿着一趋势稳定地增长，而是会沿着趋势上下波动，这种现象就是经济波动。</p>
+</div>
+<div class="sect2">
+<h3 id="经济波动的两个特征事实">1.1. 经济波动的两个特征事实</h3>
+<div class="sect3">
+<h4 id="经济波动是难以预测的">1.1.1. 经济波动是难以预测的</h4>
+<div class="paragraph">
+<p>在经济学中，经济波动 (economic fluctuation）和经济周期（business cycle）是两个经常被用到的概念。</p>
+</div>
+<div class="paragraph">
+<p>在很多情况下，经济学家会把这两个词视为同义词，但事实上这两个词之间存在着微妙的差别。大体来说，<strong>经济波动</strong>指的是经济在运行中对其趋势的一些意外偏离，它主要是由市场因素造成的，本身也比较难以预测；而<strong>经济周期</strong>则更多地是由于政策因素导致的，它通常会表现出很强的循环性。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>经济波动</strong>：</p>
+<div class="paragraph">
+<p>经济在运行中对其趋势的一些意外偏离。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="经济波动会造成一系列变量的共同变动">1.1.2. 经济波动会造成一系列变量的共同变动</h4>
+<div class="paragraph">
+<p>当经济波动发生时，经济中的一些主要变量都会同时发生波动。其中，一些变量会随着经济的高涨而升高，随着经济的低迷而降低，而另一些变量则正好相反。在文献中，一般会称前一类变量是“<strong>顺周期变量</strong>”，而后一类变量是“<strong>逆周期变量</strong>”。其中，顺周期变量包括实际GDP增长率、投资增长率、消费增长率、通货膨肚率等，而逆周期变量则包括失业率等。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="经济波动的解释框架总需求-总供给模型">1.2. 经济波动的解释框架：总需求-总供给模型</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>总需求总供给模型</strong>：</p>
+<div class="paragraph">
+<p>将总需求曲线和总供给曲线结合起来，用以分析经济中的总产出和总价格水平之间关系的模型。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>知识拓展：总需求-总供给模型与需求-供给模型</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>在需求-供给模型中，我们考虑的是某一个具体市场，纵轴表示的是商品的相对价格水平，横轴表示产量；而在总需求-总供给模型中，我们考虑的是一个经济的整体，纵轴表示的是商品的总价格水平，横轴表示经济中的总产量。</p>
+</div>
+<div class="paragraph">
+<p>在微观经济学中，我们提到在长期，市场竞争会消除超额利润，从而使价格等于边际成本，这时的市场供给曲线将是一条水平的曲线；在总需求-总供给模型中，长期总供给曲线是一条垂直的曲线，表示总产出与价格水平无关。</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="总需求曲线">1.3. 总需求曲线</h3>
+<div class="paragraph">
+<p>总需求曲线 (aggregate demand curve）所刻画的是价格水平和对经济中所有商品及劳务的需求总量之间的关系。</p>
+</div>
+<div class="sect3">
+<h4 id="总需求曲线向右下方倾斜的原因">1.3.1. 总需求曲线向右下方倾斜的原因</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>第一，价格水平的<strong>财富效应</strong>。</p>
+<div class="paragraph">
+<p>价格水平的变动对货币购买力的影响被称为“财富效应”，构成了总需求曲线向右下方倾斜的第一个原因：</p>
+</div>
+<div class="paragraph">
+<p>价格水平的上升会降低消费者持有的货币的真实价值，减少其实际财富，而实际财富的减少让他们不敢消费，从而减少其在商品和劳务上的支出。</p>
+</div>
+<div class="paragraph">
+<p>相反，价格水平的下降会增加消费者持有的货币的真实价值，增加其实际财富，而实际财富的增加会刺激他们的消费，使其在商品和劳务上的支出增加。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>财富效应</strong>:</p>
+<div class="paragraph">
+<p>价格水平的变动对货币购买力的影响。</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>第二，价格水平的<strong>利率效应</strong>。</p>
+<div class="paragraph">
+<p>物价水平是决定货币需求的一个重要原因。给定其他条件不变，物价水平越高时，用来购买一定数量的商品和劳务所需的货币数量就越多，居民可以用于储蓄的货币数量也就越少。由于借货市场的货币供给主要来自于居民储蓄，因此上述逻辑意味着物价水平的上升会减少借货市场的货币供给。在给定借货需求不变的前提下，这会使借贷的成本，即利率上升。这就是价格水平的利率效应，</p>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>利率效应</strong>：</p>
+<div class="paragraph">
+<p>价格水平变动对货币供给及利率的影响。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>在现实中，利率是企业进行投资的重要参考依据。只有当资本的回报率高于利率时，企业进行投资才是有利可图的，因此利率的上升会使一些资本回报率较低的企业放弃投资。从这个意义上讲，物价水平的上升也会减少投资。</p>
+</div>
+</li>
+<li>
+<p>第三，价格水平的<strong>汇率效应</strong>。</p>
+<div class="paragraph">
+<p><strong>汇率</strong>是指两种货币之间的比率。比如，如果美元对人民币的汇率是1：6.2，意味着1美元等于6.2元人民币。给定汇率水平，中国物价水平的下降意味着中国的商品和服务相对于外国的商品和服务变得更便宜了，从而导致对出口产品和服务需求的增加；反之。中国价格水平的上升会导致对出口产品和服务需求的减少。</p>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>汇率</strong>：</p>
+<div class="paragraph">
+<p>不同货币之间的兑换价格。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>物价水平的上升会使本国利率上升。试想，当国外投资者发现中国的利率上开时，他们会怎么做呢？显然，他们会倾向于持有更多中国的金融资产，从而获得更高收益。不过，购买中国的金融资产需要使用人民币，故他们需要先把手中的本国货币兑换成人民币，这就会导致人民币需求的上升。和一般商品一样，对人民币需求的上升也会抬升其“价格”，即使人民币升值。人民币升值会刺激进口，抑制出口，减少净出口。反之，中国物价水平的下降会导致人民币贬值，从而导致出口增加和进口减少。这就是价格水平变动的汇率效应。</p>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>汇率效应</strong>：</p>
+<div class="paragraph">
+<p>价格水平变动对汇率的影响。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>知识拓展：汇率是由什么决定的</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>汇率是货市的“价格”。如同所有产品的价格一样，汇率也是由对外汇的供求决定的。</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>在国际市场上，</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="ulist">
+<ul>
+<li>
+<p>外汇的需求主要来自：（1）本国人对外国商品的进口;（2）本国人在国外的服务需求（如国际旅游支出）；（3）本国人在国外的投资；（4）本国的外汇储备需求。</p>
+</li>
+<li>
+<p>外汇的供给主要来自：（1）本国商品的出口；（2）外国人在本国购买的服务；（3）外国人在本国的投资。</p>
+</li>
+</ul>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>从长期来看，由于货币的价值来自其真实购买力，汇率是由货币的相对购买力决定的，这被称为“购买力平价”（purchasing power parity，简称（PPP）。比如说，具有代表性的一篮子的商品和服务在中国的总价格是600元人民币，在美国需要100美元，人民币对美元的购买力平价就是6：1，即1美元等于6元人民币。</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>当然，由于许多商品是非贸易商品，以及国际贸易壁生的存在，实际的市场汇率不可能等于购买力平价。但只要允许一定程度的贸易自由，市场汇率不可能长期过度偏离购买力平价。</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>短期来说，由于资本在国际市场上的流动性，汇率在短期内受利率差的影响更大。这是因为，资本总是倾向于流向收益率最高的地方。如果中国利率高，美国利率低，就会导致美国资本流入中国，引起人民币升值；反之，如果中国利率低，美国利率高，就会导致资本从中国流向美国，引起人民市贬值。当然，如果政府对资本的流入和流出实行严格的管制，利率差对汇率的影响就是微乎其微的。</p>
+</div>
+</blockquote>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="总需求曲线的移动">1.3.2. 总需求曲线的移动</h4>
+<div class="paragraph">
+<p>向右下方倾斜的总需求曲线表明当价格水平上升时，对商品和劳务的总需求会下降。但是，在很多情况下，一此其他因素的外生变化也会在既定的价格水平下影响对商品和劳务的总需求。如果有某些外生因素扩大了总需求，则总需求曲线就会向右移动；反之，如果有某些外生因素抑制了总需求，则总需求曲线则会向左移动。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>第一，消费变化引起的总需求曲线移动。</p>
+<div class="paragraph">
+<p>现实中，影响消费的因素很多，一旦人们的偏好或者对未来的预期发生了变化，那么即使价格水平不变，消费也可能发生变化。例如，如果我们<strong>预期</strong>未来的老龄化问题会很严重，并担心将来的社会保障体系不足以支撑我们未来的养老，那么现在我们就会倾向于将更多的收入用于储蓄，而更少地进行消费，这会导致总需求曲线向左移动。</p>
+</div>
+<div class="paragraph">
+<p>此外，政府的<strong>税收</strong>政策也会在既定价格水平下影响消费。例如，当政府减税时，就会鼓励人们进行更多的支出，此时总需求曲线会向右移动；而当政府提高税收时，人们则会则会削减开支，此时总需求曲线会向左移动。</p>
+</div>
+</li>
+<li>
+<p>第二，投资变化引起的总需求曲线移动。</p>
+<div class="paragraph">
+<p>如果有某些因素对既定价格水平下企业的投资决策产生了影响，那么它也会导致总需求曲线的移动。例如，如果现在所有企业都意识到了互联网的重要性，愿意在互联网建设上投入更多的费用，那么总需求曲线就会向右移动。再如，如果企业对未来的经济状况表现出了悲观态度，那么它们就会减少投资支出，从而使总需求曲线左移。</p>
+</div>
+<div class="paragraph">
+<p>政府的税收政策会对投资产生影响，从而对总需求曲线产生影响。例如，如果政府对投资给予税收优惠，则企业会在既定的利率水平下增加自己的投资需求，此时总需求曲线会向右移动。反之，如果政府增加了企业税收，那么企业的投资需求就会受到抑制，从而总需求曲线会向左移动。</p>
+</div>
+<div class="paragraph">
+<p>此外，政府的货币政策也会造成总需求曲线的移动。<strong>一般来说，扩张性货币政策会降低利率水平，减少借货成本，从而使企业投资增加，总需求曲线向右移动；而紧缩性货币政策则会提高利率水平，增加借贷成本，从而使企业投资减少，总需求曲线向左移动</strong>。</p>
+</div>
+</li>
+<li>
+<p>第三，政府支出变化引起的总需求曲线移动。</p>
+<div class="paragraph">
+<p>政府还可以用更为直接的方法，即通过改变政府支出来使总需求曲线发生变动。例如，如果政府决定进一步增加在全国范围内的高铁网络建设投资，那么在既定的价格水平下，整个经济中的商品和劳务需求都会增加，此时总需求曲线会向右移动。又如，在控制公款消费的“八项规定〞推出后，整个政府系统开始厉行节俭，节省开支，这就造成总需求曲线的向左移动。</p>
+</div>
+</li>
+<li>
+<p>第四，净出口变化引1起的总需求曲线移动。</p>
+<div class="paragraph">
+<p>在既定的物价水平下，净出口的变动也会影响总需求曲线的移动。</p>
+</div>
+<div class="paragraph">
+<p>国际投资者在各国之间的套利可能对净出口产生影响，进而引1起需求曲线的移动。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>政策透视：次贷危机为什么会发生</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="对总需求曲线移动的小结">1.3.3. 对总需求曲线移动的小结</h4>
+<div class="paragraph">
+<p>在既定的价格水平下，所有对消费、投资、政府支出及净出口产生外生影响的因素都会引起总需求的变动，进而使总需求曲线发生移动。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="总供给曲线">1.4. 总供给曲线</h3>
+<div class="paragraph">
+<p>总供给曲线（aggregate supply curve）描述的是企业计划生产并销售的商品及劳务总量如何随价格水平而变化。同向右下方倾斜的需求曲线不同，总供给曲线的形状取决于我们所考察的时间长短。<strong>如果我们考虑的是长期问题，那么此时的总供给曲线就是垂直的；而如果我们考虑的是短期问题，那么此时的总供给曲线就是向右上方倾斜的</strong>。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>总供给曲线</strong></p>
+<div class="paragraph">
+<p>刻画价格水平与企业计划生产并销售的商品及劳务总量之间关系的曲线。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="垂直的长期总供给曲线">1.4.1. 垂直的长期总供给曲线</h4>
+<div class="paragraph">
+<p>在长期中，经济体所能提供的商品和劳务总量取决于它所拥有的要素总量，以及使用这些生产要素进行生产的技术和企业家精神。如果我们考虑的是长期问题，那么我们就不必关注价格水平的影响，只需要看经济体的要素以及它的技术，进而判断这个经济体的生产港力。从这个意义看，长期总供给曲线应该是垂直的，因为无论价格水平怎样变动，它都不会对经济的生产潜力产生影响。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>长期总供给曲线</strong></p>
+<div class="paragraph">
+<p>长期内的总供给曲线，表现为一条垂直的线。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="长期总供给曲线的移动">1.4.2. 长期总供给曲线的移动</h4>
+<div class="paragraph">
+<p>尽管长期总供给曲线是垂直的，但垂直的长期总供给曲线也会移动。简单地说，所有影响生产要素供给的因素和影响生产率变化的因素都会导致长期总供给曲线的移动。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>第一，<strong>劳动力</strong>变化引起的长期总供给曲线移动。</p>
+<div class="paragraph">
+<p>长期总供给曲线的位置在很大程度上取決于经济中的自然失业率。如果政府大幅提高最低工资，那么就会有更多工人自愿失业，退出劳动力大军。这会使自然失业率上升，从而引起长期总供给曲线的左移。而如果政府大力推动“以创业促就业”计划，则会创造更多的就业岗位，使自然失业率下降，从而引起长期总供给曲线的右移。</p>
+</div>
+<div class="paragraph">
+<p>政策透视：老龄化的挑战</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><strong>在未来一段时间，老龄化可能对中国经济的发展产生重大影响</strong>。</p>
+</div>
+</blockquote>
+</div>
+</li>
+<li>
+<p>第二，<strong>资本</strong>变化引起的长期总供给曲线移动。</p>
+<div class="paragraph">
+<p>经济中资本存量的增加会使生产率提升，从而会增加商品和服务的供给，这会导致长期总供给曲线向右移动。而经济中资本存量的减少则会降低生产率，从而减少商品和服务的供给，导致长期总供给曲线向左移动。</p>
+</div>
+<div class="paragraph">
+<p>资本不只是机器、厂房这些物质资本，还包括人力资本。无论是物质资本还是人力资本的提升，都会造成长期总供给曲线的向
+右移动。例如，如果我们分析基础教育普及的作用，就应该考虑到它对总供给提升的影响。</p>
+</div>
+</li>
+<li>
+<p>第三，<strong>自然资源</strong>变化引起的长期总供给曲线移动。</p>
+<div class="paragraph">
+<p>土地、矿藏、气候等自然资源的变化也影响长期总供给曲线的移动。例如，新油田的发现就会造成长期总供给曲线的右移，而糟糕的气候则会使长期总供给曲线左移。</p>
+</div>
+<div class="paragraph">
+<p>对于对外依存度高的国家，很多重要自然资源都是通过进口得到的。因此，国际市场上的自然资源供给的变化也会影响该国总供给曲线的移动。</p>
+</div>
+<div class="paragraph">
+<p>新自然资源的利用也会导致长期总供给曲线的右移。例如，现在页岩气的利用技术日趋成熟，储量庞大的页岩气将有望取代石油成为最重要的能源。这一技术变革将会使可供使用的能源总量大大增加。从而引起长期总供给曲线向右移动。</p>
+</div>
+<div class="paragraph">
+<p>政策透视：页岩气及其可能的经济影响</p>
+</div>
+</li>
+<li>
+<p>第四，<strong>生产率</strong>变化引起的长期总供给曲线移动。</p>
+<div class="paragraph">
+<p>除了生产要素的变化外，生产率的变化也是引起总供给曲线移动的重要原因。生产率的变化有两个来源——<strong>技术</strong>变化和<strong>资源配置效率</strong>的提升，它们都会带来长期总供给曲线的移动。</p>
+</div>
+<div class="paragraph">
+<p><mark><strong>经济中的资源配置效率很大程度上是由经济制度决定的。</strong></mark></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>对长期总供给曲线移动的小结：</p>
+</div>
+<div class="paragraph">
+<p>长期总供给曲线反映的是整个经济中对商品和劳务的生产潜力，所有使生产要素或生产率变动的因素都会使经济中的商品和服务供给发生变化，从而引起长期总供给曲线的移动。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="总需求总供给框架下的长期问题">1.4.3. 总需求——总供给框架下的长期问题</h4>
+<div class="paragraph">
+<p>生产要素的增加、技术的进步，以及经济制度的改善等都能实现长期总供给曲线的右移，因此这些事件都会使经济在更低的价格水平下生产出更高的产量。</p>
+</div>
+<div class="paragraph">
+<p>在现实中，政府的刺激政策往往是使总需求曲线移动的外生原因。例如，政府经常希望通过增发货币来使总需求曲线向右移动，借以刺激经济。但至少在长期内，这种刺激是难以产生效果的。如果长期总供给曲线保持不动，货币增发最终只会带来更高的价格水平，而不会带来更高的产。古典经济学中强调<strong>货币的中性</strong>，其实就是这个意思。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="短期总供给曲线">1.4.4. 短期总供给曲线</h4>
+<div class="paragraph">
+<p>在长期中，价格水平并不影响经济提供商品和劳务的能力。而与此相反，短期的物价水平则会对经济的产量产生切实的影响。具体来说，经济中物价水平的上升通常会使商品和劳务的供给量提升，而物价水平下降则会使商品和劳务的供给量下降。结果，短期总供给曲线就是向右上方倾斜的。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>短期总供给曲线</strong>：</p>
+<div class="paragraph">
+<p>短期内的总供给曲线，麦现为一条向右上方倾斜的线。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>为什么短期总供给曲线会向右上方倾斜呢？</p>
+</div>
+<div class="paragraph">
+<p>第一种，<strong>黏性工资理论</strong>。</p>
+</div>
+<div class="paragraph">
+<p>根据这种理论，工资在短期中是“黏性的”：由于工人和企业之间签订了固定名义工资的长期合同，因此名义工资的调整可能是十分缓慢的。与此同时，社会规范和关于公正观念的变化缓慢，也是导致名义工资调整缓慢的原因。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>黏性工资理论</strong>：</p>
+<div class="paragraph">
+<p>认为相对于经济状况的变化，名义工资的调整可能是十分线幔的。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>简而言之，根据黏性工资理论，由于名义工资是基于预期的价格水平确定的，当实际的价格水平和预期发生背离时，企业不能立即进行调整。这种黏性的工资使企业在实际价格水平低于预期时会生产较少的产量，而在实际价格水平高于预期时则会生产较多的产量，这就导致了短期供给曲线向右上方倾斜。</p>
+</div>
+<div class="paragraph">
+<p>第二种，<strong>黏性价格理论</strong>。</p>
+</div>
+<div class="paragraph">
+<p>关于短期供给曲线向上倾斜的第二种解释是黏性价格理论。这种理论强调，相对于经济状况的变化，一些商品和劳务的价格的调整是缓慢的。这是因为，对价格进行调整，需要付出一定的成本。</p>
+</div>
+<div class="paragraph">
+<p>例如餐馆调整价格，就需要重新印制菜单、改变价格标签，为此企业就需要支付所谓的“菜单成本”。由于“菜单成本”的存在，企业对价格进行实时调整就可能是不合算的，由此就产生了价格的黏性。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>黏性价格理论</strong>：</p>
+<div class="paragraph">
+<p>认为相对于经济状况的变化，一些商品和劳务的价格的调整是缓慢的。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>假设经济中的每个企业都根据它所预期的未来经济状况制定了其产品的价格。但是，当价格制定后，经济出现了意外的通货紧缩。由于“菜单成本”的存在，至少有一部分企业不能对价格进行及时调整。显然，从市场的角度看，这些企业的价格就会显得过高了，因此其销量会下降。受此影响，企业就不得不减少生产，并减少工人的雇佣水平。也就是说，价格水平的意外下降会抑制企业的生产，造成总供给的下降。反之，如果经济出现了意外的通货膨肚。由于“菜单成本〞的存在，至少有一部分企业不能对价格进行及时调整。这时，这些企业的价格就会在市场上显得过低了，因此其销量会增加。受此影响，企业将会增加产量，并增加工人的雇佣量。也就是说，价格水平的意外下降会激动企业的生产，造成总供给的上升。综合以上两方面，黏性价格的存在就会导致短期供给曲线向右上方倾斜。</p>
+</div>
+<div class="paragraph">
+<p>第三种，<strong>错觉理论</strong>。</p>
+</div>
+<div class="paragraph">
+<p>关于短期供给曲线向上倾斜的第三种解释是错觉理论。根据这种理论，价格水平的整体变动会在短期内误导生产者对市场状况的判断。由于这种短期错觉的存在，生产者会对价格水平做出反应，从而造成短期供给曲线向上倾斜。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>错觉理论</strong>：</p>
+<div class="paragraph">
+<p>认为价格水平的整体变动会在短期内误导生产者对市场状况的判断。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>具体来说，如果价格水平下降了，生产者可能会误认为这是他们所面对的相对价格下降了。例如，当果农发现市场上的水果价格变得便宜了，他不太会去思考这是否是由于价格总水平变动引起的，而更可能会认为这是水果市场上的一个独立现象。此时，他很可能减少水果种植，从而让水果供给下降。同样的，如果工人发现市场上的工资下降了，他更可能认为这是由于个别市场上的情况导致的，因此更可能减少劳动力供给，而这也会导致经济中总供给的下降。反之如果经济中的价格水平上升了，生产者也可能会认为这是他们所面对的相对价格上升了。</p>
+</div>
+<div class="paragraph">
+<p>对短期总供给曲线形状的小结：</p>
+</div>
+<div class="paragraph">
+<p>我们可以对以上论述进行总结：黏性工资、黏性价格，以及对相对价格的错觉的存在，都可能会导致短期总供给曲线的向上倾斜。所有这三种理论都表明，当实际价格水平和人们的预期发生背离时，短期供给量就会背离其长期供给量。对此，我们可以用公式表达如下：</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>短期供给量 = 长期供给量 ＋ a（实际价格水平 - 预期价格水平）</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>其中，a 刻画了产量对意外价格水平变动的反应程度。</p>
+</div>
+<div class="paragraph">
+<p>需要强调的是，以上三种理论假设都只在短期中才能起作用。<strong>在长期中，名义工资和价格都可以逐步调整，错觉也会逐步得到修正，因此供给曲线会变到长期水平</strong>。这时的供给曲线将不再是向上倾斜的，而会重新变成一条垂线。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="短期总供给曲线的移动">1.4.5. 短期总供给曲线的移动</h4>
+<div class="paragraph">
+<p>无论是劳动力、资本还是自然资源的增加，都会在短期提升经济中的总产量。同样，技术的进步、要素配置效率的提高也会使经济中的总产量增加。这些因素都会导致短期总供给曲线向右移动。</p>
+</div>
+<div class="paragraph">
+<p>除了以上因素外，短期总供给曲线还受到一个特殊因素——预期的影响。</p>
+</div>
+<div class="paragraph">
+<p>预期价格水平的上升会减少经济中商品和劳务的供给量并使短期总供给曲线向左移动；而预期价格水平的下降则会增加经济中商品和劳务的供给量，并使短期总供给曲线向右移动。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="总需求总供给框架下经济波动的解释">1.5. 总需求——总供给框架下经济波动的解释</h3>
+<div class="sect3">
+<h4 id="总需求曲线的移动-2">1.5.1. 总需求曲线的移动</h4>
+<div class="paragraph">
+<p>在现实中，很多短期冲击都是影响总需求的，这种冲击在短期内会使产出下降，但在长期，经济则会进行自我调节，产量将恢复到长期均衡水平。在这个过程中，并不需要政府的介入。</p>
+</div>
+<div class="paragraph">
+<p>政府的一些经济刺激政策虽然在短期内能使总需求曲线右移，从而使产量扩张到一个较高的水平。但从长期看，产量终究会恢复到长
+期均衡水平，同时使价格水平上升。从这个意义上看，如果不能使长期总供给曲线发生变动，那么需求扩张政策的效果就是“中性”的，只会影响名义变量，而不会影响实际变量。</p>
+</div>
+<div class="paragraph">
+<p>政策透视：2008年经济刺激政策的后果评估</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>2008年9月，国际金融危机全面爆发后，中国经济增速快速回蓉，出口出现负增长，大批农民工返乡，经济面临硬着陆的风险。为了应对这种危局，中国政府于2008年11月推出了进一步扩大内需、促进经济平稳较快增长的十项措施。初步匡算，实施这十大措施，到2010年年底约需投资四万亿元。因此，这项刺激计划也被俗称为“<mark><strong>四万亿计划</strong></mark>”。</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>自这项庞大的经济刺激计划出台以来，关于它的争议就没有停止过。一些经济学家对这一计划予以了商度肯定，认为这顶刺激计划不仅帮助中国抵御了金融危机，而且有助于世界经济的复苏。而另</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>一些经济学家則对此项计划予以了坚决的批判，认为“四万化计划”不仅没有达到顶期效果，而且扭曲了经济结构，对经济的长期发展产生了很多不利影响。</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>那么，“四万亿计划”的实际效果究竟如何呢？最近发表在《计量经济学杂志》 (Journal of Econometrics）上的一项研究对此进行了比较全面的评估。这项研究通过先进的计量技术，计算了“反事实”(counterfactuals）的经济指标，进而估算了“四万亿计划”的短期和长期效果。结果发现，在刺激政第开始时，该计划的确刺激了经济，特别是在2009年第三季度前后，使GDP提高了5.4%左右，但是这一政策的效果在随后迅速降低，在2010年第四季度之后甚至变成了负值。从这一点看，四万亿元的财政刺激政策只是暂时对经济有刺激作用，却并无长期影响。这一点，是与我们基于总需求-总供给模型得到的分析结论完全一致的。</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>资料来源：Ouyang &amp; Peng (2015)</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect3">
+<h4 id="总供给曲线的移动">1.5.2. 总供给曲线的移动</h4>
+<div class="paragraph">
+<p>经济衰退和通货膨肶同时发生，经济体陷入了所谓的“<strong>滞胀</strong>"（stagflation）。</p>
+</div>
+<div class="paragraph">
+<p>根据黏性工资理论，由于在受到冲击后，企业和工人会根据物价签订更高的工资合同，因此企业的工资成本进一步上升，这导致短期总供给曲线进一步向左移动，价格水平继续被抬高。高价格引起高工资，高工资进一步推高价格水平，这一现象就是所谓的 “工资-价格螺旋式上升”（wage-price spiral）。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>工资价格螺旋</strong>：</p>
+<div class="paragraph">
+<p>高价格引1起高工资，高工资进一步推高价格水平的现象。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>当达到某一点时，这种“工资——价格螺旋式上开”的速度会放缓。低产量和低就业水平会降低工人的讨价还价能力，从而压低名义工资水平。当名义工资水平下降后，提供商品和劳务开始变得有利可图了，此时短期总供给曲线又会向右移动。</p>
+</div>
+<div class="paragraph">
+<p>政策透视：石油危机的经济影响</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>要论最有名的短期总供给冲击，恐怕非“石油危机”莫属。由于石油是当今世界最重要的能源，所以当世界上的主要产油国发生重大政治经济事件时，整个世界的经济状况就都会因石油价格波动而受到影响。</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+  </div>
+
+  <ul class="post-navigation">
+    <li>
+      
+      <a href="/books/2021/12/14/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%95%BF/">&laquo; 经济学原理：经济增长</a>
+      
+    </li>
+    <li>
+      
+      <a href="/books/2021/12/16/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96%E5%88%86%E6%9E%90/">经济学原理：宏观经济政策分析 &raquo;</a>
+      
+    </li>
+  </ul>
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div>我只希望，祈祷，我的心境不要再粗糙下去，荒芜下去，这就是我的大愿望。</div>
+
+  <div class="license">
+    <a rel="license" href="/LICENSE.txt"><img alt="Creative Commons License" style="border-width:0" src="/assets/licenses/cc-by-nc-nd-4.0-80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+  </div>
+  </details>
+</footer>
+
+
+  </body>
+
+</html>

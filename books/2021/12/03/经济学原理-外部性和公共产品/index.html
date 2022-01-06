@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>经济学原理：外部性和公共产品</title>
+  <meta name="description" content="总结: |  帕累托效率是经济学的基本效率标准。一种状态被认为是帕累  托有效的（或帕累托最优的），如果不存在另一种可选择的状  态，使得没有任何人的福利变坏，至少有一个人的福利得到改  善。一种变革被称为是帕累托改进，如果这种变革不使任何人  的处境变得更差，至少使一个人的处境得到改善。一种变革被  称为是卡尔...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/books/2021/12/03/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E5%A4%96%E9%83%A8%E6%80%A7%E5%92%8C%E5%85%AC%E5%85%B1%E4%BA%A7%E5%93%81/">
+  <link rel="alternate" type="application/rss+xml" title="叶子" href="/feed.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW8P6JTH7J"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW8P6JTH7J');
+</script>
+
+
+
+</head>
+
+
+  <body>
+
+    <style>
+
+.site-nav ul li {
+  width: 15%;
+}
+
+</style>
+
+<header class="site-header">
+
+  <div class="wrapper">
+    <h2 class="site-title">
+      <a class="site-title" href="/">叶子</a>
+    </h2>
+
+     <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+        <div class="trigger">
+            <ul>
+              <li><a href="/">随笔</a></li>
+              <li><a href="/books">读书</a></li>
+              <li><a href="/misc">杂记</a></li>
+              <li><a href="/run">跑步</a></li>
+              <li><a href="/math">数学</a></li>
+              <li><a href="/essays">集子</a></li>
+
+            </ul>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">经济学原理：外部性和公共产品</h1>
+    <p class="post-meta">
+      <time datetime="2021-12-03T22:48:38+08:00" itemprop="datePublished">Dec 3, 2021</time>
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">张维迎</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="yaml"><span class="na">总结</span><span class="pi">:</span> <span class="pi">|</span>
+
+  <span class="s">帕累托效率是经济学的基本效率标准。一种状态被认为是帕累</span>
+  <span class="s">托有效的（或帕累托最优的），如果不存在另一种可选择的状</span>
+  <span class="s">态，使得没有任何人的福利变坏，至少有一个人的福利得到改</span>
+  <span class="s">善。一种变革被称为是帕累托改进，如果这种变革不使任何人</span>
+  <span class="s">的处境变得更差，至少使一个人的处境得到改善。一种变革被</span>
+  <span class="s">称为是卡尔多-希克斯改进，如果受益者所得超过受损者所失。</span>
+
+  <span class="s">完全竞争的市场可以实现帕累托最优的资源配置，这被称为福</span>
+  <span class="s">利经济学第一定理。</span>
+
+  <span class="s">传统经济学认为，外部性导致个人收益和个人成本不同于社会</span>
+  <span class="s">收益和社会成本，因此自由市场无法达到帕累托效率；政府的</span>
+  <span class="s">管制和税收（补贴）被认为是纠正市场失灵的手段。</span>
+
+  <span class="s">科斯定理认为，如果交易成本足够低，只要产权界定是清楚的，</span>
+  <span class="s">自由交易可以解决外部性问题，其效果优于政府干预和税收（</span>
+  <span class="s">补贴）；如果交易成本高，产权配置给谁就是重要的。</span>
+
+  <span class="s">外部性本质上其实是产权界定问题。如果没有界定任何产权，</span>
+  <span class="s">所有行为都有外部性。如果产权界定是清楚的，所谓的外部性</span>
+  <span class="s">不过是对他人权利的侵害，市场可以通过权利的交换达到有效</span>
+  <span class="s">率的安排。技术的进步将使产权界定变得更容易。外部性并不</span>
+  <span class="s">能构成政府千预市场的正当性理由。</span>
+
+  <span class="s">公共产品也不构成政府干预市场的正当性理由，传统经济学把</span>
+  <span class="s">公共产品的范围扩大了，纯粹的公共产品远比人们认为的少得</span>
+  <span class="s">多。即使纯粹的公共产品也可以由私人生产。</span>
+
+<span class="s">---</span>
+<span class="na">术语</span><span class="pi">:</span> <span class="pi">|</span>
+
+  <span class="s">帕累托效率（帕累托最优）帕累托改进 卡尔多-希克斯改进</span>
+  <span class="s">福利经济学第一定理外部性</span>
+  <span class="s">科斯定理 交易成本</span>
+  <span class="s">公共产品 竞争性 排他性 共有资源</span>
+  <span class="s">自然垄断 规模经济 网络外部性</span>
+
+<span class="s">---</span>
+<span class="na">外部性和公共产品</span><span class="pi">:</span> <span class="pi">|</span>
+
+  <span class="s">公共产品可以理解为外部性的一种特殊情况，即如果某种产品</span>
+  <span class="s">或服务存在正外部性，那么该产品或者服务就可以理解为公共</span>
+  <span class="s">产品。</span>
+
+  <span class="s">帕累托效率标准: |</span>
+
+    <span class="s">帕累托效率: |</span>
+
+      <span class="s">经济学研究中最常用的一个关于社会最优标准的：帕累托</span>
+      <span class="s">效率 (Pareto efficiency)标准。</span>
+
+      <span class="s">帕帕累托效率（帕累托最优)：</span>
+
+        <span class="s">社会资源配置的一种状态，与该状态相比，不存在另外</span>
+        <span class="s">一种可选择的状态，使得至少一个人的处境可以变好而</span>
+        <span class="s">同时没有任何其他人的处境变差。</span>
+
+      <span class="s">经济学研究中最常用的一个关于社会最优标准的：帕累托</span>
+      <span class="s">帕累托效率（帕累托有效），有时也被称为帕累托最优(</span>
+      <span class="s">Pareto optimality )，指的是社会资源配置的一种状</span>
+      <span class="s">态，与这种状态相比，不存在另外一种可选择的状态，使</span>
+      <span class="s">得没有人的状况比原来差，而至少有一个人的状况比原来</span>
+      <span class="s">更好。换一种说法，帕累托效率意味着资源配置已经无法</span>
+      <span class="s">在不损害别人的前提下，改善自己的处境，利己就必须损</span>
+      <span class="s">人。如果利己还不用损人，那么这个状态就一定不是帕累</span>
+      <span class="s">托最优的。</span>
+
+      <span class="s">帕累托最优可能意味着非常极端的收入分配不公：一个人</span>
+      <span class="s">得到所有的，另一个人什么都没有，可能也是个帕累托最</span>
+      <span class="s">优状态。帕累托最优实际上是关于社会选择的最低标准。</span>
+
+      <span class="s">财富是由人创造的，人们创造财富是需要激励的，人们创</span>
+      <span class="s">造财富的积极性的高低就决定了社会总财富的多少，而收</span>
+      <span class="s">入分配会影响人们的积极性。以中国农村为例。在改革开</span>
+      <span class="s">放前实行人民公社工分制的时候，粮食总是不够吃；但是</span>
+      <span class="s">一旦实行家庭联产承包责任制，个人所得和产量挂钩了，</span>
+      <span class="s">粮食产量马上就增加了。这就说明，财富总量事实上是和</span>
+      <span class="s">财富的分配有关的，这就意味着实际的帕累托边界不是条</span>
+      <span class="s">直线，而可能是弯曲的。</span>
+
+      <span class="s">如果每个人都是极端平均主义者，唯一的帕累托最优点就</span>
+      <span class="s">是平均分配。</span>
+
+    <span class="s">帕累托改进（Pareto improvement）: |</span>
+
+      <span class="s">资源配置的帕累托改进和帕累托最优是不兼容的：如果资</span>
+      <span class="s">源配置有帕累托改进的余地，那么现在的配置就不是帕累</span>
+      <span class="s">托最优的；反之，如果现状是帕累托最优的，就没有帕累</span>
+      <span class="s">托改进的余地。</span>
+
+      <span class="s">帕累托改迸：</span>
+
+        <span class="s">资源配置的某种改变，使得没有任何人的处境变差，但</span>
+        <span class="s">是至少有一个人的处境得到改善。</span>
+
+      <span class="s">帕累托改进意义上的变革当然是比较容易实现的，因为没</span>
+      <span class="s">有人受到损害。问题是，帕累托改进的定义要求很严，如</span>
+      <span class="s">果资源配置涉及的行为主体很多，那么想设计出这种没有</span>
+      <span class="s">人受损的改进是很困难的。例如，在一个国家中，每个人</span>
+      <span class="s">都有白己的利益诉求，想找到一个没有任何人受损的改革</span>
+      <span class="s">措施是非常困难的，即使我们把人群按照各自的利益诉求</span>
+      <span class="s">分组，那么设计出每个组都没有受损的改革方案也很困难。</span>
+      <span class="s">现实中的改革更多地呈现出这样一种状态：有些人的福利</span>
+      <span class="s">得到改善，有些人的福利受损，只不过改善的程度超过了</span>
+      <span class="s">受损的程度。</span>
+
+    <span class="s">卡尔多-希克斯改进（Kaldor-Hicks）: |</span>
+
+      <span class="s">如果一种变革使得受益者的所得大于受损者的所失，这种</span>
+      <span class="s">变革就称为卡尔多-希克斯变革或者卡尔多-希克斯改进（</span>
+      <span class="s">又称卡尔多-希克斯标准）。</span>
+
+      <span class="s">卡尔多-希克斯改进的隐含含义就是社会总财富的最大化，</span>
+      <span class="s">或者说，任何使得社会总财富增加的变革都可以称为卡尔</span>
+      <span class="s">多-希克斯改进。</span>
+
+      <span class="s">卡尔多希克斯改进：</span>
+
+        <span class="s">一种变革，使得受益者的所得可以弥补受损者的损失。</span>
+
+      <span class="s">卡尔多-希克斯标准的哲学基础是边沁的功利主义，即最大</span>
+      <span class="s">多数人的最大幸福。</span>
+
+  <span class="s">福利经济学第一定律: |</span>
+
+    <span class="s">消费的帕累托最优: |</span>
+
+      <span class="s">由于在这个方盒中存在无穷多条无差异曲线，因此存在着</span>
+      <span class="s">无穷多的切点，这些切点都是帕累托最优的。如果我们把</span>
+      <span class="s">这无穷多个切点连起来，就成为契约曲线（contract</span>
+      <span class="s">curve)。任何一种分配如果不在这条契约曲线上，那么</span>
+      <span class="s">它一定不是帕累托最优的。反过来说，如果大家自愿交换，</span>
+      <span class="s">就一定会达到这条曲线上的某一点，只是究竟最终达到哪</span>
+      <span class="s">一点，我们无法确定，因为这取决于这两个人的讨价还价</span>
+      <span class="s">能力(bargaining power)。</span>
+
+    <span class="s">生产的帕累托最优: |</span>
+
+      <span class="s">与消费的帕累托最优类似，只有两条等产量相切的点才能</span>
+      <span class="s">达到帕累托最优。如果我们把所有这些有效率的点用线连</span>
+      <span class="s">起来，就得到了生产的契约曲线。如果我们把这条曲线上</span>
+      <span class="s">的点所对应的衣服和食品数量在产品坐标轴上表示出来的</span>
+      <span class="s">话，我们就得到了生产可行性边界 (production</span>
+      <span class="s">possibility frontier).</span>
+
+    <span class="s">市场效率: |</span>
+
+      <span class="s">福利经济学第一定理：</span>
+
+        <span class="s">完全竞争市场的均衡结果一定是帕累托最优的。</span>
+
+  <span class="s">外部性与科斯定理: |</span>
+
+    <span class="s">外部性: |</span>
+
+      <span class="s">基于福利经济学第一定理，传统经济学认为，除了垄断导</span>
+      <span class="s">致的市场失灵，还有一种由外部性（externality）的存</span>
+      <span class="s">在导致的市场失灵。所谓外部性是指有些活动可能给第三</span>
+      <span class="s">方，即交易中买卖双方之外的其他人——带来影响，但这种</span>
+      <span class="s">影响没有得到相应的回报或惩罚。其中一类被称为负外部</span>
+      <span class="s">性（negative externality），即双方的交易使得第三</span>
+      <span class="s">方受损，但并没有对该损害予以补偿。另一类被称为正外</span>
+      <span class="s">部性（positive externality），即双方的交易使得第</span>
+      <span class="s">三方受益，但并没有对该收益进行收费。无论哪一类外部</span>
+      <span class="s">性存在，个人的最优选择和社会的帕累托最优就可能不一</span>
+      <span class="s">致，这就出现了典型的市场失灵现象。</span>
+
+      <span class="s">外部性：</span>
+
+        <span class="s">有些活动可能给第三方带来影响，但这种影响没有得到</span>
+        <span class="s">相应的回报或惩罚。</span>
+
+      <span class="s">市场失灵：</span>
+
+        <span class="s">自愿交换不能实现有效率的资源配置。</span>
+
+      <span class="s">负外部性的例子有很多。比如，生产企业排放污染对居民</span>
+      <span class="s">而言就是负的外部性；噪音、令他人被动吸烟也有负外部</span>
+      <span class="s">性，因为你吸烟给周围的人造成了伤害，但你没有支付相</span>
+      <span class="s">应的代价；交通事故的肇事双方，因为一直在争论过错归</span>
+      <span class="s">属和赔偿细节，造成了不必要的交通拥堵，这也是一种负</span>
+      <span class="s">外部性。</span>
+
+      <span class="s">正外部性的例子也有很多。比如，你家院子里种了一盆花。</span>
+      <span class="s">过路的人看见这盆漂亮的花顿时感觉赏心悦目，但你并没</span>
+      <span class="s">有向他收费。教育也有外部性。我们自身教育水平的提高</span>
+      <span class="s">使得社会变得更加文明，争吵打架之类的事情减少了，相</span>
+      <span class="s">当于给别人带来了好处，但没有人给你付费。还有，很多</span>
+      <span class="s">基础科学的研究也有外部性。比如，相对于牛顿的伟大贡</span>
+      <span class="s">献来说，他的收益和他的贡献并不相称。</span>
+
+      <span class="s">当存在负的外部性时，个人生产的产量过高；而当存在正</span>
+      <span class="s">的外部性时，个人生产的产量过低。两种情况都不是帕累</span>
+      <span class="s">托最优的：在前一种情况下，降低产量可以改进效率；在</span>
+      <span class="s">后一种情况下，增加产量可以改进效率。无论哪种情况下，</span>
+      <span class="s">只要有适当的补偿机制，就存在帕累托改进的空间。</span>
+
+    <span class="s">解决外部性的传统方法: |</span>
+
+      <span class="s">传统的解决办法就是，通过政府管制和税收或补贴，将外</span>
+      <span class="s">部性内部化，从而把社会成本变成个人成本，把社会收益</span>
+      <span class="s">变成个人收益，此时个人的最优决策一定就是社会最优的，</span>
+      <span class="s">上述外部性问题就被解决了。</span>
+
+      <span class="s">在负外部性的情况下，政府可以通过征税，使边际稅率等</span>
+      <span class="s">于边际外部成本，从而使个人最优产量回到社会最优产量。</span>
+
+      <span class="s">在正外部性的情况下，政府可以通过补贴，使补贴额等于</span>
+      <span class="s">边际外部收益，从而使个人最优产量回到社会最优产量。</span>
+
+    <span class="s">科斯定理与产权安排: |</span>
+
+      <span class="s">部性内部化，从而把社会成本变成个人成本，把社会收益</span>
+      <span class="s">科斯在1960年发表的《社会成本问题》一文中提出了如下</span>
+      <span class="s">问题：外部性是相互的，你可以说钢铁企业给附近的居民</span>
+      <span class="s">造成了外部性，也可以说居民给钢铁企业造成了外部性，</span>
+      <span class="s">那么究竟应该限制谁或向谁征税？进一步，政府知道正的</span>
+      <span class="s">或者负的外部性有多大吗？政府真的知道社会的最优点在</span>
+      <span class="s">哪里吗？事实上政府是没有这方面的信息的。</span>
+
+      <span class="s">科斯认为，无论是征税、补贴还是管制，实际上涉及的都</span>
+      <span class="s">是一种隐含的产权安排。如果政府要求铁路公司补偿居民，</span>
+      <span class="s">就意味着政府假定居民有不听噪音的权利，把该产权配置</span>
+      <span class="s">给了居民。反过来，如果铁路公司不必补偿居民，就意味</span>
+      <span class="s">着政府把该产权配置给了铁路公司。</span>
+
+      <span class="s">可见，从科斯的角度而言，外部性问题的核心其实是产权</span>
+      <span class="s">(property rights）问题。科斯还指出，如果没有交易成</span>
+      <span class="s">本或者交易成本很低，只要产权界定是清楚的，不论最初</span>
+      <span class="s">产权给谁，所有外部性问题都可以通过当事人在市场中的</span>
+      <span class="s">谈判来解决，谈判的结果一定是帕累托最优的，完全不需</span>
+      <span class="s">要政府干预。这就是著名的科斯定理 (Coase theorem)。</span>
+
+      <span class="s">科斯定理：</span>
+
+        <span class="s">如果没有交易成本或者交易成本很低，只要产权界定是</span>
+        <span class="s">清楚的，不论最初产权如何配置，所有外部性问题都可</span>
+        <span class="s">以通过当事人在市场中的谈判来解决，谈判的结果一定</span>
+        <span class="s">是帕累托有效的。</span>
+
+
+      <span class="s">科斯定理是一个非常发人深省的理论。它明确告诉我们，</span>
+      <span class="s">外部性的概念掩盖了问题的实质：产权问题。事实上，只</span>
+      <span class="s">要产权明晰，市场谈判的结果就可以达到帕累托有效；政</span>
+      <span class="s">府的最重要任务，不是补贴或者收税，而是清楚界定、严</span>
+      <span class="s">格保护产权。</span>
+
+      <span class="s">交易成本（transaction costs）：</span>
+
+        <span class="s">与交易相关的获取信息、谈判、签约、履行合同等所有</span>
+        <span class="s">这些活动造成的效率损失。</span>
+
+        <span class="s">那么，交易成本的大小依赖于哪些因素呢？</span>
+
+          <span class="s">第一，交易者的数量。一般而言，人数越多，谈判达</span>
+          <span class="s">成协议的难度越大。</span>
+
+          <span class="s">第二，信息不对称。</span>
+
+      <span class="s">由于交易成本的存在，现实中我们不可能达到的累托最优</span>
+      <span class="s">状态，只能实现次优（second best）状态。相应地，</span>
+      <span class="s">帕累托有效就被称为一级最优（first best）。</span>
+
+  <span class="s">外部性概念的错误: |</span>
+
+    <span class="s">外部性的普遍性:</span>
+
+      <span class="s">按照传统的外部性理论，当存在外部性时，个人最优的选</span>
+      <span class="s">择就不是社会最优的，就需要借助政府干预。如果真是这</span>
+      <span class="s">样，我们生活中几乎所有事情就都需要政府干预了，因为</span>
+      <span class="s">人类的任何活动都存在外部性影响。比如女孩子的衣着打</span>
+      <span class="s">扮就有外部性，打扮得漂亮别人会觉得舒服，打扮得难看</span>
+      <span class="s">别人会觉得难受。再如，某人发表一个观点，有人会喜欢，</span>
+      <span class="s">也有人会不喜欢，那些喜欢其观点的人能得到正效用，那</span>
+      <span class="s">些不喜欢其观点的人会得到负效用。这些都是外部性。可</span>
+      <span class="s">见，按照传统外部性的定义，如果外部性的存在就是政府</span>
+      <span class="s">干预的理由。那么政府就需要千预几乎任何事情。显然，</span>
+      <span class="s">这种主张是荒膠的。</span>
+
+      <span class="s">学术经典: 市场是技术进步的最大推动力</span>
+
+    <span class="s">外部性本质上是产权界定问题:</span>
+
+      <span class="s">外部性本质上其实是产权界定问题。如果没有界定任何产</span>
+      <span class="s">权，所有行为都有外部性。比如过去计划经济时期的人民</span>
+      <span class="s">公社，任何人偷懒都会给别人造成损害。但是如果对产权</span>
+      <span class="s">进行界定，那么外部性的程度就会降低。比如实行包产到</span>
+      <span class="s">户政策后，如果个人不努力干活，粮食产量降低了，户主</span>
+      <span class="s">就得自己承担后果，</span>
+
+      <span class="s">产权是人类一项基本的自然权利，我们可以用罗尔斯提出</span>
+      <span class="s">的原初状态 (original position）来理解产权的界定。</span>
+
+        <span class="s">在原初状态，任何人都有相同的概率造出汽车，但事前</span>
+        <span class="s">谁也不知道谁会成功，那么大家事先就会约定：制造汽</span>
+        <span class="s">车是每个人的权利，假如汽车出现之后击垮了马车，汽</span>
+        <span class="s">车制造商不需要补偿马车夫。这就是为什么福特公司不</span>
+        <span class="s">需要补偿马车夫的原因。马车夫自己也有制造汽车的自</span>
+        <span class="s">由，但没有相应的能力和本事，因此不能责怪汽车制造</span>
+        <span class="s">商。同样的，每个人都有选择着装的权利，我们不能因</span>
+        <span class="s">为不喜欢他人的着装就让他人做出补偿。当然，有些权</span>
+        <span class="s">利是禁止的。所谓“己所不欲，勿施于人”，所有的权</span>
+        <span class="s">利都是对等的、平等的。如果要保障自己的权利，就意</span>
+        <span class="s">味着别人也有同等的权利。这样一来，我们就能破解之</span>
+        <span class="s">前的很多外部性难题了。</span>
+
+      <span class="s">学术经典: 张五常：蜜蜂的寓言</span>
+
+  <span class="s">公共产品:</span>
+
+    <span class="s">公共产品分类: |</span>
+
+      <span class="s">公共产品（public goods）可以理解为外部性的一种特</span>
+      <span class="s">殊情况，即具有正外部性的产品。一般地，日常生活中</span>
+      <span class="s">使用的产品称为私人产品（private goods）。</span>
+
+      <span class="s">公共产品:</span>
+
+        <span class="s">既不具有排他性也不具有竞争性的产品。</span>
+
+      <span class="s">竞争性:</span>
+
+        <span class="s">当某个消费者在消费该产品时，别的消费者能够使用</span>
+        <span class="s">的该产品的总量就相应地减少了。</span>
+
+        <span class="s">私人产品的使用具有竞争性，比如，一杯水如果被一</span>
+        <span class="s">个人喝了，其他人就喝不到了。</span>
+
+        <span class="s">公共产品的使用具有非竞争性，比如太阳就是一种公</span>
+        <span class="s">共产品，它既照着我也照着你；又如国防，它保护着</span>
+        <span class="s">我也保护着你；不太拥挤的马路也是如此，我在路上</span>
+        <span class="s">行走不影响你的行走。</span>
+
+      <span class="s">排他性:</span>
+
+        <span class="s">不经产品提供者的同意，人们不能消费该产品。</span>
+
+        <span class="s">私人产品有办法排他，比如这个物品是我的，我可以</span>
+        <span class="s">锁起来或拿在手里，你擅自拿走就损害了我的权利。</span>
+
+        <span class="s">公共产品管理时很难排除别人的使用，比如你在没有</span>
+        <span class="s">围墙的大院子里放电影，没买票的人也可以看。道路、</span>
+        <span class="s">灯塔、烟花表演等产品也类似。</span>
+
+      <span class="s">使用上的非竞争性意味着边际的使用成本是零增加一个</span>
+      <span class="s">使用者并不会增加产品的成本。管理上的非排他性意味</span>
+      <span class="s">着产品一旦提供以后，就无法阻止别人的使用。我们把</span>
+      <span class="s">同时满足这两个特征的产品称为公共产品。现实中，如</span>
+      <span class="s">果必须同时满足这两个特征，那么纯粹的公共产品远比</span>
+      <span class="s">人们普遍认为的要少得多。</span>
+
+      <span class="s">我们可以从是否具有竞争性和排他性两个维度把所有产</span>
+      <span class="s">品划分为四大类。</span>
+
+        <span class="s">第一类产品既具有排他性又具有竞争性，即典型的私</span>
+        <span class="s">人产品，比如衣服、食品、汽车、房子等。</span>
+
+        <span class="s">第二类产品具有排他性但不具有竞争性，这种商品往</span>
+        <span class="s">往具有自然垄断的性质。以有线电视为例，它具有排</span>
+        <span class="s">他性，因为如果不交钱就接收不到电视信号；但它却</span>
+        <span class="s">是非竞争的，因为一旦信号播放以后，一万个人看和</span>
+        <span class="s">十万个人看是一样的，不会增加额外的成本。</span>
+
+        <span class="s">第三类产品是不具有排他性，但具有竞争性，即所谓</span>
+        <span class="s">的共有资源 (common resources)。</span>
+
+          <span class="s">例如，公海里的鱼具有竞争性，被别人捕了的鱼我</span>
+          <span class="s">们就不可能再捕到它，但很难排他，即谁都可以进</span>
+          <span class="s">入该水域捕鱼。</span>
+
+          <span class="s">共有资源的例子还包括环境、拥挤的不收费道路等。</span>
+
+        <span class="s">第四类产品才是标准的公共产品，比如国防。国防具</span>
+        <span class="s">有非竞争性，你享受国防服务的同时，别人享受的国</span>
+        <span class="s">防服务总量也不会减少。同时，我们也没有办法排除</span>
+        <span class="s">某一人享受国防的保护。</span>
+
+    <span class="s">公共产品的特例——自然垄断: |</span>
+
+      <span class="s">一般而言，自然垄断 (natural monopoly）是指在一</span>
+      <span class="s">定的市场范围内，由一个供应商提供产品是最好的。</span>
+      <span class="s">这是因为规模经济 (economy of scole）的存在。</span>
+
+      <span class="s">自然垄断：</span>
+
+        <span class="s">在一定的市场范围内，由一个供应商提供产品是最</span>
+        <span class="s">好的，</span>
+
+      <span class="s">规模经济：</span>
+
+        <span class="s">随着产量的增加，产品的平均成本在不断下降。</span>
+
+      <span class="s">网络产品则是另外一种自然垄断产品。网络产品往往具</span>
+      <span class="s">有消费的规模经济或者叫消费的网络外部性（network</span>
+      <span class="s">externality），即对每位客户而言，产品的价值依赖</span>
+      <span class="s">于所有使用该产品的客户数量，如电话。</span>
+
+      <span class="s">网络外部性：</span>
+
+        <span class="s">对每位客户而言，产品的价值依赖于所有使用该产品</span>
+        <span class="s">的客户数量。</span>
+
+      <span class="s">自然垄断被认定为政府干预、政府垄断的依据：因为自然</span>
+      <span class="s">垄断下，一家企业经营最节约成本，所以应该由政府垄断</span>
+      <span class="s">经营最好。但，如果该行业真的具有自然垄断的性质，则</span>
+      <span class="s">给定行业中已经存在一家企业时，没有任何新的企业会有</span>
+      <span class="s">积极性选择再进入，因为进入不是以利润为目标的私有企</span>
+      <span class="s">业的最优选择。如果该行业的规模经济达到如此高的程度，</span>
+      <span class="s">以至于两家公司进入就会出现亏损，那么为什么还有企业</span>
+      <span class="s">愿意承担损失并进入该行业呢？所以政府出面来限制企业</span>
+      <span class="s">进入是多此一举。这也反过来说明，政府限制别的企业自</span>
+      <span class="s">由进入本身就意味着该领域一定不是自然垄断的。所谓的</span>
+      <span class="s">自然垄断实际上是不自然的、人为的垄断！</span>
+
+      <span class="s">主张对自然垄断行业实行准入限制的理由是避免重复建设，</span>
+      <span class="s">但我们必须在运营效率和重复投资之间进行取舍（trade-off）。</span>
+      <span class="s">有时候从静态最优角度来看，两家企业同时运营是没有效</span>
+      <span class="s">率的。但如果只允许一家企业垄断经营，不让别的企业进</span>
+      <span class="s">入，那么虽然避免了重复建设导致的效率损失，但该垄断</span>
+      <span class="s">企业就失去了改进技术、提高质量的积极性。因此，有时</span>
+      <span class="s">甚至需要故意允许多家企业竞争，尽管整体上产能可能会</span>
+      <span class="s">有些过剩，但这样做的总效率实际上更高。</span>
+
+      <span class="s">随着全球化的深入，市场范围越来越大，传统的自然垄断</span>
+      <span class="s">概念越来越受到冲击。可以说，随着技术的发展和全球经</span>
+      <span class="s">济联系的日益密切，市场范围和边界在不断扩大，跨行业、</span>
+      <span class="s">跨国界的竞争越来越多，很多以前看似是自然垄断的产品</span>
+      <span class="s">在全球化时代将不再具有自然垄断的特征。</span>
+
+    <span class="s">公共产品: |</span>
+
+      <span class="s">搭便车（free riding）</span>
+
+      <span class="s">因徒困境（prisoners" dilemma）</span>
+
+      <span class="s">为什么传统理论认为市场在提供公共产品方面会失灵呢？</span>
+
+        <span class="s">这是因为，如果我们让个人来提供公共产品，没有人会</span>
+        <span class="s">愿意提供。</span>
+
+      <span class="s">那么公共产品的供给应该怎么解决呢？</span>
+
+        <span class="s">办法是由政府强制提供公共产品，而政府通过强制性征</span>
+        <span class="s">税获得提供公共产品的资金。这就是传统经济学的政策</span>
+        <span class="s">主张。</span>
+
+    <span class="s">公共产品的私人生产: |</span>
+
+      <span class="s">公共产品由私人提供的几种可能性:</span>
+
+      <span class="s">第一种可能性是公共产品对少数人而言具有巨大效用，那</span>
+      <span class="s">么这些人就有积极性提供该产品。</span>
+
+        <span class="s">在农村，过去很多公共产品是由个人提供的。比如修路，</span>
+        <span class="s">一般村民不会主动修路，但富人会，因为富人能从修路</span>
+        <span class="s">中得到很高的边际收益。富人家中总是高朋满座，来宾</span>
+        <span class="s">身份显赫。如果他不把破烂不堪的道路修好，贵宾就不</span>
+        <span class="s">会愿意登门拜访，富人就无法交往社会名流。即使社会</span>
+        <span class="s">名流登门了，也会对他产生不好的评价。所以富人有积</span>
+        <span class="s">极性把路修好。现代社会中，这也是一种非常重要的公</span>
+        <span class="s">共产品提供方式。</span>
+
+        <span class="s">再比如，宿舍卫生也是一种公共产品。如果宿舍中有一</span>
+        <span class="s">个特别爱干净的人，那宿舍里其他人就非常幸运，因为</span>
+        <span class="s">爱千净的人喜欢把宿舍打扫得一尘不染，其他人也能享</span>
+        <span class="s">受良好的宿舍环境。</span>
+
+      <span class="s">第二种可能性是把公共产品设计成具有一定排他性、不缴</span>
+      <span class="s">费不能使用的产品。</span>
+
+        <span class="s">比如收费公路，就是这样的产品。理论上公路建立以后，</span>
+        <span class="s">其使用的边际成本几乎为零。那么从经济学效率角度来</span>
+        <span class="s">看，高速公路就应该是免费的。然而，一旦免费，高速</span>
+        <span class="s">公路就没人愿意去建。如果通过收费进行排他，那么就</span>
+        <span class="s">会有私人企业有积极性建设高速公路，并旦私人提供的</span>
+        <span class="s">最优规模不一定比政府提供的规模要小。</span>
+
+      <span class="s">市场的力量是巨大的，很多传统上认为会出现市场失灵的</span>
+      <span class="s">问题其实都可以通过市场解決。过去人们之所以认为所有</span>
+      <span class="s">公共产品都应该由政府提供，是因为我们严重低估了市场</span>
+      <span class="s">的力量，不让市场发挥它应有的作用。历史上，大量的公</span>
+      <span class="s">共产品都是私人提供的。</span>
+
+        <span class="s">例如，英国早期的马车道路是私人投资建设的。美国第</span>
+        <span class="s">一条高速公路是由十几家汽车制造商私人修建的。私人</span>
+        <span class="s">为什么愿意修这条路呢？那是因为，高速公路的修建有</span>
+        <span class="s">利于扩大汽车的销售：只有在高速公路上汽车才能展现</span>
+        <span class="s">出它的速度优势，人们才会觉得汽车更有价值，更愿意</span>
+        <span class="s">购买。</span>
+
+        <span class="s">再比如，网络时代所谓的“垄断巨头〞为我们提供了大</span>
+        <span class="s">量的免费产品，如邮箱、微博、微信。虽然流量不免费，</span>
+        <span class="s">但产品本身免费。这些产品的成本由谁承担呢？其实是</span>
+        <span class="s">靠其他相关产品的销售弥补的。</span>
+
+      <span class="s">传统经济学认为，“垄断”企业会收取很高的垄断价格，</span>
+      <span class="s">但现实却是“垄断”企业提供了大量免费产品；传统经济</span>
+      <span class="s">学认为，边际成本为零，企业收取的价格会高于边际成本，</span>
+      <span class="s">但现实却不是这样的。另外，有一些产品或者服务本不是</span>
+      <span class="s">公共产品，比如司法和法院的判决与执行工作、监狱看守</span>
+      <span class="s">等工作。随着技术的进步和人们认识的转变，必须由政府</span>
+      <span class="s">提供的公共产品可能会越来越少。</span>
+
+      <span class="s">迷你案例: 私人承包的美国监狱</span>
+
+      <span class="s">综上所述，无论是外部性还是公共产品，本身都不是政府</span>
+      <span class="s">干预市场的理由。政府最需要提供的是一个稳定的产权制</span>
+      <span class="s">度和可预期的市场环境。在这样的制度背景下，很多所谓</span>
+      <span class="s">的公共产品是可以由市场来提供的。</span></code></pre>
+</div>
+</div>
+  </div>
+
+  <ul class="post-navigation">
+    <li>
+      
+      <a href="/books/2021/11/30/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E7%AB%9E%E4%BA%89%E4%B8%8E%E5%9E%84%E6%96%AD/">&laquo; 经济学原理：竞争与垄断</a>
+      
+    </li>
+    <li>
+      
+      <a href="/books/2021/12/05/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E9%9D%9E%E5%AF%B9%E7%A7%B0%E4%BF%A1%E6%81%AF%E4%B8%8E%E5%B8%82%E5%9C%BA/">经济学原理：非对称信息与市场 &raquo;</a>
+      
+    </li>
+  </ul>
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div>我只希望，祈祷，我的心境不要再粗糙下去，荒芜下去，这就是我的大愿望。</div>
+
+  <div class="license">
+    <a rel="license" href="/LICENSE.txt"><img alt="Creative Commons License" style="border-width:0" src="/assets/licenses/cc-by-nc-nd-4.0-80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+  </div>
+  </details>
+</footer>
+
+
+  </body>
+
+</html>

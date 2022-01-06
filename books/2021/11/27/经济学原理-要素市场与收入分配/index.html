@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>经济学原理：要素市场与收入分配</title>
+  <meta name="description" content="总结: |  市场经济中，收入分配是由价格机制决定的。要素价格构成要  素所有者的收入。  企业对中间产品和要素的需求是派生需求，即这种需求来自消  费者对最终产品的需求。  由于边际生产率递减，要素的需求曲线向下倾斜。产品价格、  生产技术等因素的变化会导致要素需求曲线的移动。  劳动力的价格（工资）由劳动力的...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/books/2021/11/27/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E8%A6%81%E7%B4%A0%E5%B8%82%E5%9C%BA%E4%B8%8E%E6%94%B6%E5%85%A5%E5%88%86%E9%85%8D/">
+  <link rel="alternate" type="application/rss+xml" title="叶子" href="/feed.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW8P6JTH7J"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW8P6JTH7J');
+</script>
+
+
+
+</head>
+
+
+  <body>
+
+    <style>
+
+.site-nav ul li {
+  width: 15%;
+}
+
+</style>
+
+<header class="site-header">
+
+  <div class="wrapper">
+    <h2 class="site-title">
+      <a class="site-title" href="/">叶子</a>
+    </h2>
+
+     <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+        <div class="trigger">
+            <ul>
+              <li><a href="/">随笔</a></li>
+              <li><a href="/books">读书</a></li>
+              <li><a href="/misc">杂记</a></li>
+              <li><a href="/run">跑步</a></li>
+              <li><a href="/math">数学</a></li>
+              <li><a href="/essays">集子</a></li>
+
+            </ul>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">经济学原理：要素市场与收入分配</h1>
+    <p class="post-meta">
+      <time datetime="2021-11-27T21:01:41+08:00" itemprop="datePublished">Nov 27, 2021</time>
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">张维迎</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="yaml"><span class="na">总结</span><span class="pi">:</span> <span class="pi">|</span>
+
+  <span class="s">市场经济中，收入分配是由价格机制决定的。要素价格构成要</span>
+  <span class="s">素所有者的收入。</span>
+
+  <span class="s">企业对中间产品和要素的需求是派生需求，即这种需求来自消</span>
+  <span class="s">费者对最终产品的需求。</span>
+
+  <span class="s">由于边际生产率递减，要素的需求曲线向下倾斜。产品价格、</span>
+  <span class="s">生产技术等因素的变化会导致要素需求曲线的移动。</span>
+
+  <span class="s">劳动力的价格（工资）由劳动力的边际生产率决定；资本的价</span>
+  <span class="s">格（利率）由资本的边际生产率决定；</span>
+
+  <span class="s">土地服务的价格（地租）由土地的边际生产率决定，在均衡情</span>
+  <span class="s">况下，要素的需求等于要素的供给。</span>
+
+  <span class="s">政府对要素市场的干预会扭曲价格机制，导致效率损失，但无</span>
+  <span class="s">助于社会公平。</span>
+
+<span class="s">---</span>
+<span class="na">术语</span><span class="pi">:</span> <span class="pi">|</span>
+  <span class="s">合同收入 剩余收入 利润</span>
+  <span class="s">派生需求 要素需求曲线 要素供给曲线</span>
+  <span class="s">工资 利率 地租 级差地租</span>
+  <span class="s">租金 寻租</span>
+  <span class="s">基尼系数</span>
+<span class="s">---</span>
+
+<span class="na">要素市场与收入分配</span><span class="pi">:</span> <span class="pi">|</span>
+
+  <span class="s">要素的需求来自要素对产品价值的贡献，因而是派生需求。</span>
+
+  <span class="s">合同收入与剩余收入: |</span>
+
+    <span class="s">在市场经济中，产品生产和收入分配其实是同时决定的。市</span>
+    <span class="s">场不仅是一个交换体系，也是一个生产体系和分配体系。在</span>
+    <span class="s">生产过程中，需要不同的人提供不同的生产要素：有人提供</span>
+    <span class="s">资本，有人提供劳动，有人提供士地，有人提供企业家精神。</span>
+    <span class="s">所有这些生产要素按照某种方式结合在一起才能生产出产品，</span>
+    <span class="s">才能为消费者创造价值。</span>
+
+    <span class="s">在市场经济中，资源、价值的分配主要是由价格来决定的。</span>
+
+    <span class="s">价格机制的魅力正在于它可以同时决定所有产品和要素的价</span>
+    <span class="s">格，使得价格在解决生产什么和如何生产的同时也解决了收</span>
+    <span class="s">入分配问题，这是计划经济根本办不到的。</span>
+
+    <span class="s">消费者支付给生产者的产品价格，构成生产者的销售收入。</span>
+    <span class="s">在产品的销售收入中，去掉原材料等中间品的成本，构成增</span>
+    <span class="s">加值（value added）；再去掉工资、地租和利息，剩下</span>
+    <span class="s">的部分就是企业的利润。</span>
+
+    <span class="s">工资、地租、利息是为生产要素支付的成本：工资是对劳动</span>
+    <span class="s">者的支付，地租是对士地所有者的支付，利息是对资本所有</span>
+    <span class="s">者的支付。</span>
+
+    <span class="s">那么利润又应该是对谁的支付呢？该如何理解企业的利润呢？</span>
+
+      <span class="s">从会计学上利润是很好理解的，无非是收入减去成本的余</span>
+      <span class="s">额，归企业（所有者）所有，但是在经济学上，因为不像</span>
+      <span class="s">工资、地租和利息都有相应的投入，利润似乎是 “无中生</span>
+      <span class="s">有”的收益，毫不夸张地说，利润是经济学中最难以理解的</span>
+      <span class="s">概念之一。</span>
+
+    <span class="s">首先需要注意到，在会计核算和政府的税收政策中，工资、</span>
+    <span class="s">地租和利息被当作 “生产成本”，但利润不算作成本。这里</span>
+    <span class="s">的原因是工资、地租和利息都是合同收入，也就是在交易契</span>
+    <span class="s">约中事先明确规定的，但利润是剩余收入，不是契约中规定</span>
+    <span class="s">的。对于合同收入，不论企业的销售收入为多少，企业都有</span>
+    <span class="s">完全的义务按照合同规定的数额予以支付，如果企业违约，</span>
+    <span class="s">权益人可以诉诸法律手段，法院可以强制企业履约或宣布企</span>
+    <span class="s">业破产。但利润作为剩余收入，它的大小依赖于企业收入的</span>
+    <span class="s">多少。只有当企业收入大于所有成本之和时，利润才是正的，</span>
+    <span class="s">否则利润就是负的。契约只规定利润归所有者所得，但不能</span>
+    <span class="s">规定利润的大小，</span>
+
+    <span class="s">那么利润究竟从哪儿来？简单地说，利润是对企业家精神这</span>
+    <span class="s">种特殊生产要素的回报。或者按照己故经济学家杨小凯的说</span>
+    <span class="s">法，利润是对企业家精神的间接定价。</span>
+
+    <span class="s">企业家精神 (entrepreneurship）之所以是一种特殊的</span>
+    <span class="s">生产要素，是因为它是所有其他生产要素的组织者，并不能</span>
+    <span class="s">被其他要素所替代。企业家精神是一个内涵非常多的概念，</span>
+    <span class="s">经济学中关于企业家精神或者说企业家的定义，至少有12种</span>
+    <span class="s">之多，但不管有多少种企业家精神的定义，企业家最基本的</span>
+    <span class="s">职能是组织生产、调节市场和创新。</span>
+
+    <span class="s">现实中，企业所有者被称为〝股东”，有些股东只是投入资</span>
+    <span class="s">金，并不直接参与企业的经营。如何理解股东的利润所得呢？</span>
+    <span class="s">事实上，股东的利润由两部分构成：一部分是资本的机会成</span>
+    <span class="s">本（等于市场利息），另一部分是企业家精神的报酬。一个</span>
+    <span class="s">股东即使不参与企业的日常决策，他也必须对企业的经营状</span>
+    <span class="s">况作出判断并承担判断失误的风险。</span>
+
+
+  <span class="s">派生需求和要素价格: |</span>
+
+    <span class="s">价值链和派生需求: |</span>
+
+      <span class="s">派生需求(derived demand): |</span>
+        <span class="s">企业对中间产品的需求是从消费者对最终产品的需求中</span>
+        <span class="s">派生出来的，对要素的需求是从产品的需求中派生出来</span>
+        <span class="s">的。</span>
+
+    <span class="s">从生产的工艺过程来看，生产是从原材料到最终产品的转换</span>
+    <span class="s">过程，每一个环节都有自己的投入和产出。</span>
+
+    <span class="s">我们可以按照距离最终消费行为的远近把生产过程和产品的</span>
+    <span class="s">次位做一个区分：把最终消费品称为一级产品，用来生产最</span>
+    <span class="s">终消费品的产品称为二级产品，用来生产二级产品的产品称</span>
+    <span class="s">为三级产品，以此类推。这就是所谓的 “迁回生产”。</span>
+
+    <span class="s">价值分配过程的流动方向与生产过程正相反，所有较高次位</span>
+    <span class="s">的产品价值都来自于较低次位的产品价值，所有产品的价值</span>
+    <span class="s">归根到底都来自于最终产品的价值，来自于消费者对最终产</span>
+    <span class="s">品价值的认可。</span>
+
+    <span class="s">在生产链条的每一个环节都有一些共同的要素被投入生产过</span>
+    <span class="s">程中，主要包括劳动、士地、资本和企业家精神。这些要素</span>
+    <span class="s">的使用方式与原材料不太相同，因为原材料往往是一次性的</span>
+    <span class="s">投入和消耗，但劳动、土地和资本往往被持续运用到产品生</span>
+    <span class="s">产和服务中去，因而它们被称为生产要素(production factor)。</span>
+
+    <span class="s">边际生产率和要素的需求曲线: |</span>
+
+      <span class="s">假定生产函数为 y = f (K，L)，其中K和L分别是资本投</span>
+      <span class="s">入和劳动投入。如果我们用p表示产品价格r和w分别代表资</span>
+      <span class="s">本的价格（利息率）和劳动力的价格（工资），那么企业的</span>
+      <span class="s">利润函数为</span>
+
+        <span class="s">π = pf (K，L) - rK - wL</span>
+
+      <span class="s">容易证明，利润最大化的要素最优需求满足如下条件：要</span>
+      <span class="s">素的边际收益等于要素的边际成本，即要素的边际产出乘</span>
+      <span class="s">以产品价格等于要素价格。</span>
+
+      <span class="s">企业对要素的需求依赖于产品的价格、要素的边际生产率</span>
+      <span class="s">和要素的价格。</span>
+
+      <span class="s">产品价格越高，企业对要素的需求越大。如果产品本身没</span>
+      <span class="s">有价值 (p=0)，企业对要素的需求就是零。要素的价格越</span>
+      <span class="s">高，对要素的需求越小。给定产品价格和要素价格，要素</span>
+      <span class="s">的需求是由要素的边际生产率决定的。</span>
+
+      <span class="s">要素需求曲线: 要素需求量与要素价格之间的关系。</span>
+
+    <span class="s">要素的需求曲线的移动: |</span>
+
+      <span class="s">要素需求曲线是假定其他因素不变的情况下要素需求量与</span>
+      <span class="s">要素价格之间的关系。所有影响要素边际收益的因素，都</span>
+      <span class="s">会影响企业对要素的需求，从而引起要素需求曲线的移动。</span>
+      <span class="s">具体包括以下几种情况：</span>
+
+        <span class="s">第一，如果企业的资本投入增加导致劳动的边际生产率</span>
+        <span class="s">上升，劳动的需求曲线就会向右移。</span>
+
+        <span class="s">第二，产品市场价格的变化导致要素的边际收益发生变</span>
+        <span class="s">化，从而改变对要素的需求。如产品价格上升导致边际</span>
+        <span class="s">收益增加，从而使得对要素的需求增加，进而引起需求</span>
+        <span class="s">曲线向右移动。</span>
+
+        <span class="s">第三，技术进步的出现导致生产要素的边际生产率变化，</span>
+        <span class="s">从而改变对要素的需求。</span>
+
+        <span class="s">第四，生产要素质量的提升导致边际生产率提高，从而</span>
+        <span class="s">增加企业的要素需求。</span>
+
+      <span class="s">如果新技术是更为劳动密集型的，技术进步将带来劳动需</span>
+      <span class="s">求的增加；反之，如果新技术是更为资本密集型的，技术</span>
+      <span class="s">进步将带来劳动需求的减少。</span>
+
+    <span class="s">要素的需求曲线的加总: |</span>
+
+    <span class="s">要素的市场需求曲线由不同企业的需求曲线横向相加所得到。</span>
+
+      <span class="s">要素的市场需求曲线比单个企业的要素需求曲线更有弹性。</span>
+
+  <span class="s">劳动力市场与工资: |</span>
+
+    <span class="s">如同产品价格由产量的供求决定一样，要素价格也是由要素</span>
+    <span class="s">的供求决定的。尽管要素需求曲线的基本特征（边际生产率</span>
+    <span class="s">曲线）对所有要素是相同的，但决定不同要素供给量的因素</span>
+    <span class="s">是不同的。</span>
+
+    <span class="s">要素供给曲线: 要素供给量与要素价格之间的关系。</span>
+
+    <span class="s">工资: 劳动力的价格，在均衡时等于劳动的边际生产率乘以</span>
+      <span class="s">产品价格</span>
+
+    <span class="s">个人劳动供给曲线: |</span>
+
+      <span class="s">劳动力的供给是由劳动者按照工作与消费（收入之间的偏</span>
+      <span class="s">好决定的。一个人的时间有限，为了得到消费带来的效用，</span>
+      <span class="s">他必须工作以获得收入，但工作本身会带给他负效用。因</span>
+      <span class="s">此他必须选择工作多长时间才是合适的。</span>
+
+      <span class="s">无差异曲线表明，劳动者的效用既取决于劳动者的劳动时</span>
+      <span class="s">间，也取决于劳动者所获得的收入。当劳动者提供更多劳</span>
+      <span class="s">动的时候，也就意味着更多的辛苦和劳累，为了让劳动者</span>
+      <span class="s">保持相同的效用，他获得的收入必须要有所增加，因此，</span>
+      <span class="s">无差异曲线一定是向上倾斜的。此外，劳动者的无差异曲</span>
+      <span class="s">线不仅向上倾斜而且形状上也越来越陡峭。这是因为：</span>
+
+        <span class="s">一方面，在工作量很少的情况下，工作给劳动者带来的</span>
+        <span class="s">边际痛苦也很小，但工作时间越长，给劳动者带来的边</span>
+        <span class="s">际痛苦就越大；</span>
+
+        <span class="s">另一方面，收入的边际效用是递减的，因此，为了保持</span>
+        <span class="s">同样的效用，随着工作时间的增加。单位劳动所需要的</span>
+        <span class="s">补偿也就越来越多。现实中加班加点的工资比正常工作</span>
+        <span class="s">时间的工资高，就是因为新增加工作量的边际负效应更</span>
+        <span class="s">大而新增收入的边际效用更低，因此劳动者需要的补偿</span>
+        <span class="s">相应地也就更高。</span>
+
+
+      <span class="s">迷你案例: “变懒”的新生代农民工——基于劳动工资率的解释</span>
+
+        <span class="s">第一代农民工主要指改革开放后于20世纪80年代中期到</span>
+        <span class="s">90年代中期从农业和农村中流出并进入非农产业就业的</span>
+        <span class="s">农民工;而所谓新生代农民工，指的是1980年以后出生，</span>
+        <span class="s">20世纪90年代后期开始进入城市打工的农民工。</span>
+
+    <span class="s">社会福利对劳动供给的影响: |</span>
+
+      <span class="s">失业救济金:</span>
+
+      <span class="s">政府提供福利极有可能使人变得更懒，劳动供给变得更少。</span>
+
+      <span class="s">社会福利需要以税收作为代价，而工资税的征收，又会使</span>
+      <span class="s">人们工作的积极性下降，这两个效应都会使得劳动的供给</span>
+      <span class="s">曲线向左移动。</span>
+
+      <span class="s">迷你案例: 福利社会与劳动时间</span>
+
+        <span class="s">为什么美国人的工作时间长于欧洲人？因为欧洲人享受</span>
+        <span class="s">的政府福利比美国人多，福利高就使得工作时间变短。</span>
+        <span class="s">德国经济研究所的所长克劳斯·兹默曼说：“我们创造</span>
+        <span class="s">了一个休闲社会，而美国人则建立了一个工作社会。”</span>
+
+    <span class="s">劳动力市场的均衡: |</span>
+
+      <span class="s">迷你案例: 最低工资法对劳动力市场均衡的影响</span>
+
+        <span class="s">如果法定最低工资低于市场均衡工资，那么这个最低工</span>
+        <span class="s">资实际上与没有是一样的。因此，最低工资要起作用，</span>
+        <span class="s">就必须高于均衡工资。如果法定工资高于均衡工资，那</span>
+        <span class="s">么将导致劳动力市场供大于求，进而导致失业，也就是</span>
+        <span class="s">说，较高的法定工资是以牺牲就业为代价的。具体而言，</span>
+        <span class="s">最低工资法将带来的后果有以下三个方面：</span>
+
+          <span class="s">第一，高于均衡水平的法定最低工资使得劳动的供给</span>
+          <span class="s">大于需求；</span>
+
+          <span class="s">第二，如果政府强制企业雇佣劳动，将导致企业亏损，</span>
+          <span class="s">长期看将进一步减少就业机会；</span>
+
+          <span class="s">第三，如果企业有雇工自由，最可能找不到工作的是</span>
+          <span class="s">那些素质相对较低的劳动者。</span>
+
+        <span class="s">由此可见，最低工资法看似保护了雇员的利益，实际则</span>
+        <span class="s">损害了他们的利益。</span>
+
+        <span class="s">其实，如果我们相信市场对资源配置的决定性作用，那</span>
+        <span class="s">么通过交易双方的讨价还价自然会形成双赢，每个参与</span>
+        <span class="s">者都皆大欢喜。但是，如果政府规定了高于均衡水平的</span>
+        <span class="s">最低工资，那么市场就没有办法实现劳动力资源的最优</span>
+        <span class="s">配置，而且政府强制金业接受法定的工资水平，既剥夺</span>
+        <span class="s">了企业对工资定价的自由权，也剥夺了工人的选择权，</span>
+        <span class="s">这显然超出了政府的职能边界。</span>
+
+    <span class="s">差异化劳动力市场: |</span>
+
+      <span class="s">现实中，由于专业的分割和地区的分割，我们看到的是多</span>
+      <span class="s">个劳动力市场，而不是一个劳动力市场。首先，随着社会</span>
+      <span class="s">分工的深化，劳动力也是专业化的，每个专业都有自己特</span>
+      <span class="s">定的劳动力市场。当然，从动态的、长期的视角上看，劳</span>
+      <span class="s">动者的专业是可以变化的。其次，由于劳动力流动成本的</span>
+      <span class="s">存在，不同地区的劳动力市场之间往往也存在着分割。此</span>
+      <span class="s">外，不同年龄段的劳动者也有不同的市场，性别、教育等</span>
+      <span class="s">因素也会分割市场。这些互相分割的劳动力市场的均衡点</span>
+      <span class="s">各不相同，这就导致了劳动力工资的差别。</span>
+
+      <span class="s">迷你案例: 大学扩招与大学毕业生的困惑</span>
+
+        <span class="s">当然，我们也许会想到大学生和高中生的劳动力市场不</span>
+        <span class="s">是完全分割的，大学生可以去和高中生抢饭碗。但是，</span>
+        <span class="s">需要注意的是，20年前的大学教育是精英数育，虽然现</span>
+        <span class="s">在已经成为普通教育，但是目前很多大学生在心理上仍</span>
+        <span class="s">然认为自己是“天之骄子”，从而“耻于”和高中生抢</span>
+        <span class="s">饭碗，他们宁可没有工作也不愿意干体力活。</span>
+
+        <span class="s">当然，还有一些其他因素导致了大学生找工作的困难。</span>
+        <span class="s">比如，严格的户口管制政策，限制了大学生的自由流动；</span>
+        <span class="s">追求在政府部门、国有企业就业的传统观念，也压缩了</span>
+        <span class="s">大学生找工作的空间。</span>
+
+      <span class="s">人往高处走，如果低工资地区和高工资地区的均衡工资相</span>
+      <span class="s">差很大的话，那么就会导致劳动力的流动。低工资地区的</span>
+      <span class="s">人群往高工资地区流动，这样就增加了高工资地区的劳动</span>
+      <span class="s">供给，高工资地区的供给曲线会向右移。此时，低工资地</span>
+      <span class="s">区的工资将会相对提高，高工资地区的工资将会相对降低。</span>
+      <span class="s">但是由于地区之间存在着流动成本，所以工资差距并不会</span>
+      <span class="s">完全消失。</span>
+
+    <span class="s">长期均衡工资差异的原因: |</span>
+
+      <span class="s">亚当·斯密在两百年前就列举了长期均衡工资差异的原因，</span>
+      <span class="s">包括工作地点、生活费用、职业的舒适程度和社会地位、</span>
+      <span class="s">获得职业的难易、学费的多寡、工作的安定程度（不稳定</span>
+      <span class="s">的工作工资一般更高）、工作责任的大小（一个电工和一</span>
+      <span class="s">个医生的责任不一样）、取得职业资格的可能性的大小等</span>
+      <span class="s">等，这些因素通过影响劳动供给曲线，进而影响均衡工资</span>
+      <span class="s">水平。</span>
+
+    <span class="s">人口与劳动力的长期供给: |</span>
+
+      <span class="s">劳动力无限供给与人口红利:</span>
+
+        <span class="s">劳动力无限供给的定义是，在工资水平保持不变的前提</span>
+        <span class="s">下，劳动力的供给几乎是没有限制的，企业想招多少工</span>
+        <span class="s">人就能招到多少工人。在这种情况下，就存在着所谓的</span>
+        <span class="s">“人口红利”。</span>
+
+      <span class="s">中国未来的经济增长，不能再一味依靠低廉的劳动力成本</span>
+      <span class="s">优势，而应该通过发挥企业家精神，通过创新和提高效率</span>
+      <span class="s">来推动经济发展。</span>
+
+  <span class="s">资本市场与利率: |</span>
+
+    <span class="s">利率: 资本的价格，在均衡时等于资本的边际生产率乘以产</span>
+      <span class="s">品价格。</span>
+
+    <span class="s">资本的需求曲线: |</span>
+
+      <span class="s">资本从形态上说，既包括物质资本，如厂房、设备等，也</span>
+      <span class="s">包括货币资本。</span>
+
+      <span class="s">如果产品价格上升了或者技术进步导致了资本的边际生产</span>
+      <span class="s">率提高，资本的需求曲线将向右移动；反之，资本的需求</span>
+      <span class="s">曲线将向左移动。劳动力价格的上升也会导致资本的需求</span>
+      <span class="s">曲线向右移动，因为企业将选择用资本替代劳动以节约成</span>
+      <span class="s">本支出。</span>
+
+    <span class="s">储蓄与资本的供给曲线: |</span>
+
+
+      <span class="s">资本的供给由人们的储蓄行为决定。</span>
+
+      <span class="s">储蓄，其实就是人们当期收入中用于消费后所剩下来的部</span>
+      <span class="s">分。按照经济学理论，人的效用是通过消费得到的，所以</span>
+      <span class="s">人们储蓄是为了未来的消费，以便获得更高的效用水平。</span>
+      <span class="s">因此，消费与储蓄之间的选择，也就是现在消费与未来消</span>
+      <span class="s">费之间的选择。人类的本性意味着我们对眼前的消费比对</span>
+      <span class="s">未来的消费看得更重。因此，人们对未来消费进行 “贴现”</span>
+      <span class="s">(discount)。尽管不同人的贴现率不同，但对绝大部分</span>
+      <span class="s">人来说，只有所增加的未来消费预期足够大时，人们才会</span>
+      <span class="s">储蓄。</span>
+
+      <span class="s">由于边际效用递减法则的作用，无差异曲线一定是向原点</span>
+      <span class="s">弯曲的，表明现在消费和未来消费之间的边际替代率是递</span>
+      <span class="s">减的。</span>
+
+      <span class="s">是不是利率上升一定会导致储蓄增加呢？不定。这是因为，</span>
+      <span class="s">利率上升会同时带来替代效应与收入效应。替代效应总是</span>
+      <span class="s">为负：利率上升意味着当期消费变得更昂贵，所以应该减</span>
+      <span class="s">少消费，增加储蓄；收入效应总是为正：利率上升意味着</span>
+      <span class="s">总收入增加，所以应该增加当期消费，减少储蓄。因此，</span>
+      <span class="s">与个人劳动供给曲线非常类似，个人的储蓄曲线也更可能</span>
+      <span class="s">是一条向后弯曲的曲线。</span>
+
+      <span class="s">市场由众多的个人组成。尽管个人储蓄曲线可能在利率上</span>
+      <span class="s">升到一定水平后向后弯曲，市场上可供投资的总储蓄曲线</span>
+      <span class="s">则更可能是向右上方倾斜的。因为资本来自储蓄，所以总</span>
+      <span class="s">储蓄曲线又称为资本的市场供给曲线，它表示资本的供给</span>
+      <span class="s">量与市场利率的关系。</span>
+
+    <span class="s">资本市场的均衡: |</span>
+
+      <span class="s">与劳动力市场均衡的分析类似，资本市场的供给曲线和需</span>
+      <span class="s">求曲线的交点，决定了均衡利率水平。资本市场的调整过</span>
+      <span class="s">程与劳动力市场也很相似：假如利率低于均衡水平，意味</span>
+      <span class="s">着储蓄少，想借钱的人借不到钱就会自然而然地提高利率；</span>
+      <span class="s">反过来说，如果利率高于均衡利率，很多人有钱货不出去，</span>
+      <span class="s">就会调低利率。可见，在没有外力干预的情况下，自然而</span>
+      <span class="s">然就会有一种力量使得市场向均衡点靠拢。</span>
+
+    <span class="s">利率管制和利息税: |</span>
+
+      <span class="s">出于各种各样的目的，政府也经常会对资本市场进行干预，</span>
+      <span class="s">包括利率管制和征收利息税。</span>
+
+      <span class="s">利率管制: 指政府用法律或行政命令的方式规定利率水平。</span>
+
+      <span class="s">与对劳动力市场工资的干预类似，由于利率就是资本的价</span>
+      <span class="s">格，对利率的管制直接扭曲了价格信号。</span>
+
+      <span class="s">当政府将利率规定得低于均衡利率:</span>
+      <span class="s">1）储蓄减少，影响资本积累，降低劳动的边际生产率</span>
+      <span class="s">2）企业倾向于更为资本密集型技术。</span>
+      <span class="s">3）得到资金的可能并非最有效率的企业。此时，资金边</span>
+          <span class="s">际收入低于社会的机会成本。利息成本表现为企业利</span>
+          <span class="s">润，扭曲价格信号。</span>
+
+    <span class="s">银行的信任配置: |</span>
+
+      <span class="s">间接融资与信贷市场:</span>
+      <span class="s">第一，由于大部分储蓄者（即资本的真正供给者）并不具</span>
+      <span class="s">有风险识别能力，他们更愿意把这项工作委托给专业人士，</span>
+      <span class="s">这就产生了银行这样的中介机构。因此，与劳动力市场不</span>
+      <span class="s">同，在资本市场上，真正的卖方（储蓄者）和买方（投资</span>
+      <span class="s">者/生产企业）并不一定直接交易，而是通过银行中介做交</span>
+      <span class="s">易（因而被称为 “间接融资”)。储蓄者把储蓄存入银行，</span>
+      <span class="s">银行再贷款给企业。这就形成了信贷市场。由于银行的运</span>
+      <span class="s">行本身需要成本，因而储蓄者得到的利率就低于借货企业</span>
+      <span class="s">支付的利率。</span>
+
+      <span class="s">道德风险与逆向选择:</span>
+      <span class="s">第二，为了控制风险并保证经风险调整后实际利率的一致</span>
+      <span class="s">性，银行必须对货款申请逐个甄别。特别是，由于借款人</span>
+      <span class="s">方面的道德风险和逆向选择，银行的预期收益并不总是随</span>
+      <span class="s">货款利率的上升而增加，而是呈现先上升后下降的情形。</span>
+
+      <span class="s">道德风险是指当银行没有办法监督借款人时，借款人可能</span>
+      <span class="s">选择一些有利于自己但会降低还款可能性的行动；逆向选</span>
+      <span class="s">择是指利率越高，低风险的借款人越不愿意借款，高风险</span>
+      <span class="s">的借款人越有积极性借款</span>
+
+      <span class="s">出于自己的利润最大化考虑，银行并不会把货款利率提高</span>
+      <span class="s">到均衡利率满足所有贷款需求，而宁愿实现信货配给：有</span>
+      <span class="s">选择地满足一部分贷款需求，拒绝另一部分货款需求。</span>
+
+      <span class="s">必须特别强调的是，银行的信贷配给与我们前面讲的价格</span>
+      <span class="s">机制并不矛盾。事实上，信贷配给可以理解为按风险调整</span>
+      <span class="s">的利率机制，正如滑雪场的排队可以理解为滑一趟雪的价</span>
+      <span class="s">格机制一样。那些被拒绝的货款申请可以理解为它们的风</span>
+      <span class="s">险是如此之大，以至于任何利率水平都不足以使得预期利</span>
+      <span class="s">率等于无风险的均衡利率。利率和信货配给的结合保证了</span>
+      <span class="s">储蓄资金投资于边际生产率不低于资金的边际成本（以储</span>
+      <span class="s">蓄者所放奔消费的边际效用度量）的项目。因此，私有银</span>
+      <span class="s">行自愿实行的信货配给与政府干预信货市场完全不同。</span>
+
+  <span class="s">地租和租金理论: |</span>
+
+    <span class="s">地租的决定: |</span>
+
+      <span class="s">土地是士地所有者的资产，土地服务的价格就是地租。对</span>
+      <span class="s">士地服务的需求来自土地的边际收益，因此，与劳动和资</span>
+      <span class="s">本一样，由于边际生产率递减法则，土地的曲线也是向下</span>
+      <span class="s">倾斜的。但与其他生产要素不同，土地的最大特点是在一</span>
+      <span class="s">定时期内它的供给量基本是固定的，即供给量对地租（及</span>
+      <span class="s">土地价格）非常不敏感。</span>
+
+      <span class="s">地租: 土地服务的价格，在均衡时等于土地的边际生产率</span>
+        <span class="s">乘以产品的价格。</span>
+
+      <span class="s">随着经济的发展，对士地的需求量会增加，但由于土地的</span>
+      <span class="s">供应量仍然不变，因此就会导致地租上升。每块地会比原</span>
+      <span class="s">来更值钱。这就是说，是需求在决定地租。</span>
+
+      <span class="s">需要注意的是，每块土地的质量是不同的。当然价格就应</span>
+      <span class="s">该有所不同。耕地也存在肥沃的土地和比较贫瘠的土地，</span>
+      <span class="s">因此土地是有级差的，这种级差会造成级差地租。随着需</span>
+      <span class="s">求的变化，很多最初没有价值的土地后来就变得有价值了，</span>
+      <span class="s">而原来有价值的土地价值就会上升。</span>
+
+      <span class="s">级差地租: 土地质量的不同导致的地租差异。</span>
+
+      <span class="s">注意，任何情况下，优等地的地租都高于劣等地的地租，</span>
+      <span class="s">二者之间的差额等于其边际生产率之差。这就是级差地租</span>
+      <span class="s">理论。填海造地也是这个道理，当填海造地的成本低于最</span>
+      <span class="s">低等级士地的均衡地租时，人们就有积极性填海造地。</span>
+
+    <span class="s">土地价格与地租: |</span>
+
+      <span class="s">土地价格实际上是由预期的土地收益所决定的，土地的均</span>
+      <span class="s">衡价格等于均衡地租的贴现值。</span>
+
+      <span class="s">简单地说．土地价格是年地租乘以利率的倒数。</span>
+
+      <span class="s">土地均衡价格和地租及利率之间的关系实际上是人们在资</span>
+      <span class="s">本市场与土地市场之间套利的结果。如果市场价格低于均</span>
+      <span class="s">衡价格，将资金用来购买土地就是合算的，随着购买士地</span>
+      <span class="s">的人数的增加，地价就会上升，直至均衡为止；反之，如</span>
+      <span class="s">果市场价格高于均衡价格，出售土地然后用获得的收入赚</span>
+      <span class="s">取利息就是合算的，随着市场上供出售的士地供给量的增</span>
+      <span class="s">加，土地价格就会下跌，直到均衡为止。</span>
+
+      <span class="s">土地需求的派生性及士地价格的派生性:</span>
+
+        <span class="s">土地的价值完全来自土地上所生产的产品的价值。如果</span>
+        <span class="s">粮食不值钱，农用土地就不值钱。如果房子很值钱，可</span>
+        <span class="s">用来盖房子的土地也就很值钱。理解这一点有助于澄清</span>
+        <span class="s">有关房价和地价关系的误解。</span>
+
+    <span class="s">租金理论和寻租行为: |</span>
+
+      <span class="s">土地是大自然给人类的赐予。为什么大自然的赐予有价格？</span>
+      <span class="s">唯一的原因是它的供给是有限的。</span>
+
+      <span class="s">通过对地租的分析，经济学家进一步引申，把所有超出为</span>
+      <span class="s">提供要素供给所必需的最低报酬以上的收入都称为租金</span>
+      <span class="s">(rent），或准租金 (auasi-rent)。</span>
+
+      <span class="s">租金(rent): 所有超出提供要素供给所必须的最低报酬以</span>
+        <span class="s">上的收入。</span>
+
+      <span class="s">经济学家还把租金的概念运用于由政府对供给的人为限制</span>
+      <span class="s">导致的超额收入。比如，当政府规定只能有几家企业经营</span>
+      <span class="s">基础电信业务时，就创造了电信经营牌照的租金；当创办</span>
+      <span class="s">出版社必须得到政府批准的时候，出版社就有了牌照租金；</span>
+      <span class="s">当出租车的数量和经营牌照受到限制的时候。出租车公司</span>
+      <span class="s">也有了牌照租金。类似的，进出口许可证、私家车的限购</span>
+      <span class="s">电视台特许权等等，都创造租金。事实上，任何形式的政</span>
+      <span class="s">府管制都会创造租金。租金本质上来自对消费者的剥夺，</span>
+      <span class="s">因为牌照和许可证迫使消费者支付比本来更高的价格。</span>
+
+      <span class="s">租金依附在产品价格上，直接归牌照的持有者获得，但租</span>
+      <span class="s">金的最终去向依赖于牌照是如何分配的。如果政府用公开</span>
+      <span class="s">拍卖的方式发放牌照，租金就变成财政收入。如果政府用</span>
+      <span class="s">“选美”的方式决定把牌照给谁！租金的最后归宿就比较</span>
+      <span class="s">复杂。经济学家把为获得租金而进行的非生产性投资活动</span>
+      <span class="s">称为 “寻租”(rent-seeking)，包括公开的游说活动</span>
+      <span class="s">和私下的贿赂行为等。</span>
+
+      <span class="s">对任何一个想获得牌照的人来说，只要寻租成本不大于预</span>
+      <span class="s">期得到的租金，就是值得的投资。</span>
+
+      <span class="s">寻租: 为获得租金而进行的非生产性投资活动，包括公开</span>
+        <span class="s">的游说活动和私下的贿赂行为等。</span>
+
+  <span class="s">市场决定的收入分配与政府干预: |</span>
+
+    <span class="s">社会总收入的分配格局:</span>
+
+      <span class="s">每种要素的报酬是由其边际生产率，即其对最终产品的贡</span>
+      <span class="s">献决定的。在相同的市场上，同质要素的均衡价格是相同</span>
+      <span class="s">的；要素的流动性障碍会使要素在地域上被分隔成不同的</span>
+      <span class="s">市场，但不同市场上的均衡价格仍然有相关性。</span>
+
+      <span class="s">资本的流动性最强，所以资本在一国内，甚至全球范围内</span>
+      <span class="s">形成统一市场，利率的地区差异很小。</span>
+
+      <span class="s">劳动力的流动性次之，所以工资的地区性差异远大于利率</span>
+      <span class="s">的地区性差异。</span>
+
+      <span class="s">土地最没有流动性（所谓“不动产”），所以地区间的价格</span>
+      <span class="s">差异最大。</span>
+
+      <span class="s">从整个社会看，最终产品的总价值被称为国内生产总值</span>
+      <span class="s">（GDP)，大致包括国民收入和折旧两部分。国民收入分</span>
+      <span class="s">配为劳动所得、资本所得、土地所得（再加上企业家的利润）。</span>
+
+      <span class="s">初次分配（ 由市场决定的收入分配）:</span>
+      <span class="s">经济学家证明，在一个静态经济中，如果生产函数具有规</span>
+      <span class="s">模报酬不变的特征，则由边际生产率决定的所有要素所得</span>
+      <span class="s">之和刚好等于国民收入，长期均衡利润为零。当然，现实</span>
+      <span class="s">经济是动态的，并不处于均衡状态，长期利润不可能为零。</span>
+
+      <span class="s">初次分配的格局在不同国家是不同的，依赖于要素的相对</span>
+      <span class="s">稀缺性、市场的竞争程度、生产的技术水平以及政府干预</span>
+      <span class="s">要素市场的程度等。</span>
+
+      <span class="s">二次分配:</span>
+      <span class="s">在初次分配的基础上，政府通过征税和转移支付把一部分</span>
+      <span class="s">收入从一些人转移给另一些人。这被称为"二次分配”。除</span>
+      <span class="s">此之外，个人之间也通过捐赠等形式进行二次分配。</span>
+
+      <span class="s">国民收入的最终分配格局是这三种分配方式共同作用的结果。</span>
+
+    <span class="s">政府干预要素市场的后果:</span>
+
+      <span class="s">有一种很流行的观点认为，市场分配虽然有助于最大化资</span>
+      <span class="s">源配置的效率（即增加最终产品的总价值），但会导致不</span>
+      <span class="s">公平，包括不同要素所有者之间的不公平和同类要素所有</span>
+      <span class="s">者内部的不公平，因此政府再分配的目的是矫正市场分配</span>
+      <span class="s">导致的不公平。这种目的是否达到还不清楚，但有一点可</span>
+      <span class="s">以肯定的是，政府对要素市场的干预（如最低工资法、利</span>
+      <span class="s">率管制、士地用途管制等）不仅损害了效率，而且也导致</span>
+      <span class="s">了不公平。</span>
+
+      <span class="s">以中国的情况为例，政府对要素市场的干预要多于对产品</span>
+      <span class="s">市场的干预。</span>
+
+        <span class="s">在资本市场上，银行业主要由国有银行垄断，利率主要</span>
+        <span class="s">由政府制定（2014年刚开始放开贷款利率)，民间不能</span>
+        <span class="s">成立金融机构，公司上市发行股票要得到政府批准，所</span>
+        <span class="s">有这些使得居民储蓄大量投入国有企业，民营企业很难</span>
+        <span class="s">得到货款，本该属于储蓄者的利息收入被转化成银行的</span>
+        <span class="s">垄断利润。</span>
+
+        <span class="s">在土地市场上，中国城市的士地属于国有，农村的士地</span>
+        <span class="s">名义上属于农民集体所有，但农用地转作商业和住宅用</span>
+        <span class="s">地必须先低价转换成国有士地，然后再由政府高价出售。</span>
+        <span class="s">结果是：一方面大量耕地闲置，另一方面房地产价格猛</span>
+        <span class="s">涨；一方面农民难以享受到城市化带来的收益，另一方</span>
+        <span class="s">面少数人把土地价格转化成自己的收入。</span>
+
+        <span class="s">中国当今最严重的腐败案件几乎都与资本市场和土地市</span>
+        <span class="s">场的政府主导有关。</span>
+
+      <span class="s">相比而言，在三大要素市场中，政府对劳动力市场的干预</span>
+      <span class="s">是最少的，但即使在这个市场上，也存在政府干预。或许</span>
+      <span class="s">可以说，户口制度和国有企业是政府对劳动力市场的最大</span>
+      <span class="s">干预。户籍制度限制了人的流动，也导致了在城市工作的</span>
+      <span class="s">农民工不能得到平等对待；国有企业的大量存在扭曲了劳</span>
+      <span class="s">动力市场，造成国有部门和非国有部门劳动者之间的不平</span>
+      <span class="s">等。有人说，如果没有政府的保护，自由竞争的劳动力市</span>
+      <span class="s">场将损害劳动者的利益。但这种观点缺乏事实支持。</span>
+
+      <span class="s">中国最自由的劳动力市场是什么市场？答案是保姆市场。</span>
+
+        <span class="s">在该市场上，政府没有规定最低工资，也没有要求三险</span>
+        <span class="s">一金。但在过去十多年，保姆工资的增长是最快的，这</span>
+        <span class="s">完全是市场力量作用的结果。2002-2011年，北京市的</span>
+        <span class="s">保姆名义工资从480元上升到2400元，上涨了整整四倍</span>
+        <span class="s">之多。名义工资的年增长率接近20%．扣除通肚因素以</span>
+        <span class="s">后的实际工资的年增长率为16%，远远高于同期北京市</span>
+        <span class="s">在岗职工平均工资的年增长率。</span>
+
+      <span class="s">经济学家通常用基尼系数 (Gini coefficient)量收入</span>
+      <span class="s">分配的不平等程度。基尼系数介于0与1之间，0代表绝对</span>
+      <span class="s">的平等（即每个人的收入都一样），1代表所有的收入被</span>
+      <span class="s">一个人拥有，系数越大意味着收入分配越不平等。</span>
+
+      <span class="s">基尼系数: 衡量收入分配不平等程度的指数，介于0与1之</span>
+        <span class="s">间，0代表绝对的平等（即每个人的收入都一样)，1代</span>
+        <span class="s">表所有的收入被一个人拥有。系数越大，意味着收入分</span>
+        <span class="s">配越不平等。</span>
+
+      <span class="s">迷你案例: “劫富济贫”就是真的平等吗？</span>
+
+        <span class="s">收入差距本身不一定意味着不公平，最重要的公平是机</span>
+        <span class="s">会均等。</span>
+
+        <span class="s">高额累进税本质上是一种劫富济贫，是功利主义思维的</span>
+        <span class="s">表现。如果富人的财富是通过诚实劳动、合法经营获得</span>
+        <span class="s">的，那么这些财富就源自于社会对他们工作的认可。如</span>
+        <span class="s">果用道义或共他理由对这些财富进行剥夺，不仅会侵犯</span>
+        <span class="s">人们的正当权益，而且会打击人们的工作和创造热情，</span>
+        <span class="s">从而造成对社会活力的损害。</span></code></pre>
+</div>
+</div>
+  </div>
+
+  <ul class="post-navigation">
+    <li>
+      
+      <a href="/books/2021/11/24/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E4%BE%9B%E6%B1%82%E4%B8%8E%E4%BB%B7%E6%A0%BC/">&laquo; 经济学原理：供求与价格</a>
+      
+    </li>
+    <li>
+      
+      <a href="/books/2021/11/28/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E4%BC%81%E4%B8%9A%E5%AE%B6%E4%B8%8E%E5%B8%82%E5%9C%BA%E8%BF%87%E7%A8%8B/">经济学原理：企业家与市场过程 &raquo;</a>
+      
+    </li>
+  </ul>
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div>我只希望，祈祷，我的心境不要再粗糙下去，荒芜下去，这就是我的大愿望。</div>
+
+  <div class="license">
+    <a rel="license" href="/LICENSE.txt"><img alt="Creative Commons License" style="border-width:0" src="/assets/licenses/cc-by-nc-nd-4.0-80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+  </div>
+  </details>
+</footer>
+
+
+  </body>
+
+</html>

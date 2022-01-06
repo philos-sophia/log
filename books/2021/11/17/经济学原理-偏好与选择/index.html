@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>经济学原理：偏好与选择</title>
+  <meta name="description" content="人的最终目的是幸福，幸福有时间的纬度和空间的纬度。理性人追求的是一生的幸福，而非眼前欲望的满足。一种产品或行动的价值由其对幸福目标的边际贡献决定。个人的偏好反应的是目标与手段之间的关系，理性人的偏好可以用效用函数来代表。无差异曲线是分析个人选择的重要工具。个人选择就是如何在满足资源约束条件下最大化效用函数。最优选...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/books/2021/11/17/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E5%81%8F%E5%A5%BD%E4%B8%8E%E9%80%89%E6%8B%A9/">
+  <link rel="alternate" type="application/rss+xml" title="叶子" href="/feed.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW8P6JTH7J"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW8P6JTH7J');
+</script>
+
+
+
+</head>
+
+
+  <body>
+
+    <style>
+
+.site-nav ul li {
+  width: 15%;
+}
+
+</style>
+
+<header class="site-header">
+
+  <div class="wrapper">
+    <h2 class="site-title">
+      <a class="site-title" href="/">叶子</a>
+    </h2>
+
+     <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+        <div class="trigger">
+            <ul>
+              <li><a href="/">随笔</a></li>
+              <li><a href="/books">读书</a></li>
+              <li><a href="/misc">杂记</a></li>
+              <li><a href="/run">跑步</a></li>
+              <li><a href="/math">数学</a></li>
+              <li><a href="/essays">集子</a></li>
+
+            </ul>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">经济学原理：偏好与选择</h1>
+    <p class="post-meta">
+      <time datetime="2021-11-17T21:46:16+08:00" itemprop="datePublished">Nov 17, 2021</time>
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">张维迎</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="console"><span class="go">人的最终目的是幸福，幸福有时间的纬度和空间的纬度。理性人
+追求的是一生的幸福，而非眼前欲望的满足。一种产品或行动的
+价值由其对幸福目标的边际贡献决定。
+
+个人的偏好反应的是目标与手段之间的关系，理性人的偏好可以
+用效用函数来代表。无差异曲线是分析个人选择的重要工具。
+
+个人选择就是如何在满足资源约束条件下最大化效用函数。最优
+选择的基本条件是边际效用等于边际成本。在多种产品的情况下，
+这一条件表现为产品在偏好上的边际替代率等于其在生产上的边
+际转换率。
+
+通过减少短期消费而进行的储蓄和投资，可以增加资本品和改进
+生产技术，从而推动生产可行性边界向外移动。经济增长表现为
+由投资和生产技术改进带来的消费水平的不断提高。</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="console"><span class="go">幸福 价值 偏好 功利主义 效用 效用函数 边际效用 鲁滨孙经济
+边际成本
+
+收入 消费 储蓄 投资 资本品 生产要素 经济增长 无差异曲线
+生产可行性边界
+
+边际效用递减法则 边际生产率递减法则 边际替代率递减法则</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="yaml"><span class="na">偏好与选择</span><span class="pi">:</span>
+
+  <span class="na">幸福与价值</span><span class="pi">:</span>
+
+    <span class="na">目的与手段</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">经济学的第一个假说是人的行动是有目的，行动只是实现</span>
+      <span class="s">某种某地的手段。</span>
+
+      <span class="s">行动总是为了实现某种直接的目的，但通常来说，某种行</span>
+      <span class="s">动的直接目的可能只是实现某种更高目的的手段，而不是</span>
+      <span class="s">行动的最终目的。</span>
+
+      <span class="s">幸福是人行动的最终目的，意味着其他目的都只是实现幸</span>
+      <span class="s">福的手段，而幸福本身不能是任何其他目的的手段，为了</span>
+      <span class="s">任何其他的目的而牺牲幸福都是非理性的。</span>
+
+      <span class="s">幸福: 个人的全面发展，即包括个人生理欲望和社会欲望</span>
+        <span class="s">的满足，也包括个人潜能的开发。</span>
+
+      <span class="s">学术经典: 亚里士多德论幸福</span>
+
+        <span class="s">亚里士多德指出，人有三种生活：第一种是享受的生活</span>
+        <span class="s">第二种是政治的生活，第三种是沉思的生活。所谓享受</span>
+        <span class="s">的生活，是指人的生理欲望的满足，如吃好的、穿好的、</span>
+        <span class="s">看美的、听悦耳的，等等。政治的生活是指追求权力和</span>
+        <span class="s">荣誉。沉思的生活是指运用理性追求真理的生活，想要</span>
+        <span class="s">理解世界，通过独立思考，企图弄清楚一些逻辑。</span>
+
+        <span class="s">前两种生活都依赖于别人，因而不是自足的，只有沉思</span>
+        <span class="s">的生活是自足和自得其乐的。比如权力和荣誉是别人给</span>
+        <span class="s">的，别人可以给予你，也可以从你身上夺走。只有沉思</span>
+        <span class="s">的生活不依赖于别人，是他人不能夺走的。</span>
+
+        <span class="s">亚里士多德认为，在人的三种生活中，沉思的生活是最</span>
+        <span class="s">高贵的。所以，他建议，每个人在物质生活得到基本满</span>
+        <span class="s">足之后，都应该追求一定的沉思的生活。</span>
+
+      <span class="s">王小波: 我活在世上，无非想要明白些道理，遇见些有趣</span>
+        <span class="s">的事，倘能如我所愿，我的一生就算成功。</span>
+
+      <span class="s">幸福是人行动的最终目的，意味着其他目的都只是实现幸</span>
+      <span class="s">幸福是一个主观概念，不同的人对它有不同的理解。比如</span>
+      <span class="s">说，有人认为有钱就是幸福，有人认为有权有名就是幸福，</span>
+      <span class="s">还有人认为获得自由才是幸福，所以不同的人有不同的追</span>
+      <span class="s">求。</span>
+
+      <span class="s">但需要指出的是，至少对大部分人来说，幸福并不是享乐</span>
+      <span class="s">主义，不是物质欲望的、肉体上的满足。当然，我们也知</span>
+      <span class="s">道，如果一个人连最基本的物质生活需要也不能得到满足，</span>
+      <span class="s">那么他不大可能是一个幸福的人。</span>
+
+    <span class="na">幸福的时间维度和空间纬度</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">吃红烧肉很解馋，喝甜饮料很爽口，但许多人拒绝吃红烧</span>
+      <span class="s">肉，不喝甜饮料，因为他们害怕得肥胖症，害怕得脂肪肝</span>
+      <span class="s">和糖尿病。</span>
+
+      <span class="s">一般来说，越是理性的人，越是注重行动的长远后果。</span>
+
+      <span class="s">人的目的是一生的幸福，而不是及时行乐，这一点对人的</span>
+      <span class="s">行为和社会合作有重要的影响。</span>
+
+      <span class="s">幸福的时间纬度甚至不局限于一生一世。比如说，对信仰</span>
+      <span class="s">基督教的人来说，死后进入天堂也许比现在的享受更重要；</span>
+      <span class="s">佛教徒积德行善，是为了来世的善报。</span>
+
+      <span class="s">人类也有一个基本的倾向，就是我们对未来的、远处的东</span>
+      <span class="s">西看得轻，对眼前的、近处的东西看得重。如果你让一个</span>
+      <span class="s">人在现在拿到一元钱和一年后拿到一元钱之间做选择，他</span>
+      <span class="s">一定会选择现在拿到一元钱，而不是一年后拿到一元钱（</span>
+      <span class="s">假定币值的实际购买力不变）。这种偏向现在的本性，部</span>
+      <span class="s">分来自现在是未来的前提，如果今天不能活下去，那明天</span>
+      <span class="s">是没有意义的；部分来自未来的不确定性，因为生活总是</span>
+      <span class="s">变化莫测，我们甚至不能保证自己的生命明天不出意外。</span>
+      <span class="s">这两个因素当然都与个人的心理相关。这种倾向于现在的</span>
+      <span class="s">本性意味着人们在做决策的时候，会对未来的收入、未来</span>
+      <span class="s">的幸福大一个折扣，经济学上称之为“时间的贴现”，它</span>
+      <span class="s">可以用贴现因子或贴现率来度量。</span>
+
+        <span class="s">贴现因子是指下一期时点的一单位收入相当于当前收入</span>
+        <span class="s">的数值，贴现率则是指现在的一单位收入比下一期一单</span>
+        <span class="s">位货币折现到当前多出来的比率。二者存在此消彼长的</span>
+        <span class="s">换算关系：一个人曰看重未来，他的贴现因子越大，对</span>
+        <span class="s">应的贴现率越小；反之亦然。</span>
+
+      <span class="s">的幸福大一个折扣，经济学上称之为“时间的贴现”，它</span>
+      <span class="s">尽管每个人都更看重现在，但不同但人对未来的贴现率是</span>
+      <span class="s">不同的。贴现率的大小对人的行为具有重要影响。一个贴</span>
+      <span class="s">现率较低的人更愿意为了未来的收益而放弃眼前的短期利</span>
+      <span class="s">益，因而也更具有合作精神，更值得他人信任；反之，一</span>
+      <span class="s">个贴现率较高的人，更不容易抵住短期诱惑，因而更可能</span>
+      <span class="s">采取损人利己的机会主义行为。</span>
+
+      <span class="s">空间纬度指的是人的幸福取决于多种因素，而非单一因素。</span>
+      <span class="s">人既有生理的需要，也有心理的、社会的精神的需要。</span>
+
+        <span class="s">作为生物性的存在，人要活着，首先必须有基本的物质</span>
+        <span class="s">生活条件，如食品、衣着、住宅，一个饥肠辘辘、衣不</span>
+        <span class="s">遮体、无家可归的人不可能是一个幸福的人。</span>
+
+        <span class="s">人是社会的动物，幸福不幸福，不仅取决于物质享受的</span>
+        <span class="s">多寡，也取决于自己和别人之间的关系是否和谐。</span>
+
+        <span class="s">作为理性的存在者，人还有精神的需求。人有自由意志，</span>
+        <span class="s">有思辨能力，有对平等相待的诉求，有人格尊严。</span>
+
+      <span class="s">较多的财富不仅能使其持有者过上较好的物质生活，也可</span>
+      <span class="s">以提高他的社会地位，让他有资源乐善好施因而受人尊重，</span>
+      <span class="s">还可以保证他有自由时间从事沉思的生活，活得更有尊严。</span>
+
+      <span class="s">当然，不同的人对幸福的不同方面有不同的诉求，有些人</span>
+      <span class="s">更看重物质享受，有些人更看重名节，有些人更看重社会</span>
+      <span class="s">地位，还有些人更在乎自由和独立。</span>
+
+    <span class="na">价值的概念</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">经济学上的价值是与人的目的相关的一个概念，是对实现</span>
+      <span class="s">某种目的的贡献的度量。</span>
+
+      <span class="s">任何物品和行动的价值最终都来自它们对幸福这个终极目</span>
+      <span class="s">的所做的贡献。</span>
+
+      <span class="s">如果一件物品或一个行动能增加人的幸福感，我们就说它</span>
+      <span class="s">是有价值的。</span>
+
+      <span class="s">经济学上的“财富”是根据价值来定义的。有价值的东西</span>
+      <span class="s">就是财富，没有价值的东西就不是财富，甚至是负财富。</span>
+
+      <span class="s">价值: 对幸福这一终极目标的边际贡献。</span>
+
+        <span class="s">一个物品或行动的价值量是由其对幸福的边际贡献决定</span>
+        <span class="s">的。所谓“边际贡献”，是指工具变量（物品或行动）</span>
+        <span class="s">变化一个单位会对目的变量造成的影响。如果某种物品</span>
+        <span class="s">增加一点或减少一点对我们的幸福水平没有影响，我们</span>
+        <span class="s">就说它的边际贡献是零，因而价值为零。这样的物品就</span>
+        <span class="s">不构成财富。比如说，阳光和空气虽然对我们的生命必</span>
+        <span class="s">不可少，但由于他们的存量如此之大，以至于多一点或</span>
+        <span class="s">少一点对我们的幸福并没有影响，因而，我们并不把它</span>
+        <span class="s">们计入我们的财富。如果某种物品增加一点会提高我们</span>
+        <span class="s">的幸福水平，减少一点会降低我们的幸福水平，我们就</span>
+        <span class="s">说它的边际贡献是正的，因而价值为正。所谓稀缺品，</span>
+        <span class="s">指的就是价值大于零的物品。</span>
+
+      <span class="s">经济学上的“财富”是根据价值来定义的。有价值的东西</span>
+      <span class="s">由于幸福是一种主观判断，同样的物品或行动对不同的人</span>
+      <span class="s">具有不同的价值，因而价值也是一个主观概念。日常生活</span>
+      <span class="s">中，我们通常用“价值观念”一词指代人们对食物和行为</span>
+      <span class="s">的看法，原因就在于此。如果两个人对幸福的理解不同，</span>
+      <span class="s">对实现幸福的手段的判断不同，我们就说他们的“价值观”</span>
+      <span class="s">不同。</span>
+
+  <span class="na">个人偏好和约束条件</span><span class="pi">:</span>
+
+    <span class="na">个人偏好</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">人的行动，是指选择手段来满足自己的目标。经济学家用</span>
+      <span class="s">偏好（preference）这个概念来定义目标与手段之间的关</span>
+      <span class="s">系。简单地说，所谓偏好，就是个人对满足目的的手段的</span>
+      <span class="s">评价。</span>
+
+      <span class="s">偏好: 对某种物品或行动的喜爱或厌恶倾向。。</span>
+
+      <span class="s">人的行动，通常由过程和结果两部分组成。人类有一种认</span>
+      <span class="s">知偏差，就是对看得见的东西比看不见的东西更重视，因</span>
+      <span class="s">而，人们总是倾向于对结果给予等多的关注，而相对忽略</span>
+      <span class="s">了过程本身的价值。</span>
+
+      <span class="s">知识拓展: 功利主义幸福观</span>
+
+        <span class="s">经济学的幸福观是公里主要的幸福观。“功利”在英文</span>
+        <span class="s">中对应的单词是utility，这个词在经济学通常翻译为</span>
+        <span class="s">“效用”，而utilitarian被翻译为“功利主义”。</span>
+
+        <span class="s">功利主义: 一种道德哲学思想，认为人的行动的目的就</span>
+          <span class="s">是最大化自己的效用，活着也可以说是最大化个人的</span>
+          <span class="s">快乐、最小化个人的痛苦。</span>
+
+        <span class="s">功利主义有个人功利主义和社会功利主义之分。个人功</span>
+        <span class="s">利主义，是指个体选择某种手段追求效用最大化。社会</span>
+        <span class="s">功利主义，是指社会的目的是社会宗总福利的最大化，</span>
+        <span class="s">或者说“最大多数人的最大幸福”。</span>
+
+        <span class="s">功利主义完全是后果主义：重要的是结果，而不是动机</span>
+        <span class="s">和手段；只要目的是正当的，有利于实现目的的任何手</span>
+        <span class="s">段都是正当的。</span>
+
+        <span class="s">虽然个人功利主义为经济学分析个体行为提供来有价值</span>
+        <span class="s">的哲学基础，但社会功利主义是值得怀疑的，因为它忽</span>
+        <span class="s">视来人的基本权利，为专制主义和集体主义提供来借口。</span>
+
+        <span class="s">经济学面临的一个中阿哟转型是如何从功利主义转向权</span>
+        <span class="s">利主义。权利主义意味着个体的基本权利必须得到尊重，</span>
+        <span class="s">任何以“集体利益”的名义剥夺个人权利的行为都是不</span>
+        <span class="s">正当的，目的的正当性不能证成手段的正当性。</span>
+
+        <span class="s">马丁·路德·金: 手段代表来在形成之中的理想和进行</span>
+          <span class="s">之中的目的，人们无法通过邪恶的手段来达到美好的</span>
+          <span class="s">目的。因为手段是种子，目的是树。</span>
+
+      <span class="s">经济学认为，如果一个人是理性的，他的偏好必须满足两</span>
+      <span class="s">个公理，即完备性公理和一致性（传递性）公理。</span>
+
+      <span class="s">情人眼里出西施:</span>
+
+        <span class="s">人的偏好具有主观性。一个人的偏好与他的生理、心理、</span>
+        <span class="s">家庭出身、社会环境、个人经验等因素有关，也受观念、</span>
+        <span class="s">哲学、意思形态等因素的影响。</span>
+
+    <span class="na">效用函数</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">为了分析偏好如何影响个人决策，经济学家引入来“效用”</span>
+      <span class="s">这个概念。效用（utility）是消费者赋予某个特定商品组</span>
+      <span class="s">合在目标上的数值（可以理解为个人的幸福指数），它的</span>
+      <span class="s">值域是实数。较高的效用值代表较大的偏好满足。</span>
+
+      <span class="s">效用: 偏好满足程度的度量。</span>
+
+      <span class="s">效用函数: 偏好与满足偏好的手段之间的关系，表明消费</span>
+        <span class="s">变化如何影响所带来的价值量的变化。</span>
+
+      <span class="s">需要指出的是，偏好是一种排序，对应的效用函数数值是</span>
+      <span class="s">序数（ordinal）概念，而不是基数（cardinal）概念。</span>
+
+      <span class="s">知识拓展: 词典式偏好排序（lexicographic ordering）</span>
+
+    <span class="na">边际效用递减法则</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">经济学家把增加一单位消费对应的效用增加值成为“边际</span>
+      <span class="s">效用”（marginal utility）。</span>
+
+      <span class="s">我们发现，随着消费量的增加，边际效用在递减，这被称</span>
+      <span class="s">为“边际效用递减法则”。</span>
+
+      <span class="s">边际效用: 增加一单位产品的消费所带来的效用的增量。</span>
+
+      <span class="s">边际效用递减法则: 随着消费量的增加，产品的边际效用</span>
+        <span class="s">是递减的。</span>
+
+      <span class="s">边际效用递减法则反应了理性人行为的一个基本特征。人</span>
+      <span class="s">们在做选择的时候，总是先满足最迫切的用途，再满足次</span>
+      <span class="s">迫切的用途，然后再满足更不迫切的用途，如此等等。</span>
+
+      <span class="s">总效用函数可以近似看作消费量的一个递增的凹函数，边</span>
+      <span class="s">际效用则是消费数量的一个减函数。</span>
+
+      <span class="s">迷你案例: 佛教《百喻经》的故事：第七个煎饼</span>
+
+      <span class="s">知识拓展: 效用的不可加总性</span>
+
+        <span class="s">由于效用是主观的，效用值也具有任意性，不同人之间</span>
+        <span class="s">的效用不可比较，因而是不可加总的。</span>
+
+        <span class="s">社会功利主义试图通过加总个人效用函数得到社会福利</span>
+        <span class="s">函数。</span>
+
+        <span class="s">对守财奴来说，他的每一分钱都有很高的效用，丢一分</span>
+        <span class="s">钱都痛苦的要命，把钱交给他之后福利增长的幅度一定</span>
+        <span class="s">高于其他人。</span>
+
+        <span class="s">我们不能简单地描述国家的偏好、社会的偏好，或者社</span>
+        <span class="s">会福利函数。遗憾的是，到目前为止，很多经济学家的</span>
+        <span class="s">政策建议是建立在最大化社会福利函数的基础之上的。</span>
+        <span class="s">这种政策可能带来对人权的侵害、对自由的损害，是不</span>
+        <span class="s">符合真正的市场原则的。</span>
+
+        <span class="s">龙应台: 我不在乎大国崛起，我只在乎小民尊严。</span>
+
+      <span class="s">知识拓展: 边际效用价值论</span>
+
+        <span class="s">边际效用价值理论解决了传统的效用价值论无法解释的</span>
+        <span class="s">“水与钻石”的悖论，成为经济学分析的一个基本工具。</span>
+
+        <span class="s">边际效用价值理论的本质是稀缺价值理论，即中国人讲</span>
+        <span class="s">的“物以稀为贵”。</span>
+
+    <span class="na">选择的约束条件</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">人的选择既依赖于偏好，也依赖于约束条件。</span>
+
+      <span class="s">人类之所以要选择，是因为人类欲望的无限性和满足欲望</span>
+      <span class="s">的资源的有限性之间的矛盾。</span>
+
+      <span class="s">矛盾: 周易、道家、法家、儒家</span>
+        <span class="s">周易: 矛盾双方对立的依存</span>
+        <span class="s">道家: 矛盾双方对立的转化</span>
+        <span class="s">法家: 矛盾双方对立的斗争</span>
+        <span class="s">儒家: 矛盾双方对立的统一</span>
+
+      <span class="s">第一类是技术性约束。技术性约束是指有些选择在技术上</span>
+      <span class="s">是不可能的。例如，时间就是一种技术性约束。</span>
+        <span class="s">技术性约束: 有些选择在技术上是不可能的。</span>
+
+      <span class="s">第二类是制度性约束。与技术性约束不同，制度性约束是</span>
+      <span class="s">人类自己施加的约束。比如产权就是一种制度性约束。</span>
+        <span class="s">制度性约束: 人类通过制度规则而增加的约束。</span>
+
+      <span class="s">第三类是道德性约束。广义上讲道德性约束是制度约束的</span>
+      <span class="s">一部分，因为道德本质上也是认为的制度规则。有些东西</span>
+      <span class="s">可能你可以拿来想用，法律不会惩罚你，但是道德是说不</span>
+      <span class="s">过去，你也许就不会那样做。</span>
+        <span class="s">道德性约束: 人类通过道德规则而施加的约束。</span>
+
+      <span class="s">第四类是信息约束。信息约束，是指由于我们掌握的信息</span>
+      <span class="s">非常有限，有些时候不知道我们自己真正需要什么，需要</span>
+      <span class="s">的东西在哪里买到，或者哪些东西值得我们信赖，因而，</span>
+      <span class="s">即使前面的三个约束都不存在，我们仍然无法采取正确的</span>
+      <span class="s">行动。</span>
+        <span class="s">信息约束: 由于缺乏足够的信息而带来的约束。</span>
+
+      <span class="s">学术经典: 荀子论欲望和制度约束的关系</span>
+
+        <span class="s">荀子《礼论》：礼起于何也？</span>
+
+        <span class="s">曰：人生而有欲，欲而不得，则不能无求。求而无度</span>
+        <span class="s">量分界，则不能不争；争则乱，乱则穷。先王恶其乱</span>
+        <span class="s">也，故制礼义以分之，以养人之欲，给人之求。使欲</span>
+        <span class="s">必不穷于物，物必不屈于欲。两者相持而长，是礼之</span>
+        <span class="s">所起也。</span>
+
+        <span class="s">故礼者养也。刍豢稻梁，五味调香，所以养口也；椒</span>
+        <span class="s">兰芬苾，所以养鼻也；雕琢刻镂，黼黻文章，所以养</span>
+        <span class="s">目也；钟鼓管磬，琴瑟竽笙，所以养耳也；疏房檖貌，</span>
+        <span class="s">越席床笫几筵，所以养体也。故礼者养也。</span>
+
+  <span class="na">鲁滨孙经济学</span><span class="pi">:</span>
+
+    <span class="na">劳动与休闲之间的选择</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">鲁滨孙经济: 生产者和消费者合二为一的个体经济，没</span>
+        <span class="s">有交换介入。</span>
+
+      <span class="s">经济学把能够直接带来快乐的时间称为休闲。</span>
+
+      <span class="s">经济学有关劳动和休闲的定义的划分，就在于人们行动</span>
+      <span class="s">的主要目的是过程本身还是活得的结果。</span>
+
+      <span class="s">边际成本: 增加一单位产品的生产（或消费）所付出的</span>
+        <span class="s">代价或放弃的收益。</span>
+
+      <span class="s">以幸福为目的的决策人最关心的既不是总收益，也不是</span>
+      <span class="s">总成本，而是净收益（或净效用）的大小。净收益由总</span>
+      <span class="s">效用减去总成本得到，边际净收益等于边际效用减去边</span>
+      <span class="s">际成本。</span>
+
+      <span class="s">最优决策规则: 最优选择在边际效用等于边际成本时达</span>
+        <span class="s">到。</span>
+
+      <span class="s">总效用曲线和总成本曲线之间的距离代表净收益。总效</span>
+      <span class="s">用曲线的斜率是对应产量下的边际效用，总成本曲线的</span>
+      <span class="s">斜率是对应产量下的边际成本。最优产量在净收益最大</span>
+      <span class="s">点达到，此时，总效用曲线的斜率和总成本曲线的斜率</span>
+      <span class="s">相等，也即边际效用等于边际成本。</span>
+
+    <span class="na">储蓄和投资</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">在经济学中，储蓄总是等于收入和消费之差，即储蓄=</span>
+      <span class="s">收入-消费。</span>
+
+      <span class="s">收入: 一定时期内的可用于消费和投资的产品总量。</span>
+
+      <span class="s">消费: 直接满足个人偏好的产品消耗。</span>
+
+      <span class="s">储蓄: 为了投资和防患有未然而不用于消费的收入。</span>
+
+      <span class="s">资本品: 人创造的、不能直接由大自然赋予的生产要素。</span>
+
+      <span class="s">生产要素: 生产产品所需要的各种投入，包括劳动、资</span>
+        <span class="s">本品、土地和其他自然资源。</span>
+
+      <span class="s">投资: 将储蓄转化为资本品的活动，目的是提供未来的</span>
+        <span class="s">生产率。</span>
+
+      <span class="s">折旧: 资本品在使用过程中因磨损导致的价值损失。</span>
+
+      <span class="s">经济增长: 单位时间内生产率的提高和可用于消费的产</span>
+        <span class="s">品的持续增加。</span>
+
+      <span class="s">知识拓展: 关于鲁滨孙经济的补充说明</span>
+
+        <span class="s">在现代经济学中，储蓄的椰子算作“存活投资”，所</span>
+        <span class="s">有“储蓄”总是等于“投资”。</span>
+
+  <span class="na">鲁滨孙经济的多元化</span><span class="pi">:</span>
+
+    <span class="na">无差异曲线</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">对鲁滨孙来说，9个椰子加2条鱼给他带来的效用与5个椰</span>
+      <span class="s">子加11条鱼给他带来的效用是一样的，这样的组合被成</span>
+      <span class="s">为无差异组合。如果这些组合足够多并且连续，我们可</span>
+      <span class="s">以在一个二维坐标中，将这些商品组合连接成一条曲线，</span>
+      <span class="s">称为无差异曲线（difference curve）。</span>
+
+      <span class="s">无差异曲线: 给定相同的效用水平的所有产品组合点的</span>
+        <span class="s">连线，反应了不同产品在偏好上的可替代性。</span>
+
+      <span class="s">随着鲁滨孙对鱼的消费量的增加，在同一条无差异曲线</span>
+      <span class="s">上增加一单位鱼的消费可替代的椰子的消费量在递减。</span>
+      <span class="s">换句话说，在保持鲁滨孙福利不变的前提下，鱼对椰子</span>
+      <span class="s">的替代随着鱼的消费数量的增加而减少。这个规律称为</span>
+      <span class="s">边际替代率递减法则。</span>
+
+      <span class="s">边际替代率递减法则: 在维持同一效用水平的前提下，</span>
+        <span class="s">随着某种商品消费量的增加，该产品能够替代的其它</span>
+        <span class="s">的商品的消费量将随之递减。</span>
+
+      <span class="s">欲望的无止境意味着每个人的无差异曲线有无数多条，</span>
+      <span class="s">不同的无差异曲线代表不同的效用水平。</span>
+
+      <span class="s">知识拓展: 关于无差异曲线的补充说明</span>
+
+        <span class="s">无差异曲线是经济学中最重要的分析工具之一。如果一</span>
+        <span class="s">个人的偏好可以用无差异曲线表示，则意味着不同的消</span>
+        <span class="s">费品在偏好上是可以替代的。也就是说，为了达到同样</span>
+        <span class="s">的满意度，减少一定量的某种消费品引起的效用损失可</span>
+        <span class="s">以通过增加一定量的另一种消费品来弥补。</span>
+
+        <span class="s">词典式偏好没有无差异曲线。</span>
+
+        <span class="s">劳动-收入的无差异曲线:</span>
+          <span class="s">由于劳动的边际效用为负，收入的边际效用为正，为</span>
+          <span class="s">了维持同样的效用水平，如果劳动时间增加，必须有</span>
+          <span class="s">更高的收入水平才能补偿由于劳动增加带来的效用减</span>
+          <span class="s">少。</span>
+
+        <span class="s">极乐点曲线:</span>
+
+        <span class="s">列昂惕夫无差异曲线:</span>
+
+    <span class="na">生产可行性曲线</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">鲁滨孙为了多捕一条鱼而放弃的椰子的数量，就是生产鱼</span>
+      <span class="s">的（边际）机会成本。所谓机会成本，其本质不是成本，</span>
+      <span class="s">而是损失的其他收益！如果鲁滨孙只能够进行摘椰子或者</span>
+      <span class="s">捕鱼这两种工作，那么这两种工作的产量的就互为机会成</span>
+      <span class="s">本。</span>
+
+      <span class="s">机会成本: 为了某个特定的行动而放弃的其他行动的最大</span>
+        <span class="s">收益。</span>
+
+      <span class="s">生产可行性边界（曲线）: 给定资源和技术情况下可能实</span>
+        <span class="s">现的最大生产组合的集合。它反应来个体或社会面临的</span>
+        <span class="s">资源约束。</span>
+
+    <span class="na">最优生产组合</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">边际替代率: 无差异曲线的斜率</span>
+
+      <span class="s">边际转换率: 生产可行性边界的斜率</span>
+
+      <span class="s">最优选择条件: 偏好上（消费）的边际替代率 = 生产上的</span>
+        <span class="s">边际转换率</span>
+
+    <span class="na">经济扩展</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">鲁滨孙既是生产者又是消费者，最优的生产组合意味着他</span>
+      <span class="s">在给定技术条件下实现来自己的最大幸福化。</span>
+
+      <span class="s">随着资本的积累和技术的进步，鲁滨孙的生产可行性边界</span>
+      <span class="s">会逐渐向外移动。</span>
+
+      <span class="s">鲁滨孙经济学以一个最简单的模型，很好地刻画了我们日</span>
+      <span class="s">常遇到的劳动——休闲决策、消费——储蓄决策、生产决</span>
+      <span class="s">策、投资决策、技术进步等经济学问题，对我们理解现实</span>
+      <span class="s">经济问题有重要的启发。但是，纵观历史，横看世界，人</span>
+      <span class="s">类的进步主要来自人与人之间的交换。</span></code></pre>
+</div>
+</div>
+  </div>
+
+  <ul class="post-navigation">
+    <li>
+      
+      <a href="/books/2021/11/16/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9A%84%E6%80%9D%E7%BB%B4%E6%96%B9%E5%BC%8F/">&laquo; 经济学原理：经济学的思维方式</a>
+      
+    </li>
+    <li>
+      
+      <a href="/books/2021/11/18/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E4%BA%A4%E6%8D%A2-%E5%88%86%E5%B7%A5%E4%B8%8E%E8%B4%A7%E5%B8%81/">经济学原理：交换、分工与货币 &raquo;</a>
+      
+    </li>
+  </ul>
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div>我只希望，祈祷，我的心境不要再粗糙下去，荒芜下去，这就是我的大愿望。</div>
+
+  <div class="license">
+    <a rel="license" href="/LICENSE.txt"><img alt="Creative Commons License" style="border-width:0" src="/assets/licenses/cc-by-nc-nd-4.0-80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+  </div>
+  </details>
+</footer>
+
+
+  </body>
+
+</html>

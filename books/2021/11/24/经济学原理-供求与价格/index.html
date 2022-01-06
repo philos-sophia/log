@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>经济学原理：供求与价格</title>
+  <meta name="description" content="总结: |  价格调节供求。需求曲线和供给曲线的交点决定了均衡价格和  均衡产量。在均衡状态，产品在生产上的边际成本等于在消费  上的边际效用，社会总剩余达到最大。  由于供给曲线和需求曲线在不断变化，均衡不是现实，而是现  实调整背后的引力。买者之间和卖者之间的竞争使得价格从不  均衡趋向均衡。  价格传导消费...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/books/2021/11/24/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E4%BE%9B%E6%B1%82%E4%B8%8E%E4%BB%B7%E6%A0%BC/">
+  <link rel="alternate" type="application/rss+xml" title="叶子" href="/feed.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW8P6JTH7J"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW8P6JTH7J');
+</script>
+
+
+
+</head>
+
+
+  <body>
+
+    <style>
+
+.site-nav ul li {
+  width: 15%;
+}
+
+</style>
+
+<header class="site-header">
+
+  <div class="wrapper">
+    <h2 class="site-title">
+      <a class="site-title" href="/">叶子</a>
+    </h2>
+
+     <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+        <div class="trigger">
+            <ul>
+              <li><a href="/">随笔</a></li>
+              <li><a href="/books">读书</a></li>
+              <li><a href="/misc">杂记</a></li>
+              <li><a href="/run">跑步</a></li>
+              <li><a href="/math">数学</a></li>
+              <li><a href="/essays">集子</a></li>
+
+            </ul>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">经济学原理：供求与价格</h1>
+    <p class="post-meta">
+      <time datetime="2021-11-24T23:03:10+08:00" itemprop="datePublished">Nov 24, 2021</time>
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">张维迎</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="yaml"><span class="na">总结</span><span class="pi">:</span> <span class="pi">|</span>
+  <span class="s">价格调节供求。需求曲线和供给曲线的交点决定了均衡价格和</span>
+  <span class="s">均衡产量。在均衡状态，产品在生产上的边际成本等于在消费</span>
+  <span class="s">上的边际效用，社会总剩余达到最大。</span>
+
+  <span class="s">由于供给曲线和需求曲线在不断变化，均衡不是现实，而是现</span>
+  <span class="s">实调整背后的引力。买者之间和卖者之间的竞争使得价格从不</span>
+  <span class="s">均衡趋向均衡。</span>
+
+  <span class="s">价格传导消费者的需求信息和生产者的成本信息，对变化做出</span>
+  <span class="s">反应，引导资源从低效率部门转向高效率部门。计划经济消灭</span>
+  <span class="s">了价格机制，必然导致供求失衡和资源浪费。</span>
+
+  <span class="s">政府对价格的干预会扭曲供求关系，导致效率损失和腐败。</span>
+
+  <span class="s">税收会改变均衡价格和均衡产量，导致价格上升和产量下降。</span>
+  <span class="s">税负的分担比例依赖于需求曲线和供给曲线的斜率。</span>
+
+  <span class="s">企业自愿采取的非价格机制，本质上是价格机制的变种。政府</span>
+  <span class="s">实施的非价格机制通常会带来明显的效率损失，也无助于社会</span>
+  <span class="s">公平。</span>
+
+<span class="s">---</span>
+<span class="na">术语</span><span class="pi">:</span> <span class="pi">|</span>
+  <span class="s">市场均衡 均衡价格 均衡产量</span>
+  <span class="s">拍卖</span>
+  <span class="s">计划经济 政府干预</span>
+  <span class="s">最高限价 最低限价</span>
+  <span class="s">税收</span>
+  <span class="s">一般均衡</span>
+  <span class="s">非价格机制</span>
+<span class="s">---</span>
+
+<span class="na">供求与价格</span><span class="pi">:</span>
+
+  <span class="na">市场与均衡</span><span class="pi">:</span> <span class="pi">|</span>
+
+    <span class="s">市场将消费决策和生产决策分开，消费者不生产自己消费的</span>
+    <span class="s">产品，生产者也不消费自己生产的产品。但市场又通过交换</span>
+    <span class="s">将消费者和生产者联系起来。</span>
+
+    <span class="s">市场通常被理解为买卖双方交易的场所．比如传统的庙会、</span>
+    <span class="s">集市，现代的购物中心、百货商店等等，都是市场。但市场</span>
+    <span class="s">又不仅仅是这些看得见、摸得着的实体场所。市场的本质是</span>
+    <span class="s">一种交易关系，它是一个超越了物理空间的概念。随着信息</span>
+    <span class="s">时代的到来，电商己经成为交易的一种新的形式，很多交易</span>
+    <span class="s">是在互联网上依托电商服务器完成的，在这里我们看不到具</span>
+    <span class="s">体的交易场所，但是这些网络虚拟的交易场仍然是在我们经</span>
+    <span class="s">济学研究的市场中进行的。市场的类型多种多样，不仅有物</span>
+    <span class="s">质产品和服务产品的交易市场，也有作为投入品的要素市场。</span>
+    <span class="s">还有很多无形的标的物也可以成为市场的交易对象，比如专</span>
+    <span class="s">利市场、思想市场等等。</span>
+
+    <span class="s">无论什么市场，都存在买者和卖者两方。市场交易是一个竞</span>
+    <span class="s">争的过程，不仅有买者和卖者之间的竞争，而且有买者之间</span>
+    <span class="s">的竞争和卖者之间的竞争。</span>
+
+    <span class="s">竞争，意味着每个人都有自由选择的权利，即向谁买、买什</span>
+    <span class="s">么和卖给谁、卖什么的自由。只有在各方都有自由选择权利</span>
+    <span class="s">的制度下才可以谈得上交易，才能够称之为市场。</span>
+
+    <span class="s">均衡价格: |</span>
+
+      <span class="s">经济学分析市场的一个基本工具是均衡。</span>
+
+      <span class="s">均衡分析有一百多年的历史，至今仍然是一个强有力的分析</span>
+      <span class="s">工具。</span>
+
+      <span class="s">均衡分析最初是经济学家从物理学上借用过来的，它是一种</span>
+      <span class="s">分析不同力量相互作用的方法。在宇宙空间中存在着各种各</span>
+      <span class="s">样的力量，各种力量相互作用，达到一种稳定的状态，被称</span>
+      <span class="s">为均衡状态。在均衡状态下，没有任何事物会发生新的变化。</span>
+
+      <span class="s">市场上，供给和需求是两种基本的力量。经济学中的市场均</span>
+      <span class="s">衡，就是指供求和需求的平衡状态。</span>
+
+      <span class="s">市场均衡: 供求和需求的平衡状态。</span>
+
+      <span class="s">市场均衡的核心是价格。</span>
+
+      <span class="s">在经济学上，我们把使得需求量和供给量相等的价格称为均</span>
+      <span class="s">衡价格(equilibrium price)，对应的需求量（供给量）</span>
+      <span class="s">称为均衡产量（equilibrium output)。</span>
+
+      <span class="s">在均衡价格下，所有的需求量都能得到满足，所有愿意在这</span>
+      <span class="s">个价格下出售的产品都可以卖出去。</span>
+
+      <span class="s">均衡价格: 需求量等于供给量时的产品价格，由需求曲线和</span>
+        <span class="s">供给曲线的交点决定。。</span>
+
+      <span class="s">均衡产量: 均衡价格下的需求量和供给量。</span>
+
+      <span class="s">为什么随着产量的增加，消费者愿意付的钱越来越少？因为</span>
+      <span class="s">边际效用是递减的。也就是说，每个人一开始总是满足最迫</span>
+      <span class="s">切的需要，他愿意为最迫切的需要付出的代价最大；迫切的</span>
+      <span class="s">需要满足之后，对于不那么迫切的需要，愿意付出的代价相</span>
+      <span class="s">对较小。</span>
+
+      <span class="s">有效率的交易只会出现在均衡点的左侧，即需求曲线高于供</span>
+      <span class="s">给曲线的部分。</span>
+
+      <span class="s">消费者的最优选择意味着他愿意接受的市场价格等于其边际</span>
+      <span class="s">效用；生产者的最优选择意味着他愿意接受的市场价格等于</span>
+      <span class="s">其边际成本。</span>
+
+        <span class="s">边际效用 = 均衡价格 = 边际成本</span>
+
+      <span class="s">总剩余（total surplus） =</span>
+        <span class="s">消费者剩余（consumer's surplus）</span>
+        <span class="s">+</span>
+        <span class="s">生产者剩余（producer's surplus）</span>
+
+      <span class="s">容易证明，只有在均衡条件下，总剩余才能达到最大，此时</span>
+      <span class="s">的市场效率是最大的。</span>
+
+      <span class="s">现实生活中我们不可能总是达到最大效率这种状态。均衡不</span>
+      <span class="s">是现实，而是现实发生变化背后的引力。</span>
+
+    <span class="s">非均衡状态及其调整: |</span>
+
+      <span class="s">当价格低于均衡价格时，消费者愿意购买的数量大于生产者</span>
+      <span class="s">愿意出售的数量，出现了供不应求的现象；当价格高于均衡</span>
+      <span class="s">价格时，消费者愿意购买的数量小于生产者愿意出售的数量，</span>
+      <span class="s">出现了供大于求的现象。无论哪种情况，都有一方的意愿不</span>
+      <span class="s">能实现，从而导致效率损失。</span>
+
+      <span class="s">为什么非均衡状态会出现？</span>
+
+        <span class="s">最基本的原因是在现实市场中，信息是不完全的。</span>
+
+        <span class="s">不均衡状态还可以理解为一种后悔的状态：当消费者按照</span>
+        <span class="s">商家的标价购买一件商品后，过一段时间发现该商品价格</span>
+        <span class="s">下降了，那当初消费者实际支付的价格就是非均衡价格，</span>
+        <span class="s">这就表现出消费者的 “后悔”。同样，当生产者把产品卖</span>
+        <span class="s">出后如果发现价格上涨了，也会感到“后悔”</span>
+
+      <span class="s">学术经典: 亚当·斯密论价格调整过程</span>
+
+        <span class="s">供不应求:</span>
+
+        <span class="s">市场上任何一个商品的供售量，如果不够满足对这种商品</span>
+        <span class="s">的有效需求，那些愿支付这种商品出售前所必须支付的地</span>
+        <span class="s">租、劳动工资和利润的全部价值的人，就不能得到他们所</span>
+        <span class="s">需要的数量的供给。他们当中有些人，不愿得不到这种商</span>
+        <span class="s">品，宁愿支付较大的价格。于是竞争便在需求者中间发生。</span>
+        <span class="s">而市场价格便或多或少地上升到自然价格以上。价格上升</span>
+        <span class="s">程度的大小，要看货品的缺乏程度及竞争者富有程度和浪</span>
+        <span class="s">费程度所引起的竟争热烈程度的大小。</span>
+
+        <span class="s">供过于求:</span>
+
+        <span class="s">反之，如果市场上这种商品的供售量超过了它的有效需求，</span>
+        <span class="s">这商品就不可能全部卖给那些愿意支付这商品出售前所必</span>
+        <span class="s">须支付的地租、劳动工资和利润的全部价值的人，其中一</span>
+        <span class="s">部分必须售给出价较低的人。这一部分价格的低落，必使</span>
+        <span class="s">全体价格随着低落。这样，它的市场价格，便或多或少降</span>
+        <span class="s">到自然价格以下。下降程度的大小，要看超过额是怎样加</span>
+        <span class="s">剧卖方的竞争，或者说，要看卖方是怎样急于要把商品卖</span>
+        <span class="s">出。</span>
+
+        <span class="s">市场均衡:</span>
+
+        <span class="s">如果市场上这种商品量不多不少，恰够供给它的有效需求，</span>
+        <span class="s">市场价格便和自然价格完全相同，或大致相同。所以，这</span>
+        <span class="s">全部商品量都能以自然价格售出，而不能以更高价格售出。</span>
+        <span class="s">各商人之间的竞争使他们都得接受这个价格，但不使他们</span>
+        <span class="s">接受更低的价格。</span>
+
+      <span class="s">调整过程需要多长的时间，在不同产品市场是不同的。特别</span>
+      <span class="s">是，由于需求很容易及时调整，调整的快慢主要取决于产品</span>
+      <span class="s">的生产周期。生产周期越长的产品，调整的速度越慢。</span>
+
+        <span class="s">例如，农作物的生产周期是以年计算，调整至少需要一年</span>
+        <span class="s">的时间；而服装的生产周期很短，调整相对快一些。</span>
+
+      <span class="s">现实生活中之所以达不到经济学意义的均衡，是因为需求曲</span>
+      <span class="s">线和供给曲线都随时间而变化。</span>
+
+    <span class="s">均衡的移动和调整: |</span>
+
+      <span class="s">在现实市场中，均衡点的变化和调整主要是通过企业家活动</span>
+      <span class="s">实现的。企业家是善于判断末来、发现不均衡并组织生产、</span>
+      <span class="s">从事创新活动的人。尽管企业家也会犯错误，但正是他们的</span>
+      <span class="s">存在，使得市场经济不仅有序，而且在不断发展。</span>
+
+  <span class="na">均衡的实例分析</span><span class="pi">:</span> <span class="pi">|</span>
+
+    <span class="s">拍卖市场: |</span>
+
+      <span class="s">拍卖: 通过买方或卖方竞价而达到均衡价格的定价机制。</span>
+
+      <span class="s">知识拓展: 拍卖简介</span>
+
+        <span class="s">拍卖是商业中的一种买卖方式，最初盛行于西方国家，近</span>
+        <span class="s">年来随着中国市场经济的深化、人们收入的增加，在中国</span>
+        <span class="s">也出现了很多拍卖市场。拍卖是由两个以上的买家通过竞</span>
+        <span class="s">购方式，最終由出价最高的人获得商品。拍卖的类型包括</span>
+        <span class="s">英格兰式拍卖、荷兰式拍卖、密封递价式拍卖、维克瑞式</span>
+        <span class="s">拍卖、反向拍卖、定向拍卖等等。</span>
+
+        <span class="s">英格兰式拍卖，也称增价拍卖或低估价拍卖，是指在拍卖</span>
+        <span class="s">过程中，拍卖人宣布拍卖标的的起拍价及最低增幅，竞买</span>
+        <span class="s">人以起拍价为起点，由低至高竟相应价，最后以最高竞价</span>
+        <span class="s">者以三次报价无人应价后，响槌成交。但成交价不得低于</span>
+        <span class="s">保留价。</span>
+
+        <span class="s">荷兰式拍卖，也称降价拍卖或高估价拍卖，是指在拍卖过</span>
+        <span class="s">程中，拍卖人宣布拍卖标的的起拍价及降幅，并依次叫价，</span>
+        <span class="s">第一位应价人响槌成交。但成交价不得低于保留价。</span>
+
+        <span class="s">英格兰式与荷兰式相结合的拍卖方式，是指在拍卖过程中，</span>
+        <span class="s">拍卖人宣布起拍价及最低增幅，由竞买人竞相应价，拍卖</span>
+        <span class="s">人依次升高叫价，以最高应价者竞得。若无人应价则转为</span>
+        <span class="s">拍卖人依次降低叫价及降幅，并依次叫价，以第一位应价</span>
+        <span class="s">者竞得。但成交价不得低于保留价。</span>
+
+        <span class="s">密封递价式拍卖，也称招标式拍卖，是指由买主在规定的</span>
+        <span class="s">时间内将密封的报价单（也称标书）递交拍卖人，由拍卖</span>
+        <span class="s">人选择买主。这种拍卖方式，和上述两种方式相比较，有</span>
+        <span class="s">以下两个特点：一是除价格条件外，还可能有其他交易条</span>
+        <span class="s">件需要考虑：二是可以来取公开开标方式，也可以采取不</span>
+        <span class="s">公开开标方式。拍卖大型设施或数量较大的库存物资或政</span>
+        <span class="s">府罚没物资时，可能来用这种方式。</span>
+
+        <span class="s">维克瑞式拍卖，也称第二价格密封拍卖。这种拍卖方式与</span>
+        <span class="s">首价密封拍卖基本相同，区别仅在于胜出者需要支付的价</span>
+        <span class="s">格是第二高的报价，而不是他自己的报价。这与易趣网所</span>
+        <span class="s">使用的代理人竞价系统相似，在这个系统中，胜出者需要</span>
+        <span class="s">支付第二高的报价，再加上一个报价的增额（如10%）。</span>
+
+        <span class="s">反向拍卖，也称拍买，常用于政府来购、工程招标等。由</span>
+        <span class="s">采购方提供希望得到的产品的信息、需要服务的要求和可</span>
+        <span class="s">以承受的价格定位，由卖家之间以竞争方式决定最终产品</span>
+        <span class="s">提供商和服务供应商，从而使采购方以最优的性价比实现</span>
+        <span class="s">购买。</span>
+
+        <span class="s">定向拍卖，是一种为特定的拍卖标的物而设计的拍卖方式，</span>
+        <span class="s">有意竞买者必须符合卖家所提出的相关条件，才可成为竟</span>
+        <span class="s">买人参与竞价。</span>
+
+      <span class="s">一口价 (take-it-or-leave-it):</span>
+
+        <span class="s">在这个模式中，卖方出价，买方没有什么砍价的余地，要</span>
+        <span class="s">么选择购买，要么选择离开。</span>
+
+        <span class="s">在现实生活中，很多市场上都是采取这种定价模式。通常</span>
+        <span class="s">来说，越是规范的市场，一口价的模式越是普遍。例如理</span>
+        <span class="s">发店，理一次发20元钱不愿接受这个价格就走人，通常没</span>
+        <span class="s">有谁会讨价还价。</span>
+
+      <span class="s">在现实当中，由于需求总在不断地波动，好多企业会备有存</span>
+      <span class="s">货，存货就是为了应对这些波动。如果存货低于预期，商家</span>
+      <span class="s">就会补充存货；如果存货高于预期，商家就少进货。调整存</span>
+      <span class="s">货的过程，是对定价偏离均衡价格的缓冲，其背后的力量就</span>
+      <span class="s">是均衡价格的引导。</span>
+
+    <span class="s">股票交易市场: |</span>
+
+      <span class="s">股票是企业所有权的权证，代表相应的分享权和控制权。与</span>
+      <span class="s">普通商品不同，股票本身不能直接用于消费，通常也不直接</span>
+      <span class="s">与商品进行交换。对个人来说，买股票是投资，不是消费。</span>
+
+      <span class="s">股票发行上市也称 “首次募股上市”（initial public</span>
+      <span class="s">offering，IPO），它是指一家股份公司第一次将其股份向</span>
+      <span class="s">公众出售。</span>
+
+      <span class="s">上市公司的股份是根据招股书中约定的条款通过经纪商或做</span>
+      <span class="s">市商进行销售。一般来说，一旦首次公开上市完成后，这家</span>
+      <span class="s">公司的股票就可以在证券交易所挂牌交易。</span>
+
+      <span class="s">在证券交易所的报价系统中，包含两类股票定价方式：</span>
+
+        <span class="s">一类是集合竞价，</span>
+
+        <span class="s">另一类是连续竞价。</span>
+
+      <span class="s">简单地说，集合竞价是一个特定的时间区间内供给和需求相</span>
+      <span class="s">等的均衡价格；连续竞价是每一笔买卖及时形成的均衡价格。</span>
+
+      <span class="s">股票集合竞价可以看作一个双边多单位的竞价模型。</span>
+
+      <span class="s">连续竞价有两个原则：价格优先和时间优先。</span>
+
+      <span class="s">知识拓展: 证券市场发展史</span>
+
+        <span class="s">证券是债券、股票等有价票证的总称。</span>
+
+        <span class="s">1792年5月17日，24名经纪人在华尔街的一棵梧桐树下聚</span>
+        <span class="s">会，商定了一项名为“梧桐树协定”的协议，约定每日在梧桐</span>
+        <span class="s">树下聚会，从事证券交易，并确定了交易佣金的最低标准</span>
+        <span class="s">及其他交易条款。1817年，这些经纪人共同组成了“纽约</span>
+        <span class="s">证券交易会”，1863年改名为“纽约证券交易所”，这便是</span>
+        <span class="s">著名的纽约证券交易所的前身。纽约证券交易所的成立标志</span>
+        <span class="s">着证券市场已基本形成。</span>
+
+        <span class="s">1918年，经北洋政府批准，成立了“北平证券交易所”这是</span>
+        <span class="s">全国第一家由中国人创办的证券交易所。</span>
+
+        <span class="s">1990年11月26日，国务院授权中国人民银行批淮的上海证</span>
+        <span class="s">券交易所宣告成立，并于1990年12月19日正式营业，成为</span>
+        <span class="s">我国第一家证券交易所；1991年4月11日，我国另一家由中</span>
+        <span class="s">国人民银行批准的证券交易所深圳证券交易所也宣告成立，</span>
+        <span class="s">并于同年7月3日正式营业。两家证券交易所的成立，标志着</span>
+        <span class="s">我国证券市场由分散的场外交易转为了集中的场内交易。</span>
+
+  <span class="na">价格的信号传递机制</span><span class="pi">:</span>
+
+    <span class="na">价格如何协调消费和生产</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">市场运行的基本原理是：供求决定价格，价格调节供求。</span>
+
+      <span class="s">价格有信号传递（signaling）的作用，它传递着生产者</span>
+      <span class="s">的成本信息和消费者的需求信息。</span>
+
+      <span class="s">尽管每个消费者都不知道成本信息，但只要生产者愿意以</span>
+      <span class="s">某个价格出售自己的产品，就意味着成本不会高于这个价</span>
+      <span class="s">格；同时，尽管生产者不知道消费者的需求信息，但只要</span>
+      <span class="s">消费者愿意购买该产品，就说明产品给消费者带来的好处</span>
+      <span class="s">不会低于其愿意支付的价格</span>
+
+      <span class="s">在市场中，信息是特别分散的。每个人通常只知道自己的</span>
+      <span class="s">信息，并在主观预期的基础上进行判断。厂商的成本也存</span>
+      <span class="s">在主观性，因为愿意支付的成本也是受预期价格影响的。</span>
+
+      <span class="s">无数的生产者和消费者存在于市场中，消费者每天都要进</span>
+      <span class="s">行很多次的消费，商家每天都会卖出很多商品，在没有事</span>
+      <span class="s">先约定或者提前下单的情况下，很多交易能够即时完成，</span>
+      <span class="s">正是因为价格起到了协调信息的功能。</span>
+
+      <span class="s">价格还有一个功能，就是协调生产者和消费者，使得稀缺</span>
+      <span class="s">资源用于生产最有价值的商品。比如生产者在选择应该生</span>
+      <span class="s">产何种商品时，就需要查看哪种可行的商品价格高。</span>
+
+      <span class="s">某种商品的价格上涨了，会传递给市场一个信号，吸引更</span>
+      <span class="s">多资源来生产该商品；某种商品的价格下降了，也会向市</span>
+      <span class="s">场传递一个信号，引导资源逐渐从该商品的生产领域撒离</span>
+      <span class="s">出来。这样就协调了整个社会的分工和专业化，这是价格</span>
+      <span class="s">最重要的功能。</span>
+
+      <span class="s">迷你案例: 优步的动态竞价策略</span>
+
+    <span class="na">计划经济为什么会失败</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">或许，理解价格功能的最好方式是看一下当价格不起作用</span>
+      <span class="s">时，消费和生产会出现什么情况。</span>
+
+      <span class="s">计划经济制度就是消灭价格功能的制度。</span>
+
+      <span class="s">当然，计划经济下也有价格．但由于价格不随供求关系而</span>
+      <span class="s">调整，计划经济下的价格并非真正意义上的价格，而只是</span>
+      <span class="s">政府核算和进行收入分配的工具。</span>
+
+      <span class="s">计划经济下，价格不决定生产什么和如何生产，只影响收</span>
+      <span class="s">入如何分配。</span>
+
+      <span class="s">计划经济: 由中央计划决定生产什么，如何生产及为谁生</span>
+        <span class="s">产的经济制度。</span>
+
+      <span class="s">计划经济的支持者认为，如果任由市场自发地调节，市场</span>
+      <span class="s">上的每个人都会像无头苍蝇一样，一定会出现供不应求或</span>
+      <span class="s">者生产过剩的非均衡状态，进而会带来效率的损失，最终</span>
+      <span class="s">形成经济危机。为了解决这个问题，计划经济倡导者建议</span>
+      <span class="s">设置一个中央计划机关（central planner）。由它计</span>
+      <span class="s">算出本来属于市场领域的方方面面，包括需求曲线、供给</span>
+      <span class="s">曲线、均衡价格以及均衡交易量等等，这样可以避免出现</span>
+      <span class="s">社会资源在无序中的浪费，实现供求双方的最高效率。由</span>
+      <span class="s">此，人类社会第一次出现了由一种思想观念创造的、依靠</span>
+      <span class="s">中央集权从上到下进行计划分配的一种制度，在这种体制</span>
+      <span class="s">下，生产者生产什么产品，怎么生产，产品由谁来消费，</span>
+      <span class="s">消费什么，甚至每个劳动力在哪里工作，都是由中央计划</span>
+      <span class="s">机关规定的。</span>
+
+      <span class="s">计划经济的初衷是要解決生产的不协调问题，结果却导致</span>
+      <span class="s">了更严重的不协调。</span>
+
+        <span class="s">计划经济下普遍出现的商品短缺现象，被匈牙利经济学</span>
+        <span class="s">家科尔内概括为 “短缺经济”。</span>
+
+        <span class="s">生产者要想做得更好一点，赚更多的钱，那么他需要预</span>
+        <span class="s">测需求，虽然他也可能犯错误但随时可进行调整。尽管</span>
+        <span class="s">市场并不总是处于均衡状态，但市场经济中趋向均衡的</span>
+        <span class="s">调整力量远比计划经济要好得多。</span>
+
+      <span class="s">知识拓展: 20世纪30年代有关计划经济的大争论</span>
+
+    <span class="na">价格如何对变化做出调整</span><span class="pi">:</span> <span class="pi">|</span>
+
+      <span class="s">或许如果一个社会真的处于静止状态，人们的偏好、资源</span>
+      <span class="s">和生产技术都不随时间而变化，无论是市场经济还是计划</span>
+      <span class="s">经济，经过若干年的调整，都会收敛于均衡状态，尽管市</span>
+      <span class="s">场经济的收敛速度比计划经济要快得多。</span>
+
+      <span class="s">价格制度相对于计划制度的优越性，不仅在于它对非均衡</span>
+      <span class="s">的纠正，而且还在于它对变化的适应和对变化的推动。</span>
+
+      <span class="s">市场经济即便每时每刻都处于不均衡状态，它也是充满活</span>
+      <span class="s">力、不断变化的不均衡，伴随这种不均衡的是技术不断进</span>
+      <span class="s">步，成本不断下降，可消费的产品数量越来越多，新的需</span>
+      <span class="s">求不断得到满足。</span>
+
+      <span class="s">计划经济即便处于均衡状态，这种经济也是没有活力的，</span>
+      <span class="s">生产者日复一日、年复一年地以相同的成本生产着同样的</span>
+      <span class="s">产品，消费者只能日复一日、年复一年地消费着同样的产</span>
+      <span class="s">品。</span>
+
+      <span class="s">可见，无论需求发生变化还是供给发生变化，价格都会通</span>
+      <span class="s">过发送信号来引导市场趋向一个新的均衡。这一现象背后</span>
+      <span class="s">的一个原因是每个人都只关心自己。所以价格不仅仅是一</span>
+      <span class="s">个信号，也是一种激动机制。</span>
+
+      <span class="s">当供给曲线每一处都高于需求曲线时，产品就没有市场，</span>
+      <span class="s">没有人愿意生产也不应该生产该产品。新产品的出现可以</span>
+      <span class="s">理解为，随着技术的不断进步，生产成本大大降低，使得</span>
+      <span class="s">供给曲线由西北往东南移动，这样市场上就会存在一定的</span>
+      <span class="s">成交量，这个技术下生产该产品是有效率的。</span>
+
+      <span class="s">印度经济学家阿马蒂亚· 森就有一个观点：市场经济国家</span>
+      <span class="s">是不会饿死人的，因为它有价格机制。只要一个地方出现</span>
+      <span class="s">灾荒，就会有想赚钱的人把粮食从其他地方运过来。没灾</span>
+      <span class="s">荒的地方的粮食减少，价格上升；有灾荒的地方获得了粮</span>
+      <span class="s">食。结果是，虽然出现了灾荒，但仍然有可供消费的粮食。</span>
+
+      <span class="s">知识拓展: 鲜为国人所知的印度计划经济</span>
+
+  <span class="na">政府干预的效率损失</span><span class="pi">:</span> <span class="pi">|</span>
+
+    <span class="s">从古到今，政府对市场的干预就一直存在。政府干预的很重</span>
+    <span class="s">要的一个方法就是对价格的管制。这样做的结果就是扭曲了</span>
+    <span class="s">价格信号，造成资源的错配，导致诸如腐败、工作懈怠、效</span>
+    <span class="s">率低下等种种社会问题。</span>
+
+    <span class="s">政府干预: 通过行政手段和法律手段实施的价格管制、配额、</span>
+      <span class="s">生产计划等。</span>
+
+    <span class="s">价格管制及其后果: |</span>
+
+      <span class="s">在市场经济国家，政府有时会对价格和工资实行限制。与</span>
+      <span class="s">计划经济的政府定价不同的是，市场经济国家的价格管制</span>
+      <span class="s">一般只规定最高限价或最低限价，而不是直接定价。</span>
+
+      <span class="s">最高限价 (price ceiling) 由英文直译过来就是价格</span>
+      <span class="s">天花板，即卖出商品的标价不能超过规定的最高价格。</span>
+
+      <span class="s">最高价格一定低于均衡价格，否则是没有意义的。</span>
+
+      <span class="s">最高限价: 规定交易价格不能高于某个特定的水平。</span>
+
+      <span class="s">从效率上来看，本来一些不是非常需要这个商品的人也进</span>
+      <span class="s">入了市场，该商品对这些消费者的效用并不高，但他们也</span>
+      <span class="s">很可能获得该商品，这对于社会资源是一种浪费。而该商</span>
+      <span class="s">品对另外一些人的价值较大，但在限价后他们可能买不到</span>
+      <span class="s">这种商品，这又是一种损失。</span>
+
+      <span class="s">既然需求大于供给，政府可以选择的一个办法是强制企业</span>
+      <span class="s">生产市场需要的产量。这就是为什么价格管制经常会伴随</span>
+      <span class="s">计划性生产的主要原因。</span>
+
+      <span class="s">假如政府的生产计划确实能够实现，此时生产的边际成本</span>
+      <span class="s">远远大于商品给消费者带来的边际价值。这是一种资源的</span>
+      <span class="s">浪费。</span>
+
+      <span class="s">有时候政府制定了最高限价并强制企业生产，如果企业亏</span>
+      <span class="s">损则给予财政补贴。但这会弱化企业降低成本的积极性，</span>
+      <span class="s">甚至诱导企业故意增加成本、制造亏损，因为亏损越多，</span>
+      <span class="s">得到的补贴越多，不亏损就没有补贴。这又是一种效率损</span>
+      <span class="s">失。</span>
+
+      <span class="s">如果政府没有办法强制企业生产，那就只能配额消费，在</span>
+      <span class="s">1200单位的需求量里面分配400单位的产量。</span>
+
+      <span class="s">如果政府通过抓阄的方式随机分配配额，将导致前面讲的</span>
+      <span class="s">效率损失，因为能得到该商品的并不一定是需求最迫切的</span>
+      <span class="s">消费者。如果政府采取其他标准进行配额，则容易产生腐</span>
+      <span class="s">败现象。如果不采取上述配额的办法，消费者就需要通过</span>
+      <span class="s">排队来解决有限供给量的归属问题：排在前面的人可以买</span>
+      <span class="s">到，排在后面的人买不到。但是排队本身带来了很多人力</span>
+      <span class="s">物力的浪费。当人们不得不排队购买商品时，他们可用于</span>
+      <span class="s">工作和休闲的时间就减少了。现实中，最高限价可能同时</span>
+      <span class="s">伴随上述各种后果的出现。</span>
+
+      <span class="s">物品短缺还可能会导致黑市交易，这在计划经济时代是特</span>
+      <span class="s">别典型的。当一些商品在最高限价下想买而买不到时非常</span>
+      <span class="s">需要这些产品的人就会偷偷地出高价而一些获得这些商品</span>
+      <span class="s">但需求并不迫切的人就愿意以高价转卖，黑市交易由此形</span>
+      <span class="s">成。有了黑市之后，生产者也会生产限价下本来不愿意生</span>
+      <span class="s">产的产品和产量。</span>
+
+      <span class="s">黑市交易在一定程度上改善了效率，但也带来了其他的问</span>
+      <span class="s">题，例如人们违法之后带来的心理成本，还会引发其他的</span>
+      <span class="s">犯罪、比如“黑吃黑”。在一个法律不合理的环境中，多数</span>
+      <span class="s">人都会违法，这就给黑社会的产生提供了条件，并进一步</span>
+      <span class="s">导致社会信任度的降低。</span>
+
+      <span class="s">迷你案例: 中国药品现价的后果</span>
+
+      <span class="s">对消费者来说，只要贿赂官员的成本低于供给量对应的价</span>
+      <span class="s">格和政府限价之间的差额，贿赂就是划算的。贿赂金中一</span>
+      <span class="s">部分是向官员的转移支付，另一部分则是完全浪费性的。</span>
+      <span class="s">排队成本则完全是浪费性的。</span>
+
+      <span class="s">最低限价: 规定交易价格不能低于某个特定的水平。</span>
+
+      <span class="s">如果说最高限价政策常常是以“保护消费者利益”为借口，</span>
+      <span class="s">最低限价政策则是实实在在为了保护某些生产者的既得利</span>
+      <span class="s">益。</span>
+
+      <span class="s">最低限价在农副产品行业中较为普遍。全球很多国家都对</span>
+      <span class="s">农产品实施最低限价或者价格补贴。在美国、欧洲、韩国、</span>
+      <span class="s">日本等发达经济体，农民的人数是较少的，但他们在政治</span>
+      <span class="s">上的声音非常大。这就是这些国家对农产品实行价格补贴</span>
+      <span class="s">的主要原因。</span>
+
+      <span class="s">在劳动力市场上，最低价格限制表现为最低工资法。最低</span>
+      <span class="s">工资法名义上是为了保护劳动者的利益，实际上减少了就</span>
+      <span class="s">业机会，损害了低技能劳动者的利益。最低工资法还诱使</span>
+      <span class="s">企业用资本密集型技术替代劳动密集型技术，机器替代人</span>
+      <span class="s">力，进一步扭曲了资源配置。</span>
+
+    <span class="s">税收如何影响价格: |</span>
+
+      <span class="s">政府干预市场的另一个方式是征税。政府需要征税获得财</span>
+      <span class="s">政收入，税收的结构和额度将会改变市场的均衡状态。</span>
+
+      <span class="s">政府征税类似在供求之间加入一个楔子，对价格和交易量</span>
+      <span class="s">都会产生影响。</span>
+
+      <span class="s">税负最终是由谁来承担？这依赖于需求曲线和供给曲线的</span>
+      <span class="s">特征。但是无论如何，税负通常会降低交易效率。</span>
+
+      <span class="s">税收: 政府用强制手段获取收入。</span>
+
+      <span class="s">税收中有一种税叫做从量税，是对生产者销售的每一单位</span>
+      <span class="s">产品进行征税。</span>
+
+      <span class="s">政府征走的税收可以作为转移支付，不会降低总剩余。但</span>
+      <span class="s">是征税后交易量的下降却降低了总剩余。可见，从量税会</span>
+      <span class="s">导致一定的效率损失。</span>
+
+      <span class="s">另外一种从量税是对消费者征税，消费者在支付生生产者</span>
+      <span class="s">价格之外还需要另外支付的税。</span>
+
+      <span class="s">假如供给是有弹性的，而需求是无弹性的，也就是我们通</span>
+      <span class="s">常所说的“刚需”。</span>
+
+      <span class="s">如果供给是无弹性的，需求是有弹性的，税收将全部由生</span>
+      <span class="s">产者承担；如果需求是无弹性的，供给是有弹性的，税收</span>
+      <span class="s">将全部由消费者承担。</span>
+
+      <span class="s">一般的，无论向哪一方征税，税负的分担比例取决于供给</span>
+      <span class="s">弹性和需求弹性的比值，哪一方弹性小，哪一方负担的税</span>
+      <span class="s">收就大：需求弹性相对小，则消费者承担的税负比重高；</span>
+      <span class="s">供给弹性相对小，则生产者承担的税负比重高。</span>
+
+      <span class="s">一般来说，税收政策会带来效率损失。只有在需求或供给</span>
+      <span class="s">无弹性的时候，税收才不造成效率损失，此时税负全部由</span>
+      <span class="s">消费者或生产者承担，没有导致交易数量的变化。只要需</span>
+      <span class="s">求和供给都有一定的弹性，税收就会造成生产效率下降。</span>
+
+      <span class="s">生活必需品的需求弹性是比较小的，比如粮食价格上涨50%，</span>
+      <span class="s">人们的消费量不会减少50%。所以对生活必需品的征税大部</span>
+      <span class="s">分转嫁给消费者。奢侈品通常需求弹性比较大，承担税负的</span>
+      <span class="s">主要是生产者。再比如房产交易税，政府可能认为买房子的</span>
+      <span class="s">人投机获得暴利，因此提高房产的交易税。但如果大家都预</span>
+      <span class="s">期房子会涨，则最终承担税收的主要还是买方。这就是当前</span>
+      <span class="s">中国房地产市场的现实情况。</span>
+
+      <span class="s">从量税是根据销售数量定额征收，从价税是根据销售价格按</span>
+      <span class="s">一定比例征收。例如征收20%的营业税，假如商家卖出2元钱</span>
+      <span class="s">的商品，就要缴纳0.4元的税。</span>
+
+      <span class="s">从量税改变的是曲线的截距，从价税改变的是曲线的斜率，</span>
+      <span class="s">因为生产者实际得到的是</span>
+
+         <span class="s">P - 0.2P，</span>
+
+      <span class="s">供给函数变成</span>
+
+         <span class="s">S = 2×(P-0.2P) = 1.6P，</span>
+
+     <span class="s">这样供给曲线变得更陡峭了。</span>
+
+      <span class="s">除了对交易征税，政府还会对个人和企业的收入征税，称</span>
+      <span class="s">为所得税。所得税是指以所得额为课税对象的税收的总称。</span>
+
+      <span class="s">所得税由谁来负担？所得税如何影响价格，影响产量？</span>
+
+        <span class="s">因为税负影响生产者的积极性，所以生产者会提高价</span>
+        <span class="s">格：假如所得税税率过高，没人愿意生产了，行业的</span>
+        <span class="s">供给量将会减少，导致市场价格上升，因此消费者就</span>
+        <span class="s">要承担部分稅收。设想一个极端的情况，假如我们征</span>
+        <span class="s">收100%的利润税，企业赚的钱都纳税了，没人愿意办</span>
+        <span class="s">企业了，最后损害的将是我们社会上的每一个人。所</span>
+        <span class="s">以，不能简单地认为向富人征的税负只是由富人负担，</span>
+        <span class="s">其实好多富人的稅会转嫁到穷人身上。</span>
+
+  <span class="na">一般均衡与非价格机制</span><span class="pi">:</span> <span class="pi">|</span>
+
+    <span class="s">一般均衡理论: |</span>
+
+      <span class="s">单一产品市场的均衡是局部均衡(partial equilibrium)。</span>
+
+      <span class="s">一般均衡或总体均衡(general equilibrium)，是指所有</span>
+      <span class="s">市场同时达到均衡的状态。</span>
+
+      <span class="s">一般均衡: 所有市场同时达到供给等于需求的均衡价格。</span>
+
+      <span class="s">一般均衡又称为瓦尔拉斯均衡。</span>
+
+      <span class="s">20世纪50年代，阿罗(K. Arrow)、德布罗（GDebreu）</span>
+      <span class="s">等人应用拓扑学和数学上的不动点定理，建立了现在经济</span>
+      <span class="s">学的一般均衡理论，并因此获得了诺贝尔经济学奖。因此，</span>
+      <span class="s">一般均衡又称为 “阿罗-德布罗定理”。</span>
+
+      <span class="s">在均衡状态，每个消费者都达到效用最大化的消费选择，</span>
+      <span class="s">每个生产者都达到利润最大化的产量选择；所有的产品市</span>
+      <span class="s">场都出清，所有的要素市场都达到供求平衡；所有消费者</span>
+      <span class="s">都能买到自己想买的产品，所有生产者都能卖出自己计划</span>
+      <span class="s">生产的产品；想找工作的劳动者一定能找到工作，想雇人</span>
+      <span class="s">的企业一定能雇到人；想借钱的生产者一定能借到钱能出</span>
+      <span class="s">货的货款人一定能把钱货出去</span>
+
+      <span class="s">一般均衡有一个条件：如果一种产品出现过剩，则价格等</span>
+      <span class="s">于零，等于说它给人们带来的边际效用为零。完全竞争企</span>
+      <span class="s">业的收入等于成本，没有超额利润。</span>
+
+      <span class="s">理论上一般均衡是通过价格的不断试错而实现的：对于任</span>
+      <span class="s">意给定的一组价格，如果某种产品供过于求，该产品的价</span>
+      <span class="s">格就向下调整；如果供不应求，该产品的价格就向上调整。</span>
+      <span class="s">这样，经过若干次的调整，所有产品的价格都趋于均衡。</span>
+
+      <span class="s">一般均衡在理论上很完美，但现实经济不可能达到一般均</span>
+      <span class="s">衡。尽管如此，一般均衡理论仍然是很有意义的。</span>
+
+        <span class="s">第一，它为分析市场提供了一个参照系；</span>
+
+        <span class="s">第二，它有助于分析政策的直接和间接效果。</span>
+
+      <span class="s">次优理论（the second-best theory）:</span>
+
+      <span class="s">一般均衡理论也意味着，如果由于某种原因某个商品的市</span>
+      <span class="s">场偏离了原来的均衡，则所有其他商品的市场也应该偏离</span>
+      <span class="s">原来的均衡。</span>
+
+  <span class="na">市场的非价格机制</span><span class="pi">:</span> <span class="pi">|</span>
+
+    <span class="s">有时候政府会出于收入分配或其他目的限制竞价，例如政府</span>
+    <span class="s">对一些特定产品实行配额生产或消费，政府有时候也要求企</span>
+    <span class="s">业必须雇用某些特定的员工。如我们前面指出的，整体来说，</span>
+    <span class="s">政府利用非价格手段干预市场会使经济产生效率损失。</span>
+
+    <span class="s">非价格机制: 通过配额、排队、限制等手段调节供求。</span>
+
+    <span class="s">在市场经济中，企业也会使用一些非价格手段调节需求。比</span>
+    <span class="s">如说，当某种产品非常紧俏的时候，厂家并不一定把价格提</span>
+    <span class="s">高到供求相等的水平，而是在维持价格不变的情况下实行限</span>
+    <span class="s">额购买。特别是，在金融市场和劳动力市场上，企业使用非</span>
+    <span class="s">价格手段更为频繁。比如说，银行并不把利率提高到这样的</span>
+    <span class="s">水平，使得所有想货款的人都能得到贷款，而是对所有申请</span>
+    <span class="s">货款的人进行资格审查，然后决定贷给谁、不货给谁以及货</span>
+    <span class="s">多少。在劳动力市场上，即使求职者愿意以更低的工资获得</span>
+    <span class="s">工作机会，企业也可能不愿意降低工资，而是宁可在保持工</span>
+    <span class="s">资不变的情况下少雇用工人。</span>
+
+    <span class="s">企业为什么使用非价格手段？无疑，有些情况下企业这样做</span>
+    <span class="s">是出于非经济因素的考虑，包括社会公正、奥论压力等。</span>
+
+    <span class="s">事实上，很多非价格机制本质上可以还原为价格机制。</span>
+
+    <span class="s">迷你案例: 为什么滑雪场不在旺季提高价格</span>
+
+      <span class="s">排队可以理解为价格的替代品，调整了顾客支付的实际价格！</span>
+
+    <span class="s">现实中有一种定价叫作打包价格机制 (bundling price)。</span>
+
+    <span class="s">例如，迪士尼乐园的一张门票包含若干活动项目，理论上消</span>
+    <span class="s">费者拿一张通票可以玩所有的项目，但实际上一天下来去不</span>
+    <span class="s">了几个地方，因为每个地方都排着很长的队。所以，名义价</span>
+    <span class="s">格不变，不等于实际价格不变，非价格调节机制可以改变真</span>
+    <span class="s">实的价格。</span>
+
+    <span class="s">与企业自行实施的非价格机制不同，在很多情况下，政府实</span>
+    <span class="s">施的非价格机制会带来明显的效率损失。也无助于社会公平。</span>
+
+    <span class="s">在非价格机制下，公平性并没有得到很好的保障，同时效率</span>
+    <span class="s">损失很大。而相对于非价格机制，价格机制是解决交通拥挤</span>
+    <span class="s">问题的更有效手段。如果不用摇号而用拍卖牌照的方式限制</span>
+    <span class="s">汽车的拥有量，不用限行而用收取拥堵费的方式控制交通流</span>
+    <span class="s">量，然后再把由此获得的收入用于补贴公共交通，不仅可以</span>
+    <span class="s">使得道路资源得到更有效的利用，减少资源浪费和空气污染，</span>
+    <span class="s">而且相对增加了低收入阶层的收入。</span>
+
+    <span class="s">迷你案例: 交通拥堵费简介</span>
+
+      <span class="s">交通拥堵费是指在交通拥挤时段对部分拥堵区域的道路使</span>
+      <span class="s">用者收取一定的费用，其本质上是一种交通管理的经济手</span>
+      <span class="s">段，目的是利用价格机制来限制城市道路高峰期的车流量，</span>
+      <span class="s">达到缓解城市交通拥堵的目的，提高整个城市交通的运营</span>
+      <span class="s">效率。</span></code></pre>
+</div>
+</div>
+  </div>
+
+  <ul class="post-navigation">
+    <li>
+      
+      <a href="/books/2021/11/21/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E7%94%9F%E4%BA%A7%E4%B8%8E%E4%BE%9B%E7%BB%99%E6%9B%B2%E7%BA%BF/">&laquo; 经济学原理：生产与供给曲线</a>
+      
+    </li>
+    <li>
+      
+      <a href="/books/2021/11/27/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E8%A6%81%E7%B4%A0%E5%B8%82%E5%9C%BA%E4%B8%8E%E6%94%B6%E5%85%A5%E5%88%86%E9%85%8D/">经济学原理：要素市场与收入分配 &raquo;</a>
+      
+    </li>
+  </ul>
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div>我只希望，祈祷，我的心境不要再粗糙下去，荒芜下去，这就是我的大愿望。</div>
+
+  <div class="license">
+    <a rel="license" href="/LICENSE.txt"><img alt="Creative Commons License" style="border-width:0" src="/assets/licenses/cc-by-nc-nd-4.0-80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+  </div>
+  </details>
+</footer>
+
+
+  </body>
+
+</html>

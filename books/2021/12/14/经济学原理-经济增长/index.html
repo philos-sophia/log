@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>经济学原理：经济增长</title>
+  <meta name="description" content="在人类历史的最初几千年中，经济的发展基本处于一种停滞状态。人均收入始终保持在一个很低的位置。直到工业革命后，现代意义上的经济增长才出现，人均收入才开始出现持续、稳步的增长。但“大增长”的同时，也出现了 “大分流”，在当今世界中，最富国和最穷国之间的差异远远大于几百年前。为什么会出现 “国富国穷” 的现象？为了回答...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/books/2021/12/14/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%95%BF/">
+  <link rel="alternate" type="application/rss+xml" title="叶子" href="/feed.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW8P6JTH7J"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW8P6JTH7J');
+</script>
+
+
+
+</head>
+
+
+  <body>
+
+    <style>
+
+.site-nav ul li {
+  width: 15%;
+}
+
+</style>
+
+<header class="site-header">
+
+  <div class="wrapper">
+    <h2 class="site-title">
+      <a class="site-title" href="/">叶子</a>
+    </h2>
+
+     <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+        <div class="trigger">
+            <ul>
+              <li><a href="/">随笔</a></li>
+              <li><a href="/books">读书</a></li>
+              <li><a href="/misc">杂记</a></li>
+              <li><a href="/run">跑步</a></li>
+              <li><a href="/math">数学</a></li>
+              <li><a href="/essays">集子</a></li>
+
+            </ul>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">经济学原理：经济增长</h1>
+    <p class="post-meta">
+      <time datetime="2021-12-14T21:49:02+08:00" itemprop="datePublished">Dec 14, 2021</time>
+       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">张维迎</span></span>
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>在人类历史的最初几千年中，经济的发展基本处
+于一种停滞状态。人均收入始终保持在一个很低的位
+置。直到工业革命后，现代意义上的经济增长才出
+现，人均收入才开始出现持续、稳步的增长。但“大
+增长”的同时，也出现了 “大分流”，在当今世界中，
+最富国和最穷国之间的差异远远大于几百年前。</p>
+</div>
+<div class="paragraph">
+<p>为什么会出现 “国富国穷” 的现象？为了回答这
+一 问题，我们必须先对经济增长的决定因素有所认
+识。在现实中，影响经济增长的因素有两类：一类是
+<strong>生产要素</strong>，另一类是<strong>生产率</strong>。其中，前者包括资本，
+劳动力资源和自然资源，而后者的增进则可能来自技
+术的进步或要素配置效率的提升。我们可以运用“增
+长核算”
+技术来对各类因素在经济增长过程中所起的
+作用进行定量分析。</p>
+</div>
+<div class="paragraph">
+<p>对于前现代经济的运作状况，可以用<strong>马尔萨斯模
+型</strong>来描述。在这个模型中，没有资本深化和生产率的
+提高，人均产出不能实现持续的增长，只会有周而复
+始的循环。而对于现代经济状况，则可以用<strong>索洛模型</strong>
+来进行描述。和马尔萨斯模型不同，索洛模型引入了
+<strong>资本深化</strong>和<strong>生产率的提高</strong>，因此可以对人均产出的持
+续增长进行解释。根据索洛模型，更高的<strong>储蓄率</strong>、更
+低的<strong>人口增长率</strong>、更快的技术增长，都会提升稳态条
+件下的人均产出水平，而经验证据也基本支持了索洛
+模型的预测。</p>
+</div>
+<div class="paragraph">
+<p>当然，索洛模型有很多不足，例如它假设了外生
+的储蓄率、外生的生产率进步速度。通过对这些假设
+进行放松，可以得到拉姆齐-卡斯-库普曼斯模型，
+内生增长模型等新理论。在传统观点中，全要素生产
+率基本被等同于技术，但现代的研究发现，资源配置
+效率所起的作用也是不可忽视的。</p>
+</div>
+<div class="paragraph">
+<p>主流增长理论的最大缺陷在于，它们都忽略了决
+定增长最重要的因素——<strong>企业家精神</strong>。根据本书作者
+概括的 “斯密-熊彼特增长模型”。一个国家是富有
+还是贫穷，其经济是增长还是停滞，主要取决于这个
+国家的企业家精神是否得到有效发挥。无论资本积
+累、资源配置，还是技术进步，其实都是企业家精神
+作用的结果。而企业家精神能否得到有效发挥，关键
+取决于这个国家的制度环境。在所有制度中，最根本
+的制度是<mark><strong>产权制度</strong></mark>、<mark><strong>商业自由</strong></mark>和<mark><strong>法治</strong></mark>。</p>
+</div>
+<div class="paragraph">
+<p>术语:|</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="rouge highlight"><code data-lang="text">经济增长 生产要素 生产率 全要素生产率
+
+马尔萨斯模型
+
+索洛模型 资本深化 资本广化 资本积累黄金律
+
+拉姆齐-卡斯-库普曼斯模型 内生增长模型
+
+资源错配
+
+斯密增长模型 斯密-熊彼特增长模型
+
+企业家 制度</code></pre>
+</div>
+</div>
+<hr>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#经济增长">1. 经济增长</a>
+<ul class="sectlevel2">
+<li><a href="#有关经济这种的一些事实">1.1. 有关经济这种的一些事实</a>
+<ul class="sectlevel3">
+<li><a href="#长期历史中的经济增长">1.1.1. 长期历史中的经济增长</a></li>
+<li><a href="#中国改革开放以来的增长情况">1.1.2. 中国改革开放以来的增长情况</a></li>
+<li><a href="#经济增长的几个谜">1.1.3. 经济增长的几个谜</a></li>
+</ul>
+</li>
+<li><a href="#经济增长的来源和增长核算">1.2. 经济增长的来源和增长核算</a>
+<ul class="sectlevel3">
+<li><a href="#经济增长的来源">1.2.1. 经济增长的来源</a></li>
+</ul>
+</li>
+<li><a href="#增长核算">1.3. 增长核算</a></li>
+<li><a href="#主流经济增长理论">1.4. 主流经济增长理论</a>
+<ul class="sectlevel3">
+<li><a href="#马尔萨斯的增长理论">1.4.1. 马尔萨斯的“增长”理论</a></li>
+<li><a href="#新古典增长理论索洛模型">1.4.2. 新古典增长理论：索洛模型</a>
+<ul class="sectlevel4">
+<li><a href="#索洛模型的假设">1.4.2.1. 索洛模型的假设</a></li>
+<li><a href="#对稳态的比较静态分析">1.4.2.2. 对稳态的比较静态分析</a></li>
+<li><a href="#索洛模型的应用">1.4.2.3. 索洛模型的应用</a></li>
+<li><a href="#素洛之后增长理论的发展">1.4.2.4. 素洛之后：增长理论的发展</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#企业家经济增长的国王">1.5. 企业家：经济增长的国王</a>
+<ul class="sectlevel3">
+<li><a href="#主流增长模型的缺陷">1.5.1. 主流增长模型的缺陷</a></li>
+<li><a href="#斯密增长模型">1.5.2. 斯密增长模型</a></li>
+<li><a href="#斯密熊彼特模型">1.5.3. 斯密—熊彼特模型</a></li>
+<li><a href="#企业家精神的制度环境">1.5.4. 企业家精神的制度环境</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1">
+<h2 id="经济增长">1. 经济增长</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>经济增长是宏观经济学关注的两大主题之一。自
+亚当•斯密以来，无数的经济学家曾致力于探索经济
+增长背后的动力。而自20世纪中期，尤其是20世纪
+90年代以来，经济学家提出了更多关于经济增长的
+理论。不过，到目前为止，还没有任何一种理论可以
+对经济增长现象做出完整的解释。</p>
+</div>
+<div class="paragraph">
+<p>传统
+的增长模型强调的是资本和技术进步与增长之间的技
+术性关系，斯密-熊彼特增长模型把企业家精神置于经济增长的中心地位。</p>
+</div>
+<div class="sect2">
+<h3 id="有关经济这种的一些事实">1.1. 有关经济这种的一些事实</h3>
+<div class="sect3">
+<h4 id="长期历史中的经济增长">1.1.1. 长期历史中的经济增长</h4>
+<div class="paragraph">
+<p>有文字记载的人类历史至今已有五千多年，但真
+正意义上的经济增长和经济发展却是最近两个多世纪
+的事情。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>经济增长</strong>：
+一个国家或地区在一定时期内人均产出（或人均收入）水平
+的持续增加。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>在“大增长”取代
+“大停滞”成为历史主题的同时，国家之间、地区之
+间的财富“大分流”也开始逐渐凸显。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="中国改革开放以来的增长情况">1.1.2. 中国改革开放以来的增长情况</h4>
+<div class="paragraph">
+<p>在我国经济在总体上高速增长的同时，地区之间
+的经济增长差异也开始表现出来。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="经济增长的几个谜">1.1.3. 经济增长的几个谜</h4>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>第一，为什么在漫长的人类历史中，真正意义上
+的经济增长只是在工业革命后的短短两三百年间才出
+现？在工业革命前后，经济的发展究竟有什么不同？</p>
+</li>
+<li>
+<p>第二，在现代经济中，人均产出为什么可以获得
+持续、较高速的增长？支撑经济增长的动力究竟是什么?</p>
+</li>
+<li>
+<p>第三，为什么有的国家富，有的国家穷？贫富的
+差异来自增长率的差异。为什么有的国家或地区可以
+获得持续的增长，而另一些国家或地区的发展则十分
+缓慢甚至停滞？</p>
+</li>
+<li>
+<p>第四，中国改革开放以来的 “经济奇迹” 是如何
+取得的？中国的高速增长可持续吗？</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="经济增长的来源和增长核算">1.2. 经济增长的来源和增长核算</h3>
+<div class="sect3">
+<h4 id="经济增长的来源">1.2.1. 经济增长的来源</h4>
+<div class="paragraph">
+<p>从经济学上讲，产出是在一定的技术下生产要素
+组合起来创造的。虽然世界各国的经济增长状况各不
+相同，但考察经济增长的来源，则无外乎两个：生产要素投入的增加和生产率的提升。</p>
+</div>
+<div class="paragraph">
+<p>在增长理论中，<strong>生产要素</strong>主要分为三类：资本、劳动力和自然资源。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>其中，<strong>资本</strong>既包括有形的资本，
+如厂房、公路、机器设备等，也包括无形资本，如专
+利、知识产权等。</p>
+<div class="paragraph">
+<p>例如，现在密布全国的铁路网络，
+就是支撑经济增长的重要资本。</p>
+</div>
+</li>
+<li>
+<p><strong>劳动力资源</strong>既包括劳
+动力的投入数量，也包括其质量。</p>
+<div class="paragraph">
+<p>即使劳动力投入数
+量不变，如果其技能、素质获得了提升，也可认为劳
+动力资源变得更为丰富了。</p>
+</div>
+</li>
+<li>
+<p><strong>自然资源</strong>包括土地、森
+林、石油、天然气及各类矿产资源等。</p>
+<div class="paragraph">
+<p>值得一提的
+是，自然资源并不是支撑经济增长的必要条件，在现
+实中，我们不难找到日本、
+新加坡等资源贫瘠的国家
+实现高速增长的例子。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>生产要素</strong>：
+进行社会生产经营活动时所需要的各种社会资源，包括资
+本、劳动力和自然资源。</p>
+</div>
+<div class="paragraph">
+<p><strong>生产率</strong>：要素的产出效率。</p>
+</div>
+<div class="paragraph">
+<p>如果生产率提
+高了，那么即使要素投入不变，也可以实现经济增
+长。</p>
+</div>
+<div class="paragraph">
+<p>生产率的提升可能来自技术的进步，也可能来自
+资源配置效率的改善。</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="增长核算">1.3. 增长核算</h3>
+<div class="paragraph">
+<p><strong>全要素生产率</strong>：
+产出增长率超出要素投入增长率的部分。它无法直接官魂测
+到，只能被间接地衡量。</p>
+</div>
+<div class="paragraph">
+<p>政策透视：中国迎来了“刘易斯拐点”吗</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>1954年，发展经济学家阿瑟 •刘易斯 (Arthut
+Lewis）在题为《劳动无限供给条件下的经济发展》
+的论文中提出了著名的
+“<strong>二元经济</strong>”模型。这个模
+型指出，经济发展过程是现代工业部门相对传统农
+业部门的扩张过程，这一扩张过程将一直特续到将
+传统农业部门中的剩余劳动力全部转移干净，并出
+现一个城乡一体化的劳动力市场时为止。这种“二
+元经济”的发展可以分为两个阶段：第一个阶段是
+劳动力无限供给阶段。此时，劳动力过剩，工资取
+决于维持生活所需的生活资料的价值。第二个阶段
+是劳动力短缺阶段，此时传统农业部门中的剩余劳
+动力被现代工业部门吸收完牛．工资取决于劳动的
+边际生产力。由第一阶段向第二阶段过渡的转折
+点，就是著名的
+“刘易斯拐点” (Lewis turning
+point).</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="主流经济增长理论">1.4. 主流经济增长理论</h3>
+<div class="sect3">
+<h4 id="马尔萨斯的增长理论">1.4.1. 马尔萨斯的“增长”理论</h4>
+<div class="paragraph">
+<p>在前现代社会，资本积累还没有凸显其重要性，
+生产率进步的速度也相对缓慢，能影响经济增长的因
+素只有人口和土地（或更为广义的自然资源）。而由
+于生产率变化的缓慢，单位面积的土地所能供养的人
+口数相对固定，因此士地的丰寡就成为决定一国经济
+总量的最根本条件。</p>
+</div>
+<div class="paragraph">
+<p>最初，由于人口相对较少，而土地则相对充裕，
+人们可以自由地使用士地，此时人口可以较快地增
+长。由于生产率变化相对缓慢，因此整个经济的产出
+就会和人口以近似相同的比例增长，人均的产出几乎
+是不变的。但随着人口的增加，土地逐渐开始变得稀
+缺，当单位面积士地上投入的人力不断增加后，土地
+的边际产出也会逐步降低，人均产出逐步下降。当人
+均产出低到不足以维持最低生存条件时，
+“<strong>天启四骑士</strong>”—— 饥荒、瘟疫、战争和死亡就会到来，让人口
+大幅下降。然后，人口又开始像之前那样增长、饱
+和，然后再下降，如此循环往复。在周而复始的循环
+中，人均的产出始终在生存线附近徘徊，就好像陷入
+了一个陷阱。</p>
+</div>
+<div class="paragraph">
+<p>英国的古典经济学家马尔萨斯最早提出了上述理
+论，因此在文献中这套理论被称作 “马尔萨斯增长理
+论”，那个经济难以摆脱的陷阱则被称作 “<strong>马尔萨斯
+陷阱</strong>”。不过，从严格意义上讲，如果称这套理论为
+“无增长理论〞可能是更确切的，因为它所解释的更
+多是停滞，而非增长。</p>
+</div>
+<div class="paragraph">
+<p>使得出生率和死亡率相等的物质收入被称为
+<strong>生存收人</strong>，即指维持本人生存所需要的收入水平。当物质收入高于这一水平时，出生率
+超过死亡率，人口增加；当物质收入低于这一水平
+时，死亡率超过出生率，人口减少。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>马尔萨斯模型</strong>：</p>
+<div class="paragraph">
+<p>没有 “资本深化〞 和生产率的提高，人均产出不能实现持续
+的增长，只会有周而复始的循环。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>迷你案例：玉米能救明朝吗
+&gt; 和中国传统的稻、麦等粮食作物相比，玉米
+具有众多独特优势。首先，玉米对环境的适应性很
+强，具有耐早、耐寒、耐贫瘠、容易在山区和沙质
+土壞地带种植等特性。其次，和传统粮食作物相
+比，玉米在单位产量上具有明显的优势。此外，和
+传统作物相比，玉米具有良好的抗灾性，这一特性
+使得播种玉米的地区在面对水旱灾害时的产量波动
+变得更小。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="新古典增长理论索洛模型">1.4.2. 新古典增长理论：索洛模型</h4>
+<div class="paragraph">
+<p>如果马尔萨斯的理论是正确的，那么人类的前景
+就是悲观的：整个社会不会有人均产出的持续增长
+人们的生活水平会停滞不前。但工业革命后，马尔萨
+斯的预言很快被打破了，整个世界开始告别 “大停
+滞”
+迎来了 “大增长”，
+在短短两三百年时间内。人
+均产出竟获得了数十倍的提升。</p>
+</div>
+<div class="paragraph">
+<p>新古典增长理论是由麻省理工学院的教授罗伯
+特•索洛在20世纪50年代提出的，因此在文献中也
+常被称为 “索洛模型”。</p>
+</div>
+<div class="paragraph">
+<p>和马尔萨斯的理论相比，新
+古典增长理论有两个重要的不同点，即强调了<strong>资本深
+化</strong>和<strong>生产率</strong>进步的作用。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>索洛模型</strong>：</p>
+<div class="paragraph">
+<p>更高的储蓄率、更低的人口增长率、更快的技术增长，都会
+提升稳态条件下的人均产出水平。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="索洛模型的假设">1.4.2.1. 索洛模型的假设</h5>
+<div class="paragraph">
+<p>在索洛模型所描述的经济中，只有资本K和劳动
+力L两种要素投入，且劳动力的增长率n是外生给定
+的。另外，经济被假设为是竞争性的，并且总在充分
+就业的水平上运行。整个经济的生产函数可以表示</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Y=AF (K, L)</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>其中，A是经济的全要素生产率，在给定资本和
+劳动力投入的前提下，全要素生产率的提升可以让产
+出得到增加。</p>
+</div>
+<div class="paragraph">
+<p>索洛模型的一个关键点是<strong>资本深化</strong> (capital
+deepening），也就是人均资本存量的提高。</p>
+</div>
+<div class="paragraph">
+<p>在现实
+中，资本深化的例子很多。例如，农民开始使用收劃
+机，而不再用手动收割；工地上开始使用挖掘机。以
+代替原来的手动挖掘；银行开始使用点钞机，以代替
+原来的人工点钞。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>资本深化</strong>：</p>
+<div class="paragraph">
+<p>人均资本存量的提高。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>那么资本是怎么实现深化的呢？简单来说。它是
+投资扣除<strong>资本广化</strong> (capital widening）的结果。我
+们知道，在一个动态的经济中，净投资（总投资减去
+折旧）的作用表现在两个方面：一方面，它会让更多
+的劳动力有机会使用资本，也就是实现
+“资本广化”；
+另一方面，则会增加每个劳动力所使用的资本数量。
+也就是实现“资本深化”。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>资本广化</strong></p>
+<div class="paragraph">
+<p>实际资本的增长率与劳动力的增长率相等。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="对稳态的比较静态分析">1.4.2.2. 对稳态的比较静态分析</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>人口增长率上升的影响。</p>
+</li>
+<li>
+<p>储蓄率上升的影响。</p>
+</li>
+<li>
+<p>生产率变化的影响。</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="索洛模型的应用">1.4.2.3. 索洛模型的应用</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>对各国收入差异的解释</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>首先，人口增长率较高的国家通常比较贫穷。在
+这些国家，面对人口增长，为保持资本—劳动比率不
+变，需要把更大比例的收入用于储蓄和投资。这种资
+本广化的要求让资本深化变得更加困难，从而使稳态
+人均资本量及人均产量减少。</p>
+</li>
+<li>
+<p>其次，若其他条件相同，则储蓄率或投资率较高
+的国家通常比较富裕，在这些国家中，劳动力人均资
+本量较高，因此，其人均产量也较高。</p>
+</li>
+<li>
+<p>最后，若其他条件相同，则劳动生产率较高的国
+家会比较富有，在这些国家中，人均产出更高，在相
+同的储蓄率下，人均储蓄及由此转化而来的人均投资
+也越高。这会让这些国家拥有更高的资本深化水平
+从而让其人均产量更高。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>关于增长速度的差异的解释</p>
+<div class="paragraph">
+<p>改革开放以来我国的储蓄率不断提高，由索洛模型不
+难看出，这也是我国经济持续高速增长的一个重要原
+因。</p>
+</div>
+<div class="paragraph">
+<p>通过不断提高储蓄率
+来提升增长速度，并不能实现国民福利的最大化，而
+通过改进经济效率提升全要素生产率，则是使经济保
+持持续健康增长的更稳妥方法。</p>
+</div>
+<div class="paragraph">
+<p>政策透视：中国经济的“新常态”</p>
+</div>
+</li>
+<li>
+<p>资本积累黄金律</p>
+<div class="paragraph">
+<p>根据索洛模型，储蓄率的提升可以使稳态的人均
+资本存量和人均产出都获得提升，那么这是否意味着
+人们应该采用
+一个很高的储蓄率，以获得最大化的人
+均产出呢？ 答案是否定的。</p>
+</div>
+<div class="paragraph">
+<p>人们进行生产活动，其追
+求的并不是产量本身，而是用生产的产品进行消费。
+如果将所有的产出都用在投资上，而不进行消费，那
+么即使产量再高，对于提升人们的福利也是没有意义。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>资本积累黄金律</p>
+<div class="paragraph">
+<p>使人均消费最高的均衡人均资本水平,</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4">
+<h5 id="素洛之后增长理论的发展">1.4.2.4. 素洛之后：增长理论的发展</h5>
+<div class="paragraph">
+<p>索洛模型虽然十分简单，但却对经济增长的原因
+和各国经济增长的差异进行了极为精辟的总结。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>储蓄率的内生化：拉姆齐-卡斯-库普曼</p>
+<div class="paragraph">
+<p>允许代表性消费者对储蓄率进行内生选择的增长模型。</p>
+</div>
+</li>
+<li>
+<p>技术进步的内生化：内生增长模型</p>
+<div class="paragraph">
+<p>假设经济能不依赖外生因素推动而实现持续增长的模型。</p>
+</div>
+<div class="paragraph">
+<p>内生增长理论对于人们理解经济增长过程、制定
+促进经济增长的政策都有很大启发。</p>
+</div>
+<div class="paragraph">
+<p>例如在上述模型
+中，就强调了知识生产在经济增长过程中的重要性。
+由这个模型不难知道，支持教育、提升教育回报的相
+关政策对于保持经济增长具有重大意义。世界上的主
+要发达国家都十分重视教育，其理由正在于此。</p>
+</div>
+</li>
+<li>
+<p>资源的配置效率和增长</p>
+<div class="paragraph">
+<p>在传统的增长模型中，其实都有一个潜藏的假
+设，即认为经济始终是在生产可行性曲线的边界上运
+行。因此，如果想要在给定的资源投入下增加产量
+就必须通过增进技术，实现生产可行性曲线的外推。</p>
+</div>
+<div class="paragraph">
+<p>但事实上，经济的运行往往不是在生产可行性曲线的
+边界上运行的，由于各类扭曲的存在，实际的生产点
+往往在曲线的内部，也就是说存在着<strong>资源错配</strong>。</p>
+</div>
+<div class="paragraph">
+<p>如果
+纠正扭曲，让生产点从曲线内部转移到边界上，那么
+就能实现既定投入下产量的提升，也即实现全要素生
+产率的提升。</p>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>资源错配</strong>：</p>
+<div class="paragraph">
+<p>由于各类扭曲的存在，资源没有按照最优效率进行配置的情况。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>在发展中国家，由于<mark><strong>体制性扭曲</strong></mark>的广泛存在，导
+致资源错配十分严重，因此通过纠正扭曲来促进经济
+增长的港力就十分巨大。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="企业家经济增长的国王">1.5. 企业家：经济增长的国王</h3>
+<div class="sect3">
+<h4 id="主流增长模型的缺陷">1.5.1. 主流增长模型的缺陷</h4>
+<div class="paragraph">
+<p>在发达的市场经济体，无论资本积累、资源配
+置，还是技术进步，其实都是<strong>企业家精神</strong>作用的结
+果。</p>
+</div>
+<div class="paragraph">
+<p>对经济增长来说，重要的不仅是投资多少，还有
+谁来投资。如果我们看不到发达国家资本积累背后的
+企业家精神，以为只要提高人均资本就可以带来增
+长，政府就很容易越俎代庖，直接从事资本积累和投
+资。第二次世界大战之后<strong>计划经济国家</strong>和发展中国家
+的经验都表明，如果政府替代企业家从事投资活动，
+资本积累并不会像新古典增长理论预测的那样带来经
+济增长。</p>
+</div>
+<div class="paragraph">
+<p><strong>有效的资源配置也是企业家的逐利行为的结
+果</strong>。</p>
+</div>
+<div class="paragraph">
+<p>计划经济的实践表明，政府的集中计划一定会号
+致资源配置的低效率。至于技术进步，则更是企业家
+创新的结果。如果说在资本积累方面，政府在形式上
+还可以替代企业家并发挥一定作用。在技术进步方
+面，政府无论如何是替代不了企业家的。虽然政府在
+兴办教育、资助科研方面可以有所作为，但缺乏了企
+业家精神，教育和科研都不可能成为推动经济增长的
+力量。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="斯密增长模型">1.5.2. 斯密增长模型</h4>
+<div class="paragraph">
+<p>亚当 •斯密 《国富论》的全名是 《国民财富的性
+质和原因的研究》。从书名可以看出，亚当•斯密想
+要探讨的就是财富是什么和财富如何增加的问题。财
+富增加也就是经济增长，斯密对此提出了自己的系统
+理论，这一理论总结起来可以被称为“斯密增长模
+型”。在这个模型中，经济增长是一个自我强化的循
+环过程：经济发展取决于<strong>生产率</strong>的提高；生产率的提高来自<strong>技术进步和创新</strong>（以及<strong>资本积累</strong>)；技术进步和创新依赖于<strong>劳动分工</strong>和生产的<strong>专业化</strong>；而分工和专业化的深度由<strong>市场的规模</strong>决定。</p>
+</div>
+<div class="paragraph">
+<p>这样，市场规模的扩大，导致分工和专业化的提升；分工和专业化的提升
+导致技术进步和生产率的增加；技术进步和生产率的
+提升，导致财富的增加：财富的增加又进一步扩大市
+场规模。如此形成一个正向循环，经济持续增长。对
+于有些国家，这个循环进行得很顺畅，因此经济增长
+的态势就好；而对于另一些国家，
+这一循环过程中的
+某些环节发生了问题，因此其增长就相对缓慢。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>斯密增长模型</strong></p>
+<div class="paragraph">
+<p>经济增长通过市场规模的扩大、分工和专业化的提升、技术
+进步和生产率的提高、财富的增加．构成一个自我强化的循环过
+程。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="斯密熊彼特模型">1.5.3. 斯密—熊彼特模型</h4>
+<div class="paragraph">
+<p>按照斯密的增长模型，经济增长一定同时表现为
+市场规模的扩大、专业化和分工的深化 （产业结构的
+变化）、技术的进步、劳动生产率的提高、国民财富
+的增加。<strong>伴随市场规模扩大和分工深化的产业结构变
+化，是经济增长的重要特征。</strong>新古典增长模型只注重
+总量（GDP）的增加，不注重产业结构的变化，是
+个很大的缺陷。</p>
+</div>
+<div class="paragraph">
+<p>在熊彼特看来，企业家是市场经济的灵魂，是创新、生产要素
+“新组合〞 及经济发展的主要组织者和推动者。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>企业家</strong>：</p>
+<div class="paragraph">
+<p>创新、生产要素 “新组合”以及经济发展的主要组织者和推
+动者。</p>
+</div>
+</li>
+<li>
+<p><strong>斯密熊彼特增长模型</strong>：</p>
+<div class="paragraph">
+<p>一个国家是富有还是贫穷，其经济是增长还是停滞，主要取
+决于这个国家的企业家精神是否得到有效发挥。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>首先，<strong>企业家是市场的发现者和创造者</strong>。</p>
+</div>
+<div class="paragraph">
+<p>现代经
+济的大部分市场本来是不存在的，是由企业家开发出
+来的。企业家是通过创造新产品来创造市场的，而不
+是仅仅满足客观上事先己经有的需求。</p>
+</div>
+<div class="paragraph">
+<p>学术经典：熊彼特：市场是企业家创造的</p>
+</div>
+<div class="paragraph">
+<p>其次，<strong>企业家创造了分工</strong>。</p>
+</div>
+<div class="paragraph">
+<p>生产链上每一个新的
+分工环节的出现，无论是作为独立的产品生产（如专
+业机器），还是服务环节的专业化提供（如现代物
+流)，都是企业家选择的结果。</p>
+</div>
+<div class="paragraph">
+<p>再次，<strong>技术进步主要是企业家创新的结果</strong>。</p>
+</div>
+<div class="paragraph">
+<p>按照
+熊彼特的观点，创新就是实现生产要素的“新组合”，
+包括创造新的产品、发展新的生产技术、开发新的市
+场、发现新的原材料和实现新的组织方式。无论哪方
+面的创新，都是企业家的功能。这并不是说技术人员
+在创新中不重要，但创新和发明是不一样的。</p>
+</div>
+<div class="paragraph">
+<p>创新可
+能需要发明，但发明不等于创新。<strong>发明</strong>只是创造出原
+来没有的东西，<strong>创新</strong>则需要经过市场的检验，有利可
+图。</p>
+</div>
+<div class="paragraph">
+<p>没有企业家的创新，科学知识和技术发明不可能
+变成推动经济增长的力量。</p>
+</div>
+<div class="paragraph">
+<p>学术经典：企业家精神与经济增长</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>熊彼特曾经将 “经济增长的国王”这顶桂冠授
+手企业家，从我们掌握的理论和实证证据看，这种
+盛誉确实是毫不为过的。</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>战略大师迈克尔．波特曾把经济发展分为三个阶
+段：要素驱动、效率驱动和创新驱动。波特认为，在经济发展的这三个阶段中，企业家精神
+的重要性是依次递增的。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="企业家精神的制度环境">1.5.4. 企业家精神的制度环境</h4>
+<div class="paragraph">
+<p>企业家精神是否能得到有效发挥，关键取决于这个
+国家的制度环境。西方国家之所以富有，是因为它们
+较早建立了有利于企业家创业和创新的制度环境。</p>
+</div>
+<div class="paragraph">
+<p>在
+所有制度中，最根本的制度是<mark><strong>产权制度和商业自由</strong></mark>。
+只有对私人产权子以充分的保护，人们有从事商业活
+动的自由，企业家才有激动去投资、去创业、去创
+新，经济才可能发展起来。而要维护产权制度和商业
+自由，就必须有良好的<mark><strong>法治</strong></mark>，用宪法和法律保护人们
+的正当权利，防止对个人权利的无端侵害。</p>
+</div>
+<div class="paragraph">
+<p>一些发展
+中国家之所以至今仍停滞不前，是因为它们缺少这样
+的制度环境。中国经济过去三十多年之所以能高速发
+展，是因为邓小平发起的市场化改革释放了中国的企
+业家精神。</p>
+</div>
+<div class="paragraph">
+<p>从经济学意义上
+讲，制度其实是一种游戏规则，在人的偏好给定时，
+游戏规则的变化就会促使追求效用最大化的个人调整
+自己的行为。</p>
+</div>
+<div class="paragraph">
+<p>例如，在一个政治开明、产权保护良好
+的制度环境下， 具有企业家精神的人就会争当企业
+家，将主要精力放在创新、开拓市场上；而在一个政
+治腐败、产权保护缺失的环境下，人们就会更加热衷
+于在有权力的政府部门工作，从事权力、寻租等<strong>非生
+产性活动</strong>，因为这显然比去当企业家的成本更低，而
+获益却更高。从这个意义上讲，各国在制度上的差别
+会带来包括企业家资源在内的各种资源的配置差别
+进而造成经济增长状况的根本不同。</p>
+</div>
+<div class="paragraph">
+<p>学术经典：企业家人才配置的重要性</p>
+</div>
+<div class="paragraph">
+<p>从古典时期开始，经济学家就十分重视制度在经
+济增长中所起的作用。</p>
+</div>
+<div class="paragraph">
+<p>例如，斯密曾有过这样的论
+述
+“使国家从最低野蛮状态到最高程度的富足，除
+了和平、易税和可接受的司法管理外，没有其他什么
+因素是必要的，其他的所有一切都是由自然的过程产
+生而来的。”</p>
+</div>
+<div class="paragraph">
+<p>最近几十年来，诺斯、温加斯特、阿西
+莫格鲁等一批经济学家更是通过大量的经验研究，证
+明了制度在经济增长过程中的重要性。道格拉斯•
+诺斯在总结第三世界发展状况时曾指出：
+“<strong>社会没有能力形成一套有效的、低成本的契约执行体系，是第
+三世界国家过去的经济停滞和现在经济不发达的最主要根源</strong>。”</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+  </div>
+
+  <ul class="post-navigation">
+    <li>
+      
+      <a href="/books/2021/12/12/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AF%BC%E8%AE%BA/">&laquo; 经济学原理：宏观经济学导论</a>
+      
+    </li>
+    <li>
+      
+      <a href="/books/2021/12/15/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%8E%9F%E7%90%86-%E7%BB%8F%E6%B5%8E%E6%B3%A2%E5%8A%A8/">经济学原理：经济波动 &raquo;</a>
+      
+    </li>
+  </ul>
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div>我只希望，祈祷，我的心境不要再粗糙下去，荒芜下去，这就是我的大愿望。</div>
+
+  <div class="license">
+    <a rel="license" href="/LICENSE.txt"><img alt="Creative Commons License" style="border-width:0" src="/assets/licenses/cc-by-nc-nd-4.0-80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+  </div>
+  </details>
+</footer>
+
+
+  </body>
+
+</html>
