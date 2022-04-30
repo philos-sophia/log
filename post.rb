@@ -60,6 +60,7 @@ now = DateTime.now
 disqus_identifier = SecureRandom::uuid.gsub('-','').hex
 
 filename = filename.gsub('，', '-').gsub('。', '-').gsub(':', '-').gsub(' ', '-').gsub(/\(|\)|\./, '').downcase
+# https://michaelcurrin.github.io/dev-cheatsheets/cheatsheets/jekyll/liquid/time-handling.html
 filename = now.strftime('%Y-%m-%d') + '-' + filename + "." + ext
 date = now.strftime('%Y-%m-%d %H:%M:%S %z')
 weekday = now.strftime('%A') # Sunday, Monday, ...
