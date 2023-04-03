@@ -142,6 +142,8 @@ sub, sup { font-size: 0.75em; line-height: 0; position: relative; vertical-align
 
 .post-list .post-meta { font-size: 0.75em; color: #828282; display: block; margin-top: .75em; margin-bottom: 1.5em; }
 
+.post-list time { font-family: monospace; }
+
 .post-link { display: block; }
 
 /** Posts */
