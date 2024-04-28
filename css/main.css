@@ -720,6 +720,7 @@ p, blockquote, dt, td.content {
 }
 
 .quoteblock .attribution {
+  color: #828282;
   margin-top: 0.75em;
   margin-right: 0.5ex;
   text-align: right;
