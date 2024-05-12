@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>行列式</title>
+  <meta name="description" content="人必生活着，爱才有所附丽。世界上并非没有为了奋斗者而开的活路；我也还未忘却翅子的扇动，虽然比先前己经颓唐得多……。——鲁迅·《伤逝》自从儿童节当天解封以来，我已再没有去过健身房。至于跑步，则是时断时续。好在是小区解封之前，在可以出单元楼前后，我曾断断续续跳过几次绳子，所以有氧能力得到有所恢复。在小区大门开放的6月...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/writings/2022/09/20/%E8%A1%8C%E5%88%97%E5%BC%8F/">
+  <link rel="alternate" type="application/rss+xml" title="叶子" href="/feed.xml">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WW8P6JTH7J"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WW8P6JTH7J');
+</script>
+
+
+
+</head>
+
+
+  <body>
+
+    <style>
+
+.site-nav ul li {
+  width: 15%;
+}
+
+</style>
+
+<header class="site-header">
+
+  <div class="wrapper">
+    <h2 class="site-title">
+      <a class="site-title" href="/">叶子</a>
+    </h2>
+
+     <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+        <div class="trigger">
+            <ul>
+              <li><a href="/">随笔</a></li>
+              <li><a href="/books">读书</a></li>
+              <li><a href="/misc">杂记</a></li>
+              <li><a href="/run">跑步</a></li>
+              <li><a href="/learning">笔记</a></li>
+              <li><a href="/essays">集子</a></li>
+
+            </ul>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">行列式</h1>
+    <p class="post-meta">
+      <time datetime="2022-09-20T16:30:00+08:00" itemprop="datePublished">
+        09 / 20 / 2022
+        
+        
+      </time>
+      
+        / 晴
+      
+      
+      
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>人必生活着，爱才有所附丽。世界上并非没有为了奋斗者而开的活路；我也还未忘却翅子的扇动，虽然比先前己经颓唐得多……。</p>
+</div>
+<div class="paragraph text-right">
+<p>——鲁迅·《伤逝》</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>自从儿童节当天解封以来，我已再没有去过健身房。至于跑步，则是时断时续。好在是小区解封之前，在可以出单元楼前后，我曾断断续续跳过几次绳子，所以有氧能力得到有所恢复。在小区大门开放的6月，跑了7次，共45公里，7月，跑了4次，共25公里，8月，跑了2次，共12公里。</p>
+</div>
+<div class="paragraph">
+<p>在我第一次出门跑步时，虽然还可以保持在5分钟每公里的配速，不过相对之前，心率则是直接飙升到了170到180。要知道，这个水位的心率值可是我直接进行T配速训练，即乳酸门槛跑，用于耐力训练的压力值。体能的衰退当然都在我预期内，但让人意外的是，在我跑完的第二天起床时，腿部肌肉居然会有撕裂的痛疼，这是训练过度的现象。我知道体能的恢复需要时间，是一个循循渐进的过程，所以我也并着急。在酷热的仲夏之夜，在室外温度接近人体温度的环境下，我也曾用5分钟每公里的配速跑过几次半个小时的慢跑。说是慢跑，其实就像是王小波说的受捶的老牛一样，当时的心率更是飙升到了190上下。我知道这个心率是一个相对比较危险的阈值，所以也只是简简单单地跑满半个小时，完成最低限度的跑量。</p>
+</div>
+<div class="paragraph">
+<p>说到王小波，我也是在很久之前懵懵懂懂读过他的《白银时代》、《黄金时代》和《黑铁时代》。我现在能够想到的人物有王二和陈清扬，其次是在《黑铁时代》中有一篇我非常喜欢的如诗的短文《我在荒岛上迎接黎明》。不久前的后来，我从陈旧的书架上取出那本红色封皮的《沉默的大多数》。关于《沉默的大多数》，是我在一次拜访大学同学时，从同学那儿借过来的。说是借，其实如陈奕迅的一首歌唱到的借到现在都没还，更甚的是我还顺手把这本书转送给了我的堂弟。最初有兴借取这本书，只是因为对《沉默的大多数》多有耳闻，而且看起来还是薄薄的一本，所以我想我应该可以很快读完。但是，大约是直到两年后，好像是没有新书可读的情况下，我才从书架上取下这本书。在《沉默的大多数》中，王二同学频繁的重复说“要追求智慧”，大意是要做一只特立独行的猪什么的。</p>
+</div>
+<div class="paragraph">
+<p>每年的九月九日，好像有一个什么公益跑的活动，而我们厂今年也在组织了这个活动。后来想起来，我去年就参与了我厂的公益跑活动。关于这个活动，我以为是我厂会让我们在某个滨江跑道或者什么鬼地方来一场五公里的跑步友谊赛，所以为了可以跑出一个不是太差的成绩，我在九月的第一天报名后的第二天就开始恢复外出跑步的训练。好在是，进入九月之后，过去常常在三十七八度上下的酷热的天气已消失不见，相对凉爽一点儿的天气，让奔跑也少了很多的压力，多了些舒适感。曾经我是喜欢夏天的，因为穿着可以极简，而不是寒冬时节的繁复层叠的衣着。现在想来，我还是比较相对凉爽，甚至略感寒冷的秋冬时节。我想我厂的跑步活动不过只是为了采集几张用于活动宣传的照片，但是结果比我想象的还要简单，就只是在车间的楼下的空旷的地方，让参与的工人们假装跑上几步而已。当然，这是线下的活动的。在此次工厂组织的跑步活动，还有一个线上累计微信步数的活动的。很不幸的是，在开赛的第二天的中午，我在工厂打羽毛球是重重地崴了一下脚踝。不知道是不是忍耐力的缘故，当时我很不以为然，也只是有点轻微的痛疼，因为往常的时候，我的脚踝是十分灵活的，崴脚那是不存在的。在跌倒的瞬间，我就直接爬了起来，而且还可以接着跑动。我以为当天晚上休息一下就可以恢复过来的。也许是早上外出跑了十公里的缘故，让身体的肌肉有些疲劳，而疲劳时最容易是受伤。晚上回去的时候，我还试着跑动一下，才发现事情确实有些不太妙。想着当天早上十公里和晚上十公里就可以怼个三万步的。为了可以让脚踝尽快恢复，宏大的计划也只好作罢。在第二天的清早醒来，当我试着起床时，我才发觉到脚踝的疼痛之感，而且居然有些影响到了日常的走路。为了不让微信的步数落下太多，我蓦然之间看到了落满灰尘的跳绳。到比赛的最后一天，我都是用跳绳来累计步数。说起来是有一些不合理的，不管怎么说，这是个有关跑步的活动嘛。不过，以五十步和百步来说，我可以说比那些拿着手机摇摆的，单纯地为了刷步数的还算有些良知吧。就这样，我在微信步数的排行榜一直处于万年第二的位置。令人庆幸的是，在最后一天，也就是九月九日的当天的清晨，我居然可以穿着跑鞋以往常的配速跑完了十公里。中午还在厂房的打了一场羽毛球。在当天晚上回去之后，在外面又跑了十公里。虽然晚上已可以大踏步地跑动起来，脚踝也只是微微地有些不适之感。以过往的经验和当时的感受，我有种感觉当时该是有四分半的配速。但是看着手表的配速居然还是在五分钟开外。我从排名的动态变化推测出，有一个卷王在偷偷地卷步数，所以在晚上的跑步，在跑完了我常常跑过的路段，快要回到小区时，虽然有些疲惫，我还是决定回头，背离着小区的方向，继续地跑着，完成了基本的十公里。至于最终结果，反正是不会太差，只有等待明天最终的揭晓了。</p>
+</div>
+<div class="paragraph">
+<p>上个周末，工厂组织了秋季的团建活动。星期五的中午，工厂用大巴车把我们这些工人拖到了某个大酒店。在酒店的自助餐厅用完午饭，回到酒店房间，简单的休息之后，就开始了整个下午的会议，而我在整个下午会议上的产出就是用好像是体育福利彩票折叠了一只鸽子和小船儿。</p>
+</div>
+<div class="paragraph">
+<p>晚宴的时候，除了吃饭，还有酒水。不过，我已经自觉地戒掉了酒精和快乐水。对于闹闹哄哄的互相敬酒，还有一群群摩肩接踵，围绕着坐着各种领导的主桌敬酒的，水泄不通的人群，我却是有些不合时宜地安静地独坐在我的餐桌的座椅上。热闹是他们，与我何干。说起来，我也是在社会上受锤多年的人了，然而对于这些或好或坏的事情，我是做不到的。想到了刚刚读过的迅哥儿的《伤逝》中的一段话：“我做出许多虚伪的温存的答案来，将温存示给她，虚伪的草稿便写在自己的心上。我的心渐被这些草稿填满了，常觉得难于呼吸。”也许，我的这种矫情或者任性，在有些看来是有些幼稚的。我想到叔本华的《人生的智慧》中说的：“人生幸福最本质的元素在于我们是什么，即我们的个性，只有个性才能够在任何环境中都持续发挥着作用。”，“幸福主要依赖思想平和与内心满足。”，我想也许是的吧。</p>
+</div>
+<div class="paragraph">
+<p>昨天下班的路上，读完了鲁迅先生的一篇短篇小说《伤逝》。未曾想，在我的印象中，行文如刀锋一样锐利的迅哥儿的笔触，竟有如此细腻温情的一面。好的文字，总会给作为读者的我有一种说不出的感受，浑厚，铿锵。晚上回来之后，为了记录记录摘抄，在迷迷糊糊的困顿中耗到了十一点，以至于误了第二天早期的闹钟。当我醒来的时候，发现已经快要五点半了。在犹豫之间，我下意识地从衣架上随手取来了马拉松短裤穿上。在洗漱完毕，思来想去，我还算决定出去跑一圈，也就是一个最低限度的半个小时慢跑。略显地有些匆匆，本想着取消跑步之后的拉伸的，不过在走到小区楼下的活动区时，想着身体还没有完全放松下来，上楼后也不适合冲澡，我还是完成了一套拉伸的放松活动。</p>
+</div>
+<div class="paragraph">
+<p>点一下题，行列式是线性代数的概念，也就是说当前我已进展到了《Basic Mathematics》最后一个章节。</p>
+</div>
+<div class="paragraph">
+<p>时间不早了，我也该下楼吃饭，坐地铁回去了。</p>
+</div>
+<div class="paragraph text-right">
+<p>2022年9月20日19时33分</p>
+</div>
+  </div>
+
+  <ul class="post-navigation">
+    <li>
+      
+      <a href="/writings/2022/09/15/%E6%A2%85%E8%8A%B1/">&laquo; 梅花</a>
+      
+    </li>
+    <li>
+      
+      <a href="/writings/2022/09/27/%E7%A7%8B%E6%A1%82/">秋桂 &raquo;</a>
+      
+    </li>
+  </ul>
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div>我只希望，祈祷，我的心境不要再粗糙下去，荒芜下去，这就是我的大愿望。</div>
+
+  <div class="license">
+    <a rel="license" href="/LICENSE.txt"><img alt="Creative Commons License" style="border-width:0" src="/assets/licenses/cc-by-nc-nd-4.0-80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+  </div>
+  </details>
+</footer>
+
+
+  </body>
+
+</html>
