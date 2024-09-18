@@ -240,7 +240,7 @@ sub, sup {
   margin-bottom: 0;
 }
 .site-title, .site-title:visited {
-  color: #424242;
+  color: rgb(66.25, 66.25, 66.25);
 }
 
 .site-nav {
@@ -300,7 +300,7 @@ sub, sup {
     height: 1.5rem;
   }
   .site-nav .menu-icon > svg path {
-    fill: #424242;
+    fill: rgb(66.25, 66.25, 66.25);
   }
   .site-nav .trigger {
     clear: both;
